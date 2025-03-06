@@ -1,0 +1,14 @@
+@charset "UTF-8";
+#cursor-highlight {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(61, 207, 182, 0.3) 5%, rgba(255, 255, 255, 0) 60%);
+  pointer-events: none;
+  width: 250px;
+  /* Größerer Radius */
+  height: 250px;
+  /* Größerer Radius */
+  transform: translate(-50%, -50%);
+  transition: all 0.01s ease-out;
+  z-index: 9999;
+}

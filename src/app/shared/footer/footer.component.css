@@ -17,16 +17,6 @@
   gap: 32px;
 }
 
-.initials-name-logo {
-  display: flex;
-  gap: 8px;
-}
-
-.initials-name {
-  display: flex;
-  flex-direction: column;
-}
-
 .footer-left-bottom {
   display: flex;
   flex-direction: column;
@@ -60,10 +50,6 @@ a {
   /* Optional: entfernt die Unterstreichung des Links */
   position: relative;
   /* Damit das Pseudoelement absolut positioniert werden kann */
-}
-
-.initials-name-logo:hover svg .inner-fill {
-  fill: transparent;
 }
 
 a:hover {

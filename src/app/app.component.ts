@@ -8,12 +8,13 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { QuotationsComponent } from './quotations/quotations.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { CursorHighlightComponent } from './cursor-highlight/cursor-highlight.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, FooterComponent, HeaderComponent,AtfComponent, AboutMeComponent, QuotationsComponent, ProjectsComponent, ContactComponent],
+  imports: [CommonModule, RouterOutlet, FooterComponent,AtfComponent, AboutMeComponent, QuotationsComponent, ProjectsComponent, ContactComponent, CursorHighlightComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

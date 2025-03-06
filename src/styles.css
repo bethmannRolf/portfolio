@@ -7,6 +7,20 @@
   font-family: 'Roboto';
 }
 
+.initials-name-logo:hover svg .inner-fill {
+  fill: transparent;
+}
+
+.initials-name-logo {
+  display: flex;
+  gap: 8px;
+}
+
+.initials-name {
+  display: flex;
+  flex-direction: column;
+}
+
 /* roboto-100 - latin */
 @font-face {
   font-display: swap;
