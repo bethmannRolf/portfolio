@@ -1,10 +1,27 @@
+@charset "UTF-8";
 .whole-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #FFFFFF;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.initials-name-logo {
+  display: flex;
+  gap: 8px;
+}
+
+.initials-name {
   display: flex;
   flex-direction: column;
 }
@@ -12,14 +29,44 @@
 .footer-left-bottom {
   display: flex;
   flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
 }
 
 .footer-center {
   display: flex;
   align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+  color: #3DCFB6;
 }
 
 .footer-right {
   display: flex;
   flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.initials-name-logo:hover svg .inner-fill {
+  fill: transparent;
+}
+
+a:hover {
+  color: #3DCFB6;
+}
+
+a:hover::before {
+  content: "• ";
+  /* Punkt vor dem Link */
 }
