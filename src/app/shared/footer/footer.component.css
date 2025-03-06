@@ -1,0 +1,25 @@
+.whole-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-left-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-center {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+}
