@@ -3,8 +3,8 @@ display:flex;
 align-items: center;
 justify-content: space-between;
 color: #FFFFFF;
-margin-bottom: 100px;
-margin-top: 100px;
+padding-bottom: 100px;
+padding-top: 100px;
 padding-left: 100px;
 padding-right: 100px;
 user-select: none;
@@ -20,23 +20,6 @@ gap: 32px;
 
 }
 
-// app-footer{
-//     background-color: #292929;
-// }
-
-
-
-// .initials-name-logo{
-// display: flex;
-// gap: 8px
-
-// }
-
-// .initials-name{
-// display: flex;
-// flex-direction: column;
-
-// }
 
 .footer-left-bottom{
 display: flex;   ///Web Developer Area
@@ -83,10 +66,7 @@ a:hover{
    
 }
 
-// a:hover::before {
-//     content: "• ";  /* Punkt vor dem Link */
-//     margin-right: 5px;  /* Optional: Abstand zwischen Punkt und Link */
-// }
+
 
 a:hover::before {
     content: "• ";  /* Punkt vor dem Link */
