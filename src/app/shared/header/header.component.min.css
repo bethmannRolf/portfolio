@@ -1,1 +1,1 @@
-.header{display:flex;justify-content:space-between;padding-left:100px;padding-right:100px;padding-top:50px}.navigation{display:flex;font-size:20px;color:white}
+.header{display:flex;justify-content:space-between;padding-left:100px;padding-right:100px;padding-top:50px;background:linear-gradient(to bottom, rgba(0,0,0,0.6), transparent)}.navigation{display:flex;gap:24px;font-size:20px;color:white}

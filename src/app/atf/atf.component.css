@@ -1,4 +1,11 @@
-* {
-  height: 100dvh;
-  background-image: url("/src/assets/img/backgrounds/atf-backbround.svg");
+.landingpage-below-header {
+  height: 90dvh;
+}
+
+.font-white {
+  color: white;
+}
+
+.landingpage {
+  background: linear-gradient(to top right, #1C1C1C, #08463B);
 }
