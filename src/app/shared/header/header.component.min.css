@@ -1,1 +1,1 @@
-header{display:flex;justify-content:space-between}.navigation{font-size:20px;color:white}
+.header{display:flex;justify-content:space-between;padding-left:100px;padding-right:100px;padding-top:50px}.navigation{display:flex;font-size:20px;color:white}
