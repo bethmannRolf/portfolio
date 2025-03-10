@@ -9,12 +9,13 @@ import { QuotationsComponent } from './quotations/quotations.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { CursorHighlightComponent } from './cursor-highlight/cursor-highlight.component';
+import { SkillsComponent } from './skills/skills.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, FooterComponent,AtfComponent, AboutMeComponent, QuotationsComponent, ProjectsComponent, ContactComponent, CursorHighlightComponent],
+  imports: [CommonModule, RouterOutlet, FooterComponent,AtfComponent, AboutMeComponent, QuotationsComponent, ProjectsComponent, ContactComponent, CursorHighlightComponent, SkillsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
