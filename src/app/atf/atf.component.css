@@ -51,3 +51,60 @@
 .marquee:hover {
   animation-play-state: paused;
 }
+
+.main-text-landingpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 218px;
+}
+
+.job-title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #D9D9D9;
+}
+
+.name-title {
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  color: #D9D9D9;
+}
+
+.atf-button {
+  background-color: transparent;
+  border: 1px solid white;
+  /* Oder eine andere Farbe */
+  color: white;
+  /* Oder eine andere Farbe */
+  padding: 10px 30px;
+  /* Längliches Format */
+  border-radius: 50px;
+  /* Oval */
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.sub-heading buttons {
+  display: flex;
+  gap: 48px;
+}
+
+.name-and-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.name-title {
+  text-align: center;
+}
