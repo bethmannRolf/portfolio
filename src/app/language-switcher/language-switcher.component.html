@@ -1,0 +1,16 @@
+<div class="language-toggle">
+    <div 
+      class="toggle-switch" 
+      [class.active-de]="selectedLanguage === 'de'"
+      [class.active-en]="selectedLanguage === 'en'"
+    ></div>
+    <span 
+      class="lang-option left" 
+      (click)="setLanguage('de')"
+    >DE</span>
+    <span 
+      class="lang-option right" 
+      (click)="setLanguage('en')"
+    >EN</span>
+  </div>
+  

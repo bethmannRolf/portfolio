@@ -1,0 +1,45 @@
+.language-toggle {
+    position: relative;
+    width: 80px;
+    height: 35px;
+    background: #ccc;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    user-select: none;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .lang-option {
+    flex: 1;
+    text-align: center;
+    z-index: 2;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .toggle-switch {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    background: #3DCFB6;
+    border-radius: 50px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+  }
+  
+  /* Standardmäßig Deutsch aktiv */
+  .active-de {
+    transform: translateX(0);
+  }
+  
+  /* Wenn Englisch aktiv ist, bewegt sich der Hintergrund nach rechts */
+  .active-en {
+    transform: translateX(45px);
+  }
+  

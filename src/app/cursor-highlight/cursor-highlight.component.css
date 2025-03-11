@@ -9,6 +9,6 @@
   height: 250px;
   /* Größerer Radius */
   transform: translate(-50%, -50%);
-  transition: all 0.01s ease-out;
+  transition: all 0.05s ease-out;
   z-index: 9999;
 }

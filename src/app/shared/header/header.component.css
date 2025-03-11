@@ -1,6 +1,10 @@
+@charset "UTF-8";
 .header {
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: -3%;
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 50px;
@@ -12,4 +16,34 @@
   gap: 24px;
   font-size: 20px;
   color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+a::after {
+  content: '•';
+  /* Punkt */
+  position: absolute;
+  left: 50%;
+  bottom: 32px;
+  /* Direkt unter dem Text */
+  transform: translateX(-50%);
+  color: #3DCFB6;
+  /* Deine gewünschte Farbe */
+  opacity: 0;
+  /* Unsichtbar, bis Hover */
+  transition: opacity 0.3s ease-in-out;
+}
+
+a:hover::after {
+  opacity: 1;
+}
+
+a:active {
+  color: #3DCFB6;
+  /* Farbe beim Anklicken */
 }

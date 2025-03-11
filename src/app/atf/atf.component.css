@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .landingpage-below-header {
   height: 90dvh;
 }
@@ -12,4 +13,41 @@
   color: white;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.marquee {
+  white-space: nowrap;
+  /* Verhindert Umbrüche */
+  overflow: hidden;
+  /* Versteckt überflüssigen Text */
+  display: block;
+  position: relative;
+  animation: marquee-animation 10s linear infinite;
+}
+
+/* Animation für das Schriftband */
+.marquee {
+  white-space: nowrap;
+  /* Kein Zeilenumbruch */
+  overflow: hidden;
+  /* Text außerhalb ausblenden */
+  display: block;
+  position: relative;
+  animation: marquee-animation 100s linear infinite;
+}
+
+/* Animation für schrägen Verlauf */
+@keyframes marquee-animation {
+  from {
+    transform: translate(100%, -10px);
+    /* Start: rechts, leicht höher */
+  }
+  to {
+    transform: translate(-100%, 100px);
+    /* Ende: links, etwas tiefer */
+  }
+}
+
+.marquee:hover {
+  animation-play-state: paused;
 }
