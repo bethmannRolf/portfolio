@@ -30,7 +30,7 @@ a::after {
   /* Punkt */
   position: absolute;
   left: 50%;
-  bottom: 32px;
+  bottom: -20px;
   /* Direkt unter dem Text */
   transform: translateX(-50%);
   color: #3DCFB6;

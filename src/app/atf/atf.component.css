@@ -92,9 +92,8 @@
   transition: all 0.3s ease-in-out;
 }
 
-.sub-heading buttons {
+.sub-heading-buttons {
   display: flex;
-  gap: 48px;
 }
 
 .name-and-button {

@@ -33,7 +33,7 @@ a::after {
     content: '•'; /* Punkt */
     position: absolute;
     left: 50%;
-    bottom: 32px; /* Direkt unter dem Text */
+    bottom: -20px; /* Direkt unter dem Text */
     transform: translateX(-50%);
     color: #3DCFB6; /* Deine gewünschte Farbe */
     opacity: 0; /* Unsichtbar, bis Hover */

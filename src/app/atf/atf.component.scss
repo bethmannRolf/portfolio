@@ -102,9 +102,12 @@ height: 90dvh;
     // color: white;
 }
 
-.sub-heading buttons{
+.sub-heading-buttons{
     display: flex;
-    gap: 48px;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction: row;
+    // gap: 48px;
    
 }
 
