@@ -33,7 +33,7 @@
   /* Text außerhalb ausblenden */
   display: block;
   position: relative;
-  animation: marquee-animation 100s linear infinite;
+  animation: marquee-animation 50s linear infinite;
 }
 
 /* Animation für schrägen Verlauf */

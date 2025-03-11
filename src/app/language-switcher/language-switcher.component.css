@@ -62,7 +62,6 @@
   transform: translateX(0);
 }
 
-/* Wenn Englisch aktiv ist, bewegt sich der Switch nach rechts */
 .active-en {
   transform: translateX(50px);
 }
