@@ -6,7 +6,7 @@ import { LanguageSwitcherComponent } from '../language-switcher/language-switche
 @Component({
   selector: 'app-atf',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, LanguageSwitcherComponent],
+  imports: [CommonModule, HeaderComponent],
   templateUrl: './atf.component.html',
   styleUrl: './atf.component.scss'
 })

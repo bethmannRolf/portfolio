@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './language-switcher.component.scss'
 })
 export class LanguageSwitcherComponent {
-  selectedLanguage: 'de' | 'en' = 'de'; // Standardmäßig Deutsch aktiv
+  selectedLanguage: 'de' | 'en' = 'de'; // default
 
   setLanguage(lang: 'de' | 'en') {
     this.selectedLanguage = lang;

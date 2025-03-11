@@ -6,10 +6,12 @@
     ></div>
     <span 
       class="lang-option left" 
+      [class.active]="selectedLanguage === 'de'"
       (click)="setLanguage('de')"
     >DE</span>
     <span 
       class="lang-option right" 
+      [class.active]="selectedLanguage === 'en'"
       (click)="setLanguage('en')"
     >EN</span>
   </div>

@@ -1,19 +1,23 @@
 @charset "UTF-8";
 .language-toggle {
   position: relative;
-  width: 80px;
-  height: 35px;
-  background: #ccc;
-  border-radius: 50px;
+  width: 100px;
+  height: 28px;
+  background: #1E252B;
+  border: 1px solid #3DCFB6;
+  border-radius: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 5px;
+  gap: 10px;
   cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: normal;
   user-select: none;
-  transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, border 0.3s;
+}
+
+.language-toggle:hover {
+  border: 1px solid white;
 }
 
 .lang-option {
@@ -21,17 +25,36 @@
   text-align: center;
   z-index: 2;
   cursor: pointer;
-  color: #333;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: normal;
+  transition: color 0.3s ease-in-out, font-weight 0.3s;
 }
 
+.lang-option:hover {
+  color: #3DCFB6;
+}
+
+.lang-option.active {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Der bewegliche Schalter */
 .toggle-switch {
   position: absolute;
-  width: 40px;
-  height: 30px;
+  width: 50px;
+  height: 28px;
   background: #3DCFB6;
-  border-radius: 50px;
+  border-radius: 15px;
+  border: 1px solid #3DCFB6;
   transition: transform 0.3s ease-in-out;
   z-index: 1;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 /* Standardmäßig Deutsch aktiv */
@@ -39,7 +62,7 @@
   transform: translateX(0);
 }
 
-/* Wenn Englisch aktiv ist, bewegt sich der Hintergrund nach rechts */
+/* Wenn Englisch aktiv ist, bewegt sich der Switch nach rechts */
 .active-en {
-  transform: translateX(45px);
+  transform: translateX(50px);
 }
