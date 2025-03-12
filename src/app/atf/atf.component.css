@@ -178,8 +178,8 @@
 
 .vertical-line-left {
   width: 2px;
-  height: 40vh;
-  background-color: black;
+  height: 25vh;
+  background-color: #3DCFB6;
 }
 
 .rotated-text {
@@ -192,7 +192,6 @@
 
 .rotated-text:hover {
   color: #3DCFB6;
-  cursor: none;
 }
 
 .mail-font-style {
