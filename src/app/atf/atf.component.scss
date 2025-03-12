@@ -98,16 +98,17 @@ height: 90dvh;
     transition: all 0.3s ease-in-out;
    
 }
-.atf-button-text{
-    // color: white;
+
+.atf-button:hover{
+    border: 1px solid #3DCFB6;;
 }
 
 .sub-heading-buttons{
     display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // flex-direction: row;
-    // gap: 48px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 48px;
    
 }
 
@@ -121,4 +122,5 @@ height: 90dvh;
 
 .name-title{
     text-align: center;
+    user-select: none;
 }

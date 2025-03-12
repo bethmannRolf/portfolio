@@ -92,8 +92,16 @@
   transition: all 0.3s ease-in-out;
 }
 
+.atf-button:hover {
+  border: 1px solid #3DCFB6;
+}
+
 .sub-heading-buttons {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 48px;
 }
 
 .name-and-button {
@@ -106,4 +114,5 @@
 
 .name-title {
   text-align: center;
+  user-select: none;
 }
