@@ -1,55 +1,58 @@
+.landingpage-below-header {
 
-
-
-.landingpage-below-header{
-    
-height: 90dvh;
+    height: 90dvh;
 }
 
-.font-white{
+.font-white {
     color: white
-
 }
 
-.landingpage{
-        // background: linear-gradient(to top right, #1C1C1C, #08463B);
-        background-color: rgb(28, 28, 28);
-        background-image: url(../../assets/img/backgrounds/landingpage_bg.svg);
-    
-        color: white;
-        background-size: cover;
+.landingpage {
+    // background: linear-gradient(to top right, #1C1C1C, #08463B);
+    background-color: rgb(28, 28, 28);
+    background-image: url(../../assets/img/backgrounds/landingpage_bg.svg);
+
+    color: white;
+    background-size: cover;
     background-repeat: no-repeat;
 
 
-    }
+}
 
 
 .marquee {
-    white-space: nowrap; /* Verhindert Umbrüche */
-    overflow: hidden; /* Versteckt überflüssigen Text */
+    white-space: nowrap;
+    /* Verhindert Umbrüche */
+    overflow: hidden;
+    /* Versteckt überflüssigen Text */
     display: block;
     position: relative;
-    
+
     animation: marquee-animation 10s linear infinite;
 }
 
 /* Animation für das Schriftband */
 .marquee {
-    white-space: nowrap; /* Kein Zeilenumbruch */
-    overflow: hidden; /* Text außerhalb ausblenden */
+    white-space: nowrap;
+    /* Kein Zeilenumbruch */
+    overflow: hidden;
+    /* Text außerhalb ausblenden */
     display: block;
     position: relative;
-    
+
     animation: marquee-animation 50s linear infinite;
 }
 
 /* Animation für schrägen Verlauf */
 @keyframes marquee-animation {
     from {
-        transform: translate(100%, -10px); /* Start: rechts, leicht höher */
+        transform: translate(100%, -10px);
+        /* Start: rechts, leicht höher */
     }
+
     to {
-        transform: translate(-100%, 100px); /* Ende: links, etwas tiefer */
+        transform: translate(-100%, 100px);
+        /* Ende: links, etwas tiefer */
     }
 }
 
@@ -59,7 +62,7 @@ height: 90dvh;
 }
 
 
-.main-text-landingpage{
+.main-text-landingpage {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +72,7 @@ height: 90dvh;
 
 }
 
-.job-title{
+.job-title {
     font-weight: 400;
     font-size: 40px;
     line-height: 100%;
@@ -77,7 +80,7 @@ height: 90dvh;
     color: #D9D9D9;
 }
 
-.name-title{
+.name-title {
 
     font-weight: 700;
     font-size: 128px;
@@ -87,32 +90,37 @@ height: 90dvh;
     color: #D9D9D9;
 }
 
-.atf-button{
+.atf-button {
     background-color: transparent;
-    border: 1px solid white; /* Oder eine andere Farbe */
-    color: white; /* Oder eine andere Farbe */
-    padding: 10px 30px; /* Längliches Format */
-    border-radius: 50px; /* Oval */
+    border: 1px solid white;
+  
+    color: white;
+  
+    padding: 10px 30px;
+
+    border-radius: 50px;
+
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-   
+
 }
 
-.atf-button:hover{
-    border: 1px solid #3DCFB6;;
+.atf-button:hover {
+    border: 1px solid #3DCFB6;
+    ;
 }
 
-.sub-heading-buttons{
+.sub-heading-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     gap: 48px;
-   
+
 }
 
-.name-and-button{
+.name-and-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +128,144 @@ height: 90dvh;
     gap: 40px;
 }
 
-.name-title{
+.name-title {
     text-align: center;
     user-select: none;
 }
+
+
+.line-buttons-mail-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0;
+    right: 5%;
+    gap: 24px;
+}
+
+.line-container-left {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    left: 10%;
+    gap: 32px;
+}
+
+.arrow-down-button {
+    background-color: transparent;
+    border: 1px solid white;
+    width: 30px;
+    height: 48px;
+    border: 1px solid #3DCFB6;
+    border-radius: 32px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.arrow-down-button svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: transform 500ms ease-in;
+    animation: moveArrowDown 1000ms ease-in  infinite alternate; 
+}
+
+@keyframes moveArrowDown {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px); 
+    }
+    100% {
+        transform: translateY(0px); 
+    }
+}
+
+
+
+
+
+
+
+/////////////////////////////////////
+.vertical-line-right {
+    width: 2px;
+    height: 33vh;
+    background-color: white;
+    margin-right: 10px; 
+    
+}
+
+.vertical-line-left {
+    width: 2px;
+    height: 40vh;
+    background-color: black;
+}
+
+.rotated-text {
+    display: inline-block;
+
+    transform: rotate(270deg);
+    color: white;
+    padding-left: 168px;
+    padding-bottom: 10px;
+   
+
+}
+
+.rotated-text:hover {
+    color: #3DCFB6;
+    cursor: none;
+}
+
+.mail-font-style {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+
+
+}
+
+svg path {
+    transition: fill 0.3s ease-in-out; 
+}
+
+svg:hover path {
+    fill: white; 
+}
+
+
+.line-buttons-mail-container a {
+    position: relative;
+    display: inline-block;
+    padding-right: 10px; /* Abstand zwischen SVG und Punkt */
+}
+
+.line-buttons-mail-container a.dotted::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 105%; 
+    width: 6px;
+    height: 6px;
+    background-color: #3DCFB6;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.line-buttons-mail-container a:hover::after {
+    opacity: 1;
+}
+
