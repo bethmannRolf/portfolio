@@ -94,27 +94,59 @@
 
     color: #D9D9D9;
 }
+//////////////////////////////////////////////
+
+
+
 
 .atf-button {
     background-color: transparent;
     border: 1px solid white;
-  
     color: white;
-  
-    padding: 10px 30px;
-
+    padding: 12px 30px;
     border-radius: 50px;
-
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    width: 160px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.atf-button-text {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: marquee 4s linear infinite;
+}
+
+/* Optimierte Animation für durchgängigen Fluss */
+@keyframes marquee {
+    from {
+        left: 100%;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+/* Hover: Stoppt Bewegung & zentriert den Text */
+.atf-button:hover .atf-button-text {
+    animation: none;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .atf-button:hover {
     border: 1px solid #3DCFB6;
-    ;
 }
+
 
 .sub-heading-buttons {
     display: flex;
@@ -124,6 +156,12 @@
     gap: 48px;
 
 }
+
+
+
+
+
+
 
 .name-and-button {
     display: flex;
