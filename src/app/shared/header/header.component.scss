@@ -14,7 +14,7 @@
 
 .navigation {
     display: flex;
-    // justify-content: center;
+ 
     align-items: center;
     gap: 24px;
     font-size: 20px;
@@ -25,18 +25,18 @@ a {
     color: white;
     text-decoration: none;
     position: relative;
-    // position: relative;
+
 
 }
 
 a::after {
-    content: '•'; /* Punkt */
+    content: '•'; 
     position: absolute;
     left: 50%;
-    bottom: -20px; /* Direkt unter dem Text */
+    bottom: -20px; 
     transform: translateX(-50%);
-    color: #3DCFB6; /* Deine gewünschte Farbe */
-    opacity: 0; /* Unsichtbar, bis Hover */
+    color: #3DCFB6; 
+    opacity: 0; 
     transition: opacity 0.3s ease-in-out;
   }
   
@@ -45,5 +45,5 @@ a::after {
   }
 
   a:active {
-    color: #3DCFB6; /* Farbe beim Anklicken */
+    color: #3DCFB6; 
   }
