@@ -1,5 +1,4 @@
 .landingpage-below-header {
-
     height: 90vh;
 }
 
@@ -8,25 +7,22 @@
 }
 
 .landingpage {
-    // background: linear-gradient(to top right, #1C1C1C, #08463B);
     background-color: rgb(28, 28, 28);
     background-image: url(../../assets/img/backgrounds/landingpage_bg.svg);
-
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-
-
 }
+
 ///////////////////////////////
 
 .marquee {
-    overflow: hidden; /* Versteckt überflüssigen Text */
+    overflow-x: hidden;
     background-color: rgba(255, 255, 255, 0.12);
     color: #3DCFB6;
     height: 62px;
-    width: 100%; /* 100% der Ansicht */
+    width: 100%;
     padding: 12px 32px;
     font-size: 32px;
     font-weight: 400;
@@ -36,39 +32,38 @@
     display: flex;
     align-items: center;
     position: absolute;
-    bottom: 70px; /* An den unteren Rand der Landingpage anheften */
+    bottom: 70px;
     left: 0;
     backdrop-filter: blur(5.3px);
     z-index: 10;
-  
-    /* Hier wird der schräge Effekt auf die äußere div angewendet */
-    transform: skewY(-3deg); /* Skewing nach unten */
-    transform-origin: top right; /* Skewing beginnt oben rechts */
-  }
-  
-  /* Der animierte Wrapper */
-  .marquee-content {
+
+
+    transform: skewY(-3deg);
+    transform-origin: top right;
+}
+
+.marquee-content {
     display: flex;
     justify-content: space-between;
-    min-width: 200%; /* Doppelte Breite für flüssiges Scrollen */
+    min-width: 200%;
     animation: marquee-animation 15s linear infinite;
- 
-  }
-  
-  /* Animation für den Lauftext */
-@keyframes marquee-animation {
-  0% {
-    transform: translateX(0); /* Startet von links */
-  }
-  100% {
-    transform: translateX(-50%); /* Bewegt sich um die Hälfte des Inhalts (um nahtlos zu starten) */
-  }
 }
-  .marquee:hover .marquee-content {
+
+@keyframes marquee-animation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.marquee:hover .marquee-content {
     animation-play-state: paused;
-  }
-  
-////////////////////////////////////////
+}
+
+
 .main-text-landingpage {
     display: flex;
     justify-content: center;
@@ -76,7 +71,6 @@
     flex-direction: column;
     gap: 12px;
     margin-top: 218px;
-
 }
 
 .job-title {
@@ -96,6 +90,7 @@
 
     color: #D9D9D9;
 }
+
 //////////////////////////////////////////////
 
 
@@ -128,7 +123,6 @@
     animation: marquee 4s linear infinite;
 }
 
-/* Optimierte Animation für durchgängigen Fluss */
 @keyframes marquee {
     from {
         left: 100%;
@@ -138,7 +132,6 @@
     }
 }
 
-/* Hover: Stoppt Bewegung & zentriert den Text */
 .atf-button:hover .atf-button-text {
     animation: none;
     left: 50%;
@@ -149,21 +142,13 @@
     border: 1px solid #3DCFB6;
 }
 
-
 .sub-heading-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     gap: 48px;
-
 }
-
-
-
-
-
-
 
 .name-and-button {
     display: flex;
@@ -220,34 +205,30 @@
     height: 18px;
     fill: white;
     transition: transform 500ms ease-in;
-    animation: moveArrowDown 1000ms ease-in  infinite alternate; 
+    animation: moveArrowDown 1000ms ease-in infinite alternate;
 }
 
 @keyframes moveArrowDown {
     0% {
         transform: translateY(0px);
     }
+
     50% {
-        transform: translateY(10px); 
+        transform: translateY(10px);
     }
+
     100% {
-        transform: translateY(0px); 
+        transform: translateY(0px);
     }
 }
-
-
-
-
-
-
 
 /////////////////////////////////////
 .vertical-line-right {
     width: 2px;
     height: 33vh;
     background-color: white;
-    margin-right: 10px; 
-    
+    margin-right: 10px;
+
 }
 
 .vertical-line-left {
@@ -263,13 +244,13 @@
     color: white;
     padding-left: 168px;
     padding-bottom: 10px;
-   
+
 
 }
 
 .rotated-text:hover {
     color: #3DCFB6;
-   
+
 }
 
 .mail-font-style {
@@ -282,25 +263,24 @@
 }
 
 svg path {
-    transition: fill 0.3s ease-in-out; 
+    transition: fill 0.3s ease-in-out;
 }
 
 svg:hover path {
-    fill: white; 
+    fill: white;
 }
-
 
 .line-buttons-mail-container a {
     position: relative;
     display: inline-block;
-    padding-right: 10px; /* Abstand zwischen SVG und Punkt */
+    padding-right: 10px;
 }
 
 .line-buttons-mail-container a.dotted::after {
     content: "";
     position: absolute;
     top: 50%;
-    left: 105%; 
+    left: 105%;
     width: 6px;
     height: 6px;
     background-color: #3DCFB6;
@@ -313,4 +293,3 @@ svg:hover path {
 .line-buttons-mail-container a:hover::after {
     opacity: 1;
 }
-
