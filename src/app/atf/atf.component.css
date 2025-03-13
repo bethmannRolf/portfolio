@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .landingpage-below-header {
-  height: 90dvh;
+  height: 90vh;
 }
 
 .font-white {
@@ -13,6 +13,7 @@
   color: white;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .marquee {
@@ -21,7 +22,7 @@
   background-color: rgba(255, 255, 255, 0.12);
   color: #3DCFB6;
   height: 62px;
-  width: 100vw;
+  width: 100%;
   /* 100% der Ansicht */
   padding: 12px 32px;
   font-size: 32px;

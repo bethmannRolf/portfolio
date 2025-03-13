@@ -1,6 +1,6 @@
 .landingpage-below-header {
 
-    height: 90dvh;
+    height: 90vh;
 }
 
 .font-white {
@@ -15,6 +15,7 @@
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 
 
 }
@@ -25,7 +26,7 @@
     background-color: rgba(255, 255, 255, 0.12);
     color: #3DCFB6;
     height: 62px;
-    width: 100vw; /* 100% der Ansicht */
+    width: 100%; /* 100% der Ansicht */
     padding: 12px 32px;
     font-size: 32px;
     font-weight: 400;
@@ -51,6 +52,7 @@
     justify-content: space-between;
     min-width: 200%; /* Doppelte Breite für flüssiges Scrollen */
     animation: marquee-animation 15s linear infinite;
+ 
   }
   
   /* Animation für den Lauftext */
