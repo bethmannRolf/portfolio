@@ -1,1 +1,13 @@
-<p>contact-form works!</p>
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <label for="name">Name:</label>
+    <input id="name" formControlName="name" required />
+  
+    <label for="email">Email:</label>
+    <input id="email" formControlName="email" required type="email" />
+  
+    <label for="message">Nachricht:</label>
+    <textarea id="message" formControlName="message" required></textarea>
+  
+    <button type="submit" [disabled]="contactForm.invalid">Absenden</button>
+  </form>
+  
