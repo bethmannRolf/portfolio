@@ -3,4 +3,73 @@
   color: white;
   height: 500px;
   width: 100%;
+  display: flex;
+}
+
+.left-contact-side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-upper-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-me-span {
+  color: #3DCFB6;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.work-together-heading {
+  color: #3DCFB6;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -3%;
+}
+
+.left-lower-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-lower-heading {
+  color: #3DCFB6;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.left-lower-first-span {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.highlight-green {
+  color: #3DCFB6;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.need-developer {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.app-contact-form {
+  width: 50%;
 }

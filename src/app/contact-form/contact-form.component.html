@@ -1,13 +1,13 @@
-<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-    <label for="name">Name:</label>
+<form class="contact-form-container" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <label class="question-contact-input" for="name">What's your name ?</label>
     <input id="name" formControlName="name" required />
   
-    <label for="email">Email:</label>
+    <label for="email">What's your email?</label>
     <input id="email" formControlName="email" required type="email" />
   
-    <label for="message">Nachricht:</label>
+    <label for="message">How can i help you ?</label>
     <textarea id="message" formControlName="message" required></textarea>
   
-    <button type="submit" [disabled]="contactForm.invalid">Absenden</button>
+    <button type="submit" [disabled]="contactForm.invalid">Say Hello ;)</button>
   </form>
   
