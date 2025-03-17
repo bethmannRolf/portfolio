@@ -10,11 +10,13 @@
   width: 50%;
   display: flex;
   flex-direction: column;
+  gap: 40px;
 }
 
 .left-upper-section {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .contact-me-span {
@@ -36,6 +38,7 @@
 .left-lower-section {
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 
 .left-lower-heading {
