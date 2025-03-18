@@ -1,17 +1,27 @@
-<div class="position-container">
-    <form class="contact-form-container" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-        <div class="name-input-section">
-            <label class="question-contact-input" for="name">What's your name ?</label>
-            <input placeholder="Wert..." id="name" formControlName="name" required />
-        </div>
-        <div class="email-input-section">
-            <label for="email">What's your email?</label>
-            <input id="email" formControlName="email" required type="email" />
-        </div>
-        <div class="message-area-section">
-            <label for="message">How can i help you ?</label>
-            <textarea id="message" formControlName="message" required></textarea>
-        </div>
-        <button class="contact-submit-button" type="submit" [disabled]="contactForm.invalid">Say Hello ;)</button>
-    </form>
-</div>
+<form class="contact-form-container" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <div class="name-input-section">
+        <label class="question-contact-input" for="name">What's your name?</label>
+        <input placeholder="Wert..." id="name" formControlName="name" required />
+    </div>
+
+    <div class="email-input-section">
+        <label for="email">What's your email?</label>
+        <input placeholder="your@email.com" id="email" formControlName="email" required type="email" />
+    </div>
+
+    <div class="message-area-section">
+        <label for="message">How can I help you?</label>
+        <textarea id="message" formControlName="message" required></textarea>
+    </div>
+
+    <div class="checkbox-section">
+        <input id="acceptTerms" type="checkbox" formControlName="acceptTerms" />
+        <label for="acceptTerms">
+            <span class="privacy-confirmation-text">I've read the </span>
+            <a class="privacy-policy-link privacy-confirmation-text" href="#">privacy policy</a>
+            <span class="privacy-confirmation-text"> and agree to the processing of my data as outlined.</span>
+        </label>
+    </div>
+
+    <button class="contact-submit-button" type="submit" [disabled]="contactForm.invalid"><span class="submit-span">Say Hello ;)</span></button>
+</form>

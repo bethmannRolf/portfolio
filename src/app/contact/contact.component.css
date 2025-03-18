@@ -1,14 +1,13 @@
 .contact-section {
   background-color: #1c1c1c;
   color: white;
-  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 96px;
 }
 
 .left-contact-side {
-  width: 50%;
   max-width: 616px;
   display: flex;
   flex-direction: column;
@@ -73,8 +72,4 @@
   font-size: 16px;
   line-height: 120%;
   letter-spacing: 0%;
-}
-
-.app-contact-form {
-  width: 50%;
 }

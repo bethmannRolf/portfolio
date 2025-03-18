@@ -1,17 +1,17 @@
 .contact-section {
     background-color: rgb(28, 28, 28);
     color: white;
-  
-    width: 100%;
+
+    // width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
-    padding: 96px;
-   
+padding: 96px;
 }
 
 .left-contact-side {
-    width: 50%;
+  
     max-width: 616px;
     display: flex;
     flex-direction: column;
@@ -81,10 +81,9 @@
     letter-spacing: 0%;
 }
 
-.app-contact-form{
+.app-contact-form {
 
-    width: 50%;
-   
-    
+
+
+
 }
-

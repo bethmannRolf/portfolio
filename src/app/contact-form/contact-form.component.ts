@@ -15,10 +15,10 @@ export class ContactFormComponent {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required]
+      message: ['', Validators.required],
+      acceptTerms: [false, Validators.requiredTrue] 
     });
   }
-
   onSubmit() {
     if (this.contactForm.valid) {
       console.log('Form data:', this.contactForm.value);
