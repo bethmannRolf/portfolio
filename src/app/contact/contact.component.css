@@ -1,13 +1,15 @@
 .contact-section {
   background-color: #1c1c1c;
   color: white;
-  height: 500px;
   width: 100%;
   display: flex;
+  align-items: center;
+  padding: 96px;
 }
 
 .left-contact-side {
   width: 50%;
+  max-width: 616px;
   display: flex;
   flex-direction: column;
   gap: 40px;

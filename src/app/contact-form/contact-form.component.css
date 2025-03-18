@@ -2,3 +2,32 @@
   display: flex;
   flex-direction: column;
 }
+
+.name-input-section {
+  border-top: 1px solid #3DCFB6;
+  display: flex;
+  flex-direction: column;
+}
+
+.email-input-section {
+  border-top: 1px solid #3DCFB6;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-area-section {
+  border-top: 1px solid #3DCFB6;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-submit-button {
+  border-top: 1px solid #3DCFB6;
+}
+
+.position-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
