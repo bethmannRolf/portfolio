@@ -1,16 +1,16 @@
 <form class="contact-form-container" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
     <div class="name-input-section">
-        <label class="question-contact-input" for="name">What's your name?</label>
+        <label for="name"><span class="question-name-input">What's your name?</span></label>
         <input placeholder="Wert..." id="name" formControlName="name" required />
     </div>
 
     <div class="email-input-section">
-        <label for="email">What's your email?</label>
+        <label for="email"><span class="question-mail-input">What's your email?</span></label>
         <input placeholder="your@email.com" id="email" formControlName="email" required type="email" />
     </div>
 
     <div class="message-area-section">
-        <label for="message">How can I help you?</label>
+        <label for="message"><span class="question-message-input">How can I help you?</span></label>
         <textarea id="message" formControlName="message" required></textarea>
     </div>
 
@@ -23,5 +23,6 @@
         </label>
     </div>
 
-    <button class="contact-submit-button" type="submit" [disabled]="contactForm.invalid"><span class="submit-span">Say Hello ;)</span></button>
+    <button class="contact-submit-button" type="submit" [disabled]="contactForm.invalid"><span class="submit-span">Say
+            Hello ;)</span></button>
 </form>
