@@ -1,23 +1,4 @@
-@charset "UTF-8";
 .contact-form-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.name-input-section {
-  border-top: 1px solid #3DCFB6;
-  display: flex;
-  flex-direction: column;
-}
-
-.email-input-section {
-  border-top: 1px solid #3DCFB6;
-  display: flex;
-  flex-direction: column;
-}
-
-.message-area-section {
-  border-top: 1px solid #3DCFB6;
   display: flex;
   flex-direction: column;
 }
@@ -37,7 +18,6 @@
   display: flex;
 }
 
-/* Stil für die Checkbox-Section */
 .checkbox-section {
   display: flex;
   align-items: center;
@@ -45,14 +25,11 @@
   margin-top: 15px;
 }
 
-/* Standard Checkbox ausblenden */
 .checkbox-section input[type="checkbox"] {
   appearance: none;
-  /* Entfernt das Standard-Checkbox-Design */
   width: 24px;
   height: 24px;
   border: 2px solid #1abc9c;
-  /* Türkis */
   border-radius: 4px;
   background-color: transparent;
   cursor: pointer;
@@ -60,25 +37,20 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* Hover-Effekt mit Glow */
 .checkbox-section input[type="checkbox"]:hover {
   box-shadow: 0 0 10px rgba(26, 188, 156, 0.8);
 }
 
-/* Checkbox aktiv (wenn angeklickt) */
 .checkbox-section input[type="checkbox"]:checked {
   background-color: black;
   border-color: #1abc9c;
   box-shadow: 0 0 10px #1abc9c;
 }
 
-/* Häkchen-Stil */
 .checkbox-section input[type="checkbox"]::after {
   content: "\2714";
-  /* Unicode für ✔ */
   font-size: 18px;
   color: #1abc9c;
-  /* Türkis */
   position: absolute;
   left: 50%;
   top: 50%;
@@ -86,12 +58,10 @@
   opacity: 0;
 }
 
-/* Häkchen sichtbar machen, wenn Checkbox gecheckt ist */
 .checkbox-section input[type="checkbox"]:checked::after {
   opacity: 1;
 }
 
-/* Stil für den Text und den Link */
 .checkbox-section label {
   font-size: 14px;
   color: #fff;
@@ -105,7 +75,6 @@
   margin-left: 5px;
 }
 
-/* Hover-Effekt für den Link */
 .privacy-policy-link:hover {
   color: white;
   text-decoration: underline;
@@ -193,6 +162,7 @@
 }
 
 .name-input-section {
+  border-top: 1px solid #3DCFB6;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -201,6 +171,7 @@
 .email-input-section {
   display: flex;
   flex-direction: column;
+  border-top: 1px solid #3DCFB6;
   gap: 16px;
 }
 

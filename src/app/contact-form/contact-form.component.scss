@@ -1,56 +1,23 @@
 .contact-form-container {
     display: flex;
     flex-direction: column;
-    
 }
 
-// .contact-form-container {
-//     border-top: 1px solid #3DCFB6;
-//     border-bottom: 1px solid #3DCFB6;
-// }
-
-
-.name-input-section {
-    border-top: 1px solid #3DCFB6;
-    display: flex;
-    flex-direction: column;
-}
-
-.email-input-section {
-    border-top: 1px solid #3DCFB6;
-    display: flex;
-    flex-direction: column;
-}
-
-.message-area-section {
-    border-top: 1px solid #3DCFB6;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-submit-button{
+.contact-submit-button {
     border-top: 1px solid #3DCFB6;
 }
 
-.position-container{
+.position-container {
     width: 50%;
-display: flex;
-justify-content: center;
-align-items: center;
-
-}
-
-
-.checkbox-section{
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
 
+.checkbox-section {
+    display: flex;
+}
 
-/////
-/// 
-/// 
-/* Stil für die Checkbox-Section */
 .checkbox-section {
     display: flex;
     align-items: center;
@@ -58,12 +25,11 @@ align-items: center;
     margin-top: 15px;
 }
 
-/* Standard Checkbox ausblenden */
 .checkbox-section input[type="checkbox"] {
-    appearance: none; /* Entfernt das Standard-Checkbox-Design */
+    appearance: none;
     width: 24px;
     height: 24px;
-    border: 2px solid #1abc9c; /* Türkis */
+    border: 2px solid #1abc9c;
     border-radius: 4px;
     background-color: transparent;
     cursor: pointer;
@@ -71,37 +37,31 @@ align-items: center;
     transition: all 0.3s ease-in-out;
 }
 
-/* Hover-Effekt mit Glow */
 .checkbox-section input[type="checkbox"]:hover {
     box-shadow: 0 0 10px rgba(26, 188, 156, 0.8);
 }
 
-/* Checkbox aktiv (wenn angeklickt) */
 .checkbox-section input[type="checkbox"]:checked {
     background-color: black;
     border-color: #1abc9c;
     box-shadow: 0 0 10px #1abc9c;
 }
 
-/* Häkchen-Stil */
 .checkbox-section input[type="checkbox"]::after {
-    content: "\2714"; /* Unicode für ✔ */
+    content: "\2714";
     font-size: 18px;
-    color: #1abc9c; /* Türkis */
+    color: #1abc9c;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    // transition: opacity 0.2s ease-in-out;
 }
 
-/* Häkchen sichtbar machen, wenn Checkbox gecheckt ist */
 .checkbox-section input[type="checkbox"]:checked::after {
     opacity: 1;
 }
 
-/* Stil für den Text und den Link */
 .checkbox-section label {
     font-size: 14px;
     color: #fff;
@@ -113,69 +73,23 @@ align-items: center;
     text-decoration: none;
     font-weight: bold;
     margin-left: 5px;
-    
 }
 
-/* Hover-Effekt für den Link */
 .privacy-policy-link:hover {
     color: white;
     text-decoration: underline;
 }
 
-
-.privacy-confirmation-text{
+.privacy-confirmation-text {
     font-size: 15px;
     font-weight: 400;
     line-height: 120%;
     letter-spacing: 0%;
 }
 
-.privacy-policy-link{
+.privacy-policy-link {
     letter-spacing: -3%;
 }
-
-// .submit-span{
-
-//     font-size: 18px;
-//     font-weight: 400;
-//     line-height: 120%;
-//     letter-spacing: 0%;
-// }
-
-
-
-
-// .contact-submit-button {
-//     background: transparent;
-//     border: 2px solid #50E3C2; /* Türkisfarbene Umrandung */
-//     border-radius: 50px; /* Macht den Button oval */
-//     padding: 10px 30px;
-//     font-size: 16px;
-//     color: transparent; /* Unsichtbarer Text */
-//     cursor: pointer;
-//     position: relative;
-//     display: inline-block;
-// }
-
-// .contact-submit-button:hover .submit-span {
-//     color: #50E3C2; /* Text sichtbar machen bei Hover */
-// }
-
-// .contact-submit-button:disabled {
-//     border-color: white; /* Graue Umrandung, wenn deaktiviert */
-//     cursor: not-allowed;
-// }
-
-// .submit-span {
-//     color: white; 
-//         font-size: 18px;
-//     font-weight: 400;
-//     line-height: 120%;
-//     letter-spacing: 0%;
-    
-// }
-
-
 
 .contact-submit-button {
     background-color: transparent;
@@ -223,51 +137,53 @@ align-items: center;
     border: 1px solid #3DCFB6;
 }
 
-
-.question-name-input{
+.question-name-input {
     font-size: 24px;
     font-weight: 500;
     line-height: 120%;
     letter-spacing: 0%;
     color: #3DCFB6;
-    }
-    
-    .question-mail-input{
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 120%;
-        letter-spacing: 0%;
-        color: #3DCFB6;
-    }
-    
-    
-    .question-message-input{
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 120%;
-        letter-spacing: 0%;
-        color: #3DCFB6;
-    }
-    
-    .name-input-section{
-        display: flex;
-        flex-direction: column;
-        gap:16px;
-     
-    }
+}
 
-    .email-input-section{
-        display: flex;
-        flex-direction: column;
-        gap:16px;
-    }
+.question-mail-input {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #3DCFB6;
+}
 
-    .message-area-section{
-        display: flex;
-        flex-direction: column;
-        gap:16px;
-        border-top: 1px solid rgba(61, 207, 182, 0.5);
-        border-bottom: 1px solid rgba(61, 207, 182, 0.5);
-        
-        
-    }
+.question-message-input {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #3DCFB6;
+}
+
+.name-input-section {
+    border-top: 1px solid #3DCFB6;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.email-input-section {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #3DCFB6;
+    gap: 16px;
+}
+
+.message-area-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-top: 1px solid rgba(61, 207, 182, 0.5);
+    border-bottom: 1px solid rgba(61, 207, 182, 0.5);
+}
+
+
+
+
+
