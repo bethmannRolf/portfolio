@@ -3,15 +3,14 @@
         <label for="name"><span class="question-name-input">What's your name?</span></label>
         <input placeholder="Wert..." id="name" formControlName="name" required />
     </div>
-
     <div class="email-input-section">
         <label for="email"><span class="question-mail-input">What's your email?</span></label>
         <input placeholder="your@email.com" id="email" formControlName="email" required type="email" />
     </div>
-
     <div class="message-area-section">
         <label for="message"><span class="question-message-input">How can I help you?</span></label>
-        <textarea placeholder="Hello Lukas, I am interested in ..." id="message" formControlName="message" required></textarea>
+        <textarea placeholder="Hello Lukas, I am interested in ..." id="message" formControlName="message"
+            required></textarea>
     </div>
     <div class="policy-button-section">
         <div class="checkbox-section">
@@ -26,6 +25,5 @@
         <button class="contact-submit-button" type="submit" [disabled]="contactForm.invalid"><span
                 class="submit-span">Say
                 Hello ;)</span></button>
-
     </div>
 </form>
