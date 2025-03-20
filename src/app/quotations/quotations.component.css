@@ -2,4 +2,15 @@
   background-color: #1c1c1c;
   color: white;
   height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3dcfb6;
+}
+
+.what-colleagues-say {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
