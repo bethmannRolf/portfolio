@@ -3,4 +3,39 @@
   color: white;
   height: 500px;
   width: 100%;
+  padding: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 41px;
+}
+
+.upper-headings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.upper-small-heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #3dcfb6;
+}
+
+.upper-large-heading {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -3%;
+  color: #3dcfb6;
+}
+
+.short-section-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: white;
 }

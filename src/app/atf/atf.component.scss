@@ -96,6 +96,7 @@
 
 
 
+
 .atf-button {
     background-color: transparent;
     border: 1px solid white;
@@ -119,11 +120,11 @@
     white-space: nowrap;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    animation: marquee 4s linear infinite;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-@keyframes marquee {
+@keyframes marqueeButton {
     from {
         left: 100%;
     }
@@ -133,15 +134,16 @@
 }
 
 .atf-button:hover .atf-button-text {
-    animation: none;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    animation: marqueeButton 4s linear infinite;
 }
 
+
 .atf-button:hover {
+    transition: all 0.5s ease-in;
     border: 1px solid #3DCFB6;
 }
 
+////////////////////////////////////////
 .sub-heading-buttons {
     display: flex;
     align-items: center;
