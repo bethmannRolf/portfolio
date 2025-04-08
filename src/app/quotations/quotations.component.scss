@@ -1,40 +1,63 @@
-.quotations-section{
+.quotations-section {
     background-color: rgb(28, 28, 28);
     color: white;
-    height: 500px;     //just to show section  
+  
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
-   
-}
-
-.what-colleagues-say{
-font-weight: 700;
-font-size: 32px;
-line-height: 100%;
-letter-spacing: 0%;
- color:rgba(61, 207, 182, 1)
 
 }
 
-app-quotation-card{
+.what-colleagues-say {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(61, 207, 182, 1)
+}
 
-    // background-color: transparent;
-   height: 274px;
-   width: 632px;
+// app-quotation-card {
 
+
+// }
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 100vw; // z. B.
+    margin: 0 auto;
+  }
+  
+  .slides-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 80px;
+  }
+  
+
+  .slide {
+    flex: 0 0 calc(100% / 3); 
+    max-width: calc(100% / 3);
+    opacity: 0.4;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+
+    height: 274px;
+    width: 632px;//632px originalö
     border: 1px solid rgba(61, 207, 182, 1);
     background-color: rgba(61, 207, 182, 0.3);
     border-radius: 32px;
 
-}
-
-
-// .quotations-section >.quote-sign-styling{
-// position: sticky;
-// top: 83px;
-// left: 349px;
-// z-index: 999;
-
-// }
+    
+  }
+  
+  .slide.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+  

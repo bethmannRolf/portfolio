@@ -1,10 +1,5 @@
-
-
-
-
 import { CommonModule } from '@angular/common';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-
 @Component({
   selector: 'app-slider-navigation',
   standalone: true,
@@ -18,15 +13,18 @@ export class SliderNavigationComponent {
 
   @Output() indexChanged = new EventEmitter<number>();
 
-  goToPrevious() {
-    const newIndex = this.currentIndex > 0 ? this.currentIndex - 1 : this.slides.length - 1;
-    this.indexChanged.emit(newIndex);
-  }
 
-  goToNext() {
-    const newIndex = (this.currentIndex + 1) % this.slides.length;
-    this.indexChanged.emit(newIndex);
-  }
+nextSlide() {
+  this.indexChanged.emit(this.currentIndex + 1);
+}
+
+previousSlide() {
+  this.indexChanged.emit(this.currentIndex - 1);
+}
+
+
+
+
 
   goToSlide(index: number) {
     this.indexChanged.emit(index);

@@ -1,27 +1,42 @@
 import { Component } from '@angular/core';
 import { QuotationCardComponent } from './quotation-card/quotation-card.component';
 import { SliderNavigationComponent } from './slider-navigation/slider-navigation.component';
-
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-quotations',
   standalone: true,
-  imports: [QuotationCardComponent, SliderNavigationComponent],
+  imports: [QuotationCardComponent, SliderNavigationComponent, CommonModule],
   templateUrl: './quotations.component.html',
   styleUrl: './quotations.component.scss'
 })
 export class QuotationsComponent {
-
-
-  slides = [/* deine Slide-Daten */];
+ 
   currentIndex = 0;
+
+  // onSlideChanged(index: number) {
+  //   this.currentIndex = index;
+  // }
   
+
   onSlideChanged(index: number) {
-    this.currentSlideIndex = index;
+    const slidesLength = this.slides.length;
+  
+    // Damit wir nicht aus dem Array rauslaufen:
+    this.currentIndex = (index + slidesLength) % slidesLength;
   }
   
+
+
+  getVisibleSlides() {
+    const prev = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+    const next = (this.currentIndex + 1) % this.slides.length;
+    return [this.slides[prev], this.slides[this.currentIndex], this.slides[next]];
+  }
   
 
-  quotationSlides = [
+
+
+  slides = [
     {
       text: 'Erstes Zitat...',
       name: 'Max Mustermann',
@@ -29,7 +44,7 @@ export class QuotationsComponent {
     },
     {
       text: 'Zweites Zitat...',
-      name: 'Anna Beispiel',
+      name: 'Name 2',
       position: 'Designer'
     },
     {
@@ -38,16 +53,20 @@ export class QuotationsComponent {
       position: 'Manager'
     }
   ];
+
+
+
+  // getSlideTransform() {
+  //   const slideWidth = 632 + 80; // Slide + Abstand
+  //   return `translateX(-${slideWidth}px)`; // Immer der mittlere (Index 1) soll zentriert sein
+  // }
   
-  currentSlideIndex = 0;
+
+  getSlideTransform() {
+    const slideWidth = 632 + 80; // slide width + gap
+    const offset = slideWidth * this.currentIndex;
+    return `translateX(-${offset}px)`;
+  }
   
-
-
-
-
-
-
-
-
 
 }
