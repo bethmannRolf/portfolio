@@ -23,3 +23,10 @@ app-quotation-card {
   background-color: rgba(61, 207, 182, 0.3);
   border-radius: 32px;
 }
+
+.quotations-section > .quote-sign-styling {
+  position: sticky;
+  top: 83px;
+  left: 349px;
+  z-index: 999;
+}
