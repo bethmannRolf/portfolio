@@ -2,32 +2,28 @@
 
     <span class="what-colleagues-say">What my colleagues say about me</span>
     <img class="quote-sign-styling" src="../../assets/img/quotations/quotes.png">
-    <app-quotation-card></app-quotation-card>
+    <!-- <app-quotation-card></app-quotation-card> -->
 
 
 
-    <div class="slider-wrapper">
-        <app-quotation-card
-          *ngIf="quotationSlides.length"
-          [text]="quotationSlides[currentSlideIndex].text"
-          [name]="quotationSlides[currentSlideIndex].name"
-          [position]="quotationSlides[currentSlideIndex].position"
-        ></app-quotation-card>
+    <!-- <div class="slider-wrapper"> -->
+<!-- Elternkomponente -->
+<app-quotation-card
+  [text]="quotationSlides[currentSlideIndex].text"
+  [name]="quotationSlides[currentSlideIndex].name"
+  [position]="quotationSlides[currentSlideIndex].position">
+</app-quotation-card>
+
       
         <app-slider-navigation
           [slides]="quotationSlides"
           [currentIndex]="currentSlideIndex"
           (indexChanged)="onSlideChanged($event)">
         </app-slider-navigation>
-      </div>
+      <!-- </div> -->
       
 
 
-    <!-- <div>
-        <app-slider-navigation [slides]="slides" [currentIndex]="currentIndex" (indexChanged)="onSlideChanged($event)">
-        </app-slider-navigation>
-
-    </div> -->
 
 
 

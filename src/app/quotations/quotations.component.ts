@@ -23,7 +23,7 @@ export class QuotationsComponent {
 
   quotationSlides = [
     {
-      text: 'Lorem ipsum dolor sit amet...',
+      text: 'Erstes Zitat...',
       name: 'Max Mustermann',
       position: 'Entwickler'
     },
