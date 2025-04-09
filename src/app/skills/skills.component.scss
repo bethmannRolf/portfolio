@@ -1,4 +1,5 @@
 .skills-section {
+  display: flex;
   width: 100%;
   background-color: rgb(28, 28, 28);
   background-image: url(../../assets/img/backgrounds/skills_background.svg);
@@ -75,14 +76,28 @@
 }
 
 
+///////////////
+///  right side
+
+// .right-side{
+//   width: 632px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-wrap: wrap;
+//   gap:72px
+
+// }
+
+.image-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
 
 
-
-
-
-
-
-
+////////////////////
 
 
 
