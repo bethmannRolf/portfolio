@@ -12,5 +12,11 @@
             <button class="talk-button"><span class="talk-button-text">Let's Talk</span></button>
         </div>
     </div>
-    <!-- right-side for-loop skills -->
+    <div class="right-side">
+        <img *ngFor="let img of images" [src]="img" alt="Bild" />
+        
+    
+        <img src="../../assets/img/technologies/growth_mindset.svg">
+
+    </div>
 </div>
