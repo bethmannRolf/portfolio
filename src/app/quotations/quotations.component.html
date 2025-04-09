@@ -1,25 +1,42 @@
-<div class="quotations-section">
+<!-- <div class="quotations-section">
   <span class="what-colleagues-say">What my colleagues say about me</span>
   <img class="quote-sign-styling" src="../../assets/img/quotations/quotes.png">
 
 
 
-  <div class="slider-container">
-    <div class="slides-wrapper" [style.transform]="getSlideTransform()">
-      <div *ngFor="let slide of getVisibleSlides(); let i = index" class="slide" [class.active]="i === 1">
-        <app-quotation-card [text]="slide.text" [name]="slide.name" [position]="slide.position"></app-quotation-card>
-      </div>
+
+   <div class="slides-wrapper" [style.transform]="getSlideTransform()">
+    <div *ngFor="let slide of slides; let i = index" 
+         class="slide" 
+         [class.active]="i === currentIndex">
+      <app-quotation-card [text]="slide.text" [name]="slide.name" [position]="slide.position"></app-quotation-card>
     </div>
   </div>
-
-
-
-
-
-
+  
 
   <app-slider-navigation [slides]="slides" [currentIndex]="currentIndex" (indexChanged)="onSlideChanged($event)">
   </app-slider-navigation>
 
 
+</div> -->
+
+
+<div class="quotations-section">
+  <span class="what-colleagues-say">What my colleagues say about me</span>
+  <img class="quote-sign-styling" src="../../assets/img/quotations/quotes.png" />
+
+  <div class="slider-container">
+    <div class="slides-wrapper" [style.transform]="getSlideTransform()">
+      <div *ngFor="let slide of slides; let i = index"
+           class="slide"
+           [class.active]="i === currentIndex">
+        <app-quotation-card [text]="slide.text" [name]="slide.name" [position]="slide.position"></app-quotation-card>
+      </div>
+    </div>
+    
+  </div>
+  
+
+  <app-slider-navigation [slides]="slides" [currentIndex]="currentIndex" (indexChanged)="onSlideChanged($event)">
+  </app-slider-navigation>
 </div>

@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    width: 100vw;
 
 }
 
@@ -22,39 +23,61 @@
 
 // }
 
+// .slider-container {
+//   overflow: hidden;
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   margin: 40px 0;
+//   }
+  
 .slider-container {
+  .slider-container {
+    overflow: hidden;
+    width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
     position: relative;
-    width: 100%;
-    max-width: 100vw; // z. B.
-    margin: 0 auto;
   }
   
-  .slides-wrapper {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    gap: 80px;
-  }
-  
+}
 
+.slides-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 80px; /* statt margin an jeder Slide */
+  padding: 0 40px; /* sorgt für gleichmäßigen Abstand links/rechts */
+}
+
+
+
+  // .slides-wrapper {
+  //   display: flex;
+  //   transition: transform 0.5s ease-in-out;
+  // }
+  
   .slide {
-    flex: 0 0 calc(100% / 3); 
-    max-width: calc(100% / 3);
-    opacity: 0.4;
-    transform: scale(0.95);
-    transition: all 0.3s ease;
-
+    flex-shrink: 0;
+    width: 632px;
     height: 274px;
-    width: 632px;//632px originalö
+  
+    opacity: 0.5;
+    transform: scale(0.95);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  
     border: 1px solid rgba(61, 207, 182, 1);
     background-color: rgba(61, 207, 182, 0.3);
     border-radius: 32px;
 
-    
+
+
+    &.active {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
+  
+
   
   .slide.active {
     opacity: 1;
