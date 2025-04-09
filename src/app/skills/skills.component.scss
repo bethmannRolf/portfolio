@@ -96,6 +96,57 @@
   gap: 8px;
 }
 
+.image-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+.image-container img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.image-container span {
+  display: block;
+  margin-top: 5px;
+}
+
+.image-container.last-image .info-box {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #eee;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.image-container.last-image:hover .info-box {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ////////////////////
 

@@ -17,12 +17,21 @@
     </div>
     <div class="right-side">
 
-        <div class="image-container" *ngFor="let image of images">
-            <img [src]="image.src" [alt]="image.title" width="64px" height="64px" />
-            <span>{{ image.title }}</span>
+        <div 
+        class="image-container" 
+        *ngFor="let image of images; let last = last"
+        [class.last-image]="last">
+        
+        <img [src]="image.src" [alt]="image.title" />
+        <span>{{ image.title }}</span>
+      
+       
+        <div class="info-box" *ngIf="last">
+          <span>Hier steht deine Info!</span>
         </div>
+      </div>
+      
 
-        <!-- <img src="../../assets/img/technologies/growth_mindset.svg" width="64px" height="64px"> -->
 
     </div>
 </div>
