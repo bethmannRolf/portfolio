@@ -11,18 +11,6 @@ import { Component } from '@angular/core';
 export class SkillsComponent {
 
 
-// images: string[] = [
-//   '../../assets/img/technologies/html.svg',
-//   '../../assets/img/technologies/css.svg',
-//   '../../assets/img/technologies/javascript.svg',
-//   '../../assets/img/technologies/material_design.svg',
-//   '../../assets/img/technologies/typescript.svg',
-//   '../../assets/img/technologies/angular.svg',
-//   '../../assets/img/technologies/firebase.svg',
-//   '../../assets/img/technologies/git.svg',
-//   '../../assets/img/technologies/rest-api.svg',
-//   '../../assets/img/technologies/scrum.svg'
-// ]
 
 images = [
 { src: '../../assets/img/technologies/html.svg', title: 'HTML' },
@@ -33,7 +21,7 @@ images = [
 { src: '../../assets/img/technologies/angular.svg', title: 'Angular' },
 { src: '../../assets/img/technologies/firebase.svg', title: 'Firebase' },
 { src: '../../assets/img/technologies/git.svg', title: 'GIT' },
-{ src: '../../assets/img/technologies/rest-api.svg', title: 'Res-Api' },
+{ src: '../../assets/img/technologies/rest-api.svg', title: 'Rest-Api' },
 { src: '../../assets/img/technologies/scrum.svg', title: 'Scrum' },
 { src: '../../assets/img/technologies/growth_mindset.svg', title: 'Growth Mindset' }
 ];

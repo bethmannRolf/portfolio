@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .skills-section {
   display: flex;
   width: 100%;
@@ -72,48 +73,80 @@
   letter-spacing: 0%;
 }
 
-.image-container {
+.right-side {
+  width: 100%;
+  /* optional: oder max-width: 632px; wenn du’s limitieren willst */
   display: flex;
-  align-items: center;
+  padding-top: 190px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.image-container {
+  width: 632px;
+  flex: 0 1 calc(25% - 24px);
+  /* 4 pro Zeile */
+  box-sizing: border-box;
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.single-skill-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 8px;
 }
 
-.image-container {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  margin: 10px;
+.image-container img {
+  transition: transform 175ms ease-in;
 }
 
-.image-container img {
-  width: 150px;
-  height: auto;
-  border-radius: 8px;
+.image-container img:hover {
+  transform: scale(1.1);
   cursor: pointer;
 }
 
-.image-container span {
-  display: block;
-  margin-top: 5px;
-}
-
-.image-container.last-image .info-box {
-  display: none;
+.image-container .info-box {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
   position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #eee;
-  color: #333;
-  padding: 8px 12px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 16px;
   border-radius: 8px;
-  white-space: nowrap;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: white;
+  z-index: 10;
 }
 
 .image-container.last-image:hover .info-box {
-  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.info-box {
+  max-width: 200px;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .image-container {
+    flex: 0 1 calc(50% - 24px);
+    /* 2 pro Zeile */
+  }
+}
+
+@media (max-width: 500px) {
+  .image-container {
+    flex: 0 1 100%;
+    /* 1 pro Zeile */
+  }
 }
 
 .talk-button {

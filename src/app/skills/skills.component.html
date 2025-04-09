@@ -17,20 +17,17 @@
     </div>
     <div class="right-side">
 
-        <div 
-        class="image-container" 
-        *ngFor="let image of images; let last = last"
-        [class.last-image]="last">
-        
-        <img [src]="image.src" [alt]="image.title" />
-        <span>{{ image.title }}</span>
-      
-       
-        <div class="info-box" *ngIf="last">
-          <span>Hier steht deine Info!</span>
+        <div class="image-container" *ngFor="let image of images; let last = last" [class.last-image]="last">
+            <div class="single-skill-container">
+                <img [src]="image.src" [alt]="image.title" />
+                <span>{{ image.title }}</span>
+            </div>
+
+            <div class="info-box" *ngIf="last">
+                <span>Hier steht deine Info!</span>
+            </div>
         </div>
-      </div>
-      
+
 
 
     </div>
