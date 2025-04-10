@@ -81,19 +81,19 @@
 
 
 .right-side {
-  width: 100%; /* optional: oder max-width: 632px; wenn du’s limitieren willst */
+  width: 100%; 
   display: flex;
   padding-top: 190px;
   flex-wrap: wrap;
-  // gap: 24px;
+
   justify-content: flex-start;
-  // border: 1px solid red;
+  
 }
 
 .image-container {
   width: 632px;
-  // border: 1px solid blue;
-  flex: 0 1 calc(25% - 24px); /* 4 pro Zeile */
+  
+  flex: 0 1 calc(25% - 24px); 
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -120,20 +120,39 @@
 }
 
 
-.image-container .info-box {
-  opacity: 0;
-  pointer-events: none;
-  // transition: opacity 0.3s ease-in-out;
-  background-color: #FFFFFF;
+
+.info-box {
   position: absolute;
-  top: 500px;  //Test
+  top: -140px; 
   left: 0;
-  color:#3DCFB6;
+  background-color: #ffffff;
   padding: 16px;
   border-radius: 8px;
+  color: #3DCFB6;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 10;
- 
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
+
+
+.info-box::after {
+  content: '';
+  position: absolute;
+  bottom: -20px; 
+  left: 30%;
+  transform: translateX(-50%);
+
+  border-width: 10px;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+
+
+
+
 
 .image-container.last-image:hover .info-box {
   opacity: 1;
@@ -141,51 +160,52 @@
 }
 
 .info-box {
-  max-width: 200px;
-  text-align: center;
-  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px; 
+}
+
+.growth-images-row {
+  display: flex;
+  gap: 16px; 
+}
+
+.growth-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images-growth-styling {
+  width: 32px;
+  height: 32px;
+}
+
+.images-growth-text-styling {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 108%;
 }
 
 
-.growth-image-container{
-  // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
-}
 
-.images-growth-text-styling{
 
-font-weight: 700;
-font-size: 12px;
-line-height: 108%;
-letter-spacing: 0%;
-}
 
-.images-growth-styling{
-width: 32px;
-height: 32px;
-}
 
-// .skill-font-styling{
 
+// @media (max-width: 900px) {
+//   .image-container {
+//     flex: 0 1 calc(50% - 24px); 
+//   }
 // }
 
-
-
-
-
-
-
-@media (max-width: 900px) {
-  .image-container {
-    flex: 0 1 calc(50% - 24px); /* 2 pro Zeile */
-  }
-}
-
-@media (max-width: 500px) {
-  .image-container {
-    flex: 0 1 100%; /* 1 pro Zeile */
-  }
-}
+// @media (max-width: 500px) {
+//   .image-container {
+//     flex: 0 1 100%; 
+//   }
+// }
 
 
 ////////////////////

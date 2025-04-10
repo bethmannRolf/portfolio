@@ -23,13 +23,16 @@
                 <span class="skill-font-styling">{{ image.title }}</span>
             </div>
 
-            <div class="info-box" *ngIf="last" >
-                <span>I haave a special interest in learning</span>
-                <div  class="growth-image-container" *ngFor="let image of imagesGrowth">
+            <div class="info-box" *ngIf="last">
+                <span>I have a special interest in learning</span>
+                <div class="growth-images-row">
+                  <div class="growth-image-container" *ngFor="let image of imagesGrowth">
                     <img class="images-growth-styling" [src]="image.src" [alt]="image.title">
                     <span class="images-growth-text-styling">{{ image.title }}</span>
+                  </div>
                 </div>
-            </div>
+              </div>
+              
         </div>
 
 
