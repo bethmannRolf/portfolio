@@ -27,5 +27,16 @@ images = [
 ];
 
 
+imagesGrowth = [
+  { src: '../../assets/img/technologies/react.svg', title: 'React' },
+  { src: '../../assets/img/technologies/vue.svg', title: 'Vue' },
+
+  ];
+  
+
+
+
+
+
 
 }

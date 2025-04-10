@@ -17,15 +17,18 @@
     </div>
     <div class="right-side">
 
-        <div class="image-container" *ngFor="let image of images; let last = last" [class.last-image]="last">
+        <div class="image-container" *ngFor="let image of images; let last = last" [class.last-image]="last" >
             <div class="single-skill-container">
                 <img [src]="image.src" [alt]="image.title" />
-                <span>{{ image.title }}</span>
+                <span class="skill-font-styling">{{ image.title }}</span>
             </div>
 
-            <div class="info-box" *ngIf="last">
+            <div class="info-box" *ngIf="last" >
                 <span>I haave a special interest in learning</span>
-                <div class="growth-image-container"></div>
+                <div  class="growth-image-container" *ngFor="let image of imagesGrowth">
+                    <img class="images-growth-styling" [src]="imagesGrowth.src" [alt]="imagesGrowth.title">
+                    <span class="imgages-growth-text-styling">{{ imagesGrowth.title }}</span>
+                </div>
             </div>
         </div>
 
