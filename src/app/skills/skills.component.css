@@ -99,7 +99,7 @@
 }
 
 .image-container img {
-  transition: transform 175ms ease-in;
+  transition: transform 0.3s ease-in;
 }
 
 .image-container img:hover {
@@ -165,6 +165,15 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 108%;
+}
+
+.last-image .skill-font-styling {
+  color: #ffffff;
+  transition: color 0.3s ease-in-out;
+}
+
+.last-image:hover .skill-font-styling {
+  color: #3DCFB6;
 }
 
 .talk-button {

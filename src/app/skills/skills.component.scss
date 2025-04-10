@@ -110,7 +110,7 @@
 }
 
 .image-container img {
- transition: transform 175ms ease-in;
+ transition: transform 0.3s ease-in;
   
 }
 
@@ -190,10 +190,20 @@
 
 
 
+.last-image .skill-font-styling {
+  color: #ffffff; 
+  transition: color 0.3s ease-in-out;
+}
+
+
+.last-image:hover .skill-font-styling {
+  color: #3DCFB6;
+}
 
 
 
 
+///////For later use responssivenes
 
 // @media (max-width: 900px) {
 //   .image-container {
