@@ -26,8 +26,8 @@
             <div class="info-box" *ngIf="last" >
                 <span>I haave a special interest in learning</span>
                 <div  class="growth-image-container" *ngFor="let image of imagesGrowth">
-                    <img class="images-growth-styling" [src]="imagesGrowth.src" [alt]="imagesGrowth.title">
-                    <span class="imgages-growth-text-styling">{{ imagesGrowth.title }}</span>
+                    <img class="images-growth-styling" [src]="image.src" [alt]="image.title">
+                    <span class="images-growth-text-styling">{{ image.title }}</span>
                 </div>
             </div>
         </div>
