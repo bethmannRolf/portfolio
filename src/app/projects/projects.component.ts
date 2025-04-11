@@ -10,4 +10,18 @@ import { SingleProjectComponent } from './single-project/single-project.componen
 })
 export class ProjectsComponent {
 
+
+ projectsData = [
+    { projectTitle: 'El Polo Loco ' , imageSource: '', usedTechnologies: 'JavaScript'+ 'HTML' + 'CSS' },
+    { projectTitle: 'Join', imageSource: '' , usedTechnologies: 'JavaScript' +'Objektorientierung' + 'HTML' + 'CSS' },
+    { projectTitle: 'Portfolio' , imageSource: '', usedTechnologies: 'Angular' + 'TypeScript' + 'HTML' + 'SCSS' }
+  
+    ];
+    
+
+
+
+
+
+
 }
