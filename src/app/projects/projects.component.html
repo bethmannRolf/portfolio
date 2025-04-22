@@ -7,9 +7,13 @@
 
     <span class="short-section-description">Explore a selection of my work here - interact with projects to see my
         skills in action</span>
-    <div class="single-project-area">
+        <div class="single-project-area">
+            <app-single-project
+              *ngFor="let project of projectsData"
+              [project]="project">
+            </app-single-project>
+          </div>
+          
 
-    </div>
-
-    <app-single-project></app-single-project>
+    <!-- <app-single-project></app-single-project>  -->
 </div>
