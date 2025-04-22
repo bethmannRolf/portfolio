@@ -18,9 +18,15 @@ export class ProjectsComponent {
   
     ];
     
+showProjectPreview(){
+
+}
+
+showSingleProject(){
 
 
 
+}
 
 
 
