@@ -1,4 +1,4 @@
-.single-project-container{
+.single-project-container {
 
 
     // position: absolute;
@@ -6,74 +6,95 @@
     // left: 50%;
     // transform: translate(-50%, -50%);
     // text-align: center;
-  
 
 
-    width: 400px;//just for showing
+
+    width: 400px; //just for showing
     height: 200px; //just for showing
     background: linear-gradient(to top right, rgba(28, 28, 28, 1), rgba(8, 70, 59, 1));
-    border: 1px solid  #3DCFB6;
-   
-}
-
-
-.left-card-side{
-
-
-}
-
-.project-number{
-
+    border: 1px solid #3DCFB6;
 
 }
 
 
-.project-name{
+.left-card-side {}
+
+.project-number {
+
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 100%;
+    letter-spacing: -2%;
+    color: #3DCFB6;
+}
+
+
+.project-name {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80%;
+    letter-spacing: -3%;
+}
+
+.what-about-question {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #3DCFB6;
+}
+
+.what-about-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
 
 }
 
-.what-about-question{
+.used-technologies {}
 
+.source-buttons {
+    display: flex;
+    gap: 32px;
 }
 
-.what-about-text{
+.single-source-button {
+    height: 48px;
+    width: auto;
 
+    padding-right: 24px;
+    padding-left: 24px;
 
+    border: 1px solid white;
 }
 
-.used-technologies{
-
-
+.source-button-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: white;
 }
 
-.source-buttons{
+.gitHub-button {}
 
+.live-test-button {}
+
+.right-card-side {}
+
+.next-project-span {
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #3DCFB6;
 }
 
-.source-button{
-
+.arrow-right {
+    width: 40px;
+    height: 40px;
 }
 
-.gitHub-button{
-
-}
-
-.live-test-button{
-
-}
-
-.right-card-side{
-
-}
-
-.next-project-span{
-
-}
-
-.arrow-right{
-
-}
-
-.project-previe-image{
-    
-}
+.project-previe-image {}
