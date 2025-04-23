@@ -1,5 +1,8 @@
 .projects-section {
   background-color: #1c1c1c;
+}
+
+.content-area {
   color: white;
   height: 500px;
   width: 100%;
@@ -8,9 +11,12 @@
   flex-direction: column;
   justify-content: center;
   gap: 41px;
+  left: 96px;
 }
 
 .upper-headings {
+  height: auto;
+  width: 880px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -38,4 +44,10 @@
   line-height: 120%;
   letter-spacing: 0%;
   color: white;
+}
+
+.single-project-area {
+  width: 880px;
+  padding-right: 64px;
+  border-top: 1px solid #3DCFB6;
 }

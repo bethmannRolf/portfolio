@@ -1,19 +1,18 @@
 <div class="projects-section">
+<div class="content-area">
+  <div class="upper-headings">
+    <span class="upper-small-heading">Portfolio</span>
+    <span class="upper-large-heading">Featured Projects</span>
+  </div>
 
-    <div class="upper-headings">
-        <span class="upper-small-heading">Portfolio</span>
-        <span class="upper-large-heading">Featured Projects</span>
-    </div>
+  <span class="short-section-description">Explore a selection of my work here - interact with projects to see my
+    skills in action</span>
+  <div class="single-project-area">
+    <app-single-project *ngFor="let project of projectsData" [project]="project">
+    </app-single-project>
+  </div>
 
-    <span class="short-section-description">Explore a selection of my work here - interact with projects to see my
-        skills in action</span>
-        <div class="single-project-area">
-            <app-single-project
-              *ngFor="let project of projectsData"
-              [project]="project">
-            </app-single-project>
-          </div>
-          
 
-    <!-- <app-single-project></app-single-project>  -->
+
+</div>
 </div>

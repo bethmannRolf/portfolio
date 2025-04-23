@@ -1,11 +1,8 @@
-
-
-
-
 <div class="project-card">
-    <img [src]="project.imageSource" [alt]="project.projectTitle" />
-    <h3>{{ project.projectTitle }}</h3>
-    <p>{{ project.usedTechnologies }}</p>
-    <p>{{ project.additionalInformation }}</p>
-  </div>
-  
+  <!-- <img [src]="project.imageSource" [alt]="project.projectTitle" /> -->
+  <span> {{ project.projectTitle }}</span>
+
+  <span class="tech">{{ project.usedTechnologies }}</span>
+  <!-- <p class="info">{{ project.additionalInformation }}</p> -->
+
+</div>
