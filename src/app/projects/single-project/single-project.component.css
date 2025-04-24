@@ -8,3 +8,29 @@
   width: 100%;
   border-bottom: 1px solid #3DCFB6;
 }
+
+.left-projectline-side {
+  display: flex;
+  align-items: center;
+}
+
+.project-title-span {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: white;
+}
+
+.tech {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: white;
+}
+
+.outwards-arrow-white {
+  width: 23px;
+  height: 23px;
+}
