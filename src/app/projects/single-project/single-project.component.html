@@ -1,11 +1,16 @@
 <div class="project-card">
-  <!-- <img [src]="project.imageSource" [alt]="project.projectTitle" /> -->
+
   <div class="left-projectline-side">
     <span class="project-title-span"> {{ project.projectTitle }}</span>
     <img class="outwards-arrow-white" src="./../../../assets/img/projects/arrow_outward_white.svg">
   </div>
 
-  <span class="tech">{{ project.usedTechnologies }}</span>
-  <!-- <p class="project-info">{{ project.additionalInformation }}</p> -->
+  <div class="tech">
+    <ng-container *ngFor="let tech of project.usedTechnologies; let isLast = last">
+      <span class="tech-item">{{ tech }}</span>
+      <span *ngIf="!isLast" class="pipe">|</span>
+    </ng-container>
+  </div>
+
 
 </div>
