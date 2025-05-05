@@ -1,30 +1,24 @@
-
 <div class="projects-section">
- 
+
   <div class="content-area">
     <div class="upper-headings">
       <span class="upper-small-heading">Portfolio</span>
       <span class="upper-large-heading">Featured Projects</span>
     </div>
-
     <span class="short-section-description">
       Explore a selection of my work here - interact with projects to see my skills in action
     </span>
 
     <div class="single-project-area">
-      <div class="project-hover-wrapper" *ngFor="let project of projectsData"
-        (mouseenter)="hoveredImage = project.imageSource" (mouseleave)="hoveredImage = ''">
+      <div class="test-wrapper">
+      <div class="project-hover-wrapper" *ngFor="let project of projectsData; let i = index"
+        (mouseenter)="onHover(project.imageSource, i)" (mouseleave)="hoveredImage = ''">
         <app-single-project [project]="project"></app-single-project>
       </div>
     </div>
+    <div class="projects-preview" *ngIf="hoveredImage" [ngStyle]="{'margin-top': previewTopPosition + 'px'}">
+      <img [src]="hoveredImage" alt="Preview" />
+    </div>
   </div>
 
-
-  <div class="projects-preview" *ngIf="hoveredImage">
-    <img [src]="hoveredImage" alt="Preview" />
-  </div>
 </div>
-
-
-
-

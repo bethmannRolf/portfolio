@@ -15,9 +15,14 @@ import { ProjectData } from '../models/project-data.model';
 })
 export class ProjectsComponent {
 
-
   hoveredImage: string = '';
-
+  previewTopPosition: number = 0;
+  
+  onHover(imageSrc: string, index: number): void {
+    this.hoveredImage = imageSrc;
+    this.previewTopPosition = index * 100; // jedes Bild 100px weiter unten
+  }
+  
 
   projectsData: ProjectData[] = [
     {
