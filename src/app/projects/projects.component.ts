@@ -35,6 +35,11 @@ export class ProjectsComponent {
   openOverlay(project: ProjectData) {
     this.selectedProject = project;
   }
+
+  onChangeProject(newProject: ProjectData) {
+    this.selectedProject = newProject;
+  }
+
   
   closeOverlay() {
     this.selectedProject = null;
@@ -49,15 +54,15 @@ export class ProjectsComponent {
       usedTechnologies: ['JavaScript', 'HTML', 'CSS'],
       usedTechOverlay: [
         {
-          imgSource: 'assets/img/icons/js.svg',
+          imgSource: '../../assets/img/projects/js_green.svg',
           techName: 'JavaScript'
         },
         {
-          imgSource: 'assets/img/icons/html.svg',
+          imgSource: '../../assets/img/projects/html_green.svg',
           techName: 'HTML'
         },
         {
-          imgSource: 'assets/img/icons/css.svg',
+          imgSource: '../../assets/img/projects/css_green.svg',
           techName: 'CSS'
         }
       ],
@@ -70,15 +75,15 @@ export class ProjectsComponent {
       usedTechnologies: ['JavaScript', 'HTML', 'CSS'],
       usedTechOverlay: [
         {
-          imgSource: 'assets/img/icons/js.svg',
+          imgSource: '../../assets/img/projects/js_green.svg',
           techName: 'JavaScript'
         },
         {
-          imgSource: 'assets/img/icons/html.svg',
+          imgSource: '../../assets/img/projects/html_green.svg',
           techName: 'HTML'
         },
         {
-          imgSource: 'assets/img/icons/css.svg',
+          imgSource: '../../assets/img/projects/css_green.svg',
           techName: 'CSS'
         }
       ],
@@ -92,15 +97,19 @@ export class ProjectsComponent {
       usedTechnologies: ['Angular', 'Typescript', 'HTML', 'SCSS'],
       usedTechOverlay: [
         {
-          imgSource: 'assets/img/icons/js.svg',
-          techName: 'JavaScript'
+          imgSource: '../../assets/img/projects/angular_green.svg',
+          techName: 'Angular'
         },
         {
-          imgSource: 'assets/img/icons/html.svg',
+          imgSource: '../../assets/img/projects/ts_green.svg',
+          techName: 'TypeScript'
+        },
+        {
+          imgSource: '../../assets/img/projects/html_green.svg',
           techName: 'HTML'
         },
         {
-          imgSource: 'assets/img/icons/css.svg',
+          imgSource: '../../assets/img/projects/css_green.svg',
           techName: 'CSS'
         }
       ],

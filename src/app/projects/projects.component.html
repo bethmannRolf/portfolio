@@ -22,6 +22,8 @@
   </div>
   <app-project-overlay
   *ngIf="selectedProject"
+  [allProjects]="projectsData"
+  (changeProject)="onChangeProject($event)"
   [project]="selectedProject"
   (close)="closeOverlay()">
 </app-project-overlay>
