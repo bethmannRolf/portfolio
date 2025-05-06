@@ -12,13 +12,17 @@
     <div class="single-project-area">
       <div class="test-wrapper">
       <div class="project-hover-wrapper" *ngFor="let project of projectsData; let i = index"
-        (mouseenter)="onHover(project.imageSource, i)" (mouseleave)="hoveredImage = ''">
-        <app-single-project [project]="project"></app-single-project>
+        (mouseenter)="onHover(project.imageSource, i)" (mouseleave)="hoveredImage = ''"  (click)="openOverlay(project)">
+        <app-single-project [project]="project"  (projectSelected)="openOverlay($event)"></app-single-project>
       </div>
     </div>
     <div class="projects-preview" *ngIf="hoveredImage" [ngStyle]="{'margin-top': previewTopPosition + 'px'}">
       <img [src]="hoveredImage" alt="Preview" />
     </div>
   </div>
-
+  <app-project-overlay
+  *ngIf="selectedProject"
+  [project]="selectedProject"
+  (close)="closeOverlay()">
+</app-project-overlay>
 </div>

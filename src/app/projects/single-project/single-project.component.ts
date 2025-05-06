@@ -1,6 +1,6 @@
-import { CommonModule } from '@angular/common';
+import { Component, Input, Output, EventEmitter,  } from '@angular/core';
 import { ProjectData } from '../../../app/models/project-data.model';
-import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-single-project',
@@ -11,4 +11,9 @@ import { Component, Input } from '@angular/core';
 })
 export class SingleProjectComponent {
   @Input() project!: ProjectData;
+  @Output() projectSelected = new EventEmitter<ProjectData>();
+
+  openOverlay() {
+    this.projectSelected.emit(this.project);
+  }
 }
