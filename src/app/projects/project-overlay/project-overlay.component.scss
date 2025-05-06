@@ -1,17 +1,42 @@
+// .project-overlay-container {
+//    user-select: none;
+//     display: flex;
+//     justify-content: space-between;
+//     z-index: 99999;
+//     position:absolute;
+//     width: 80%; 
+//     height: auto; 
+//     background: linear-gradient(to top right, rgba(28, 28, 28, 1), rgba(8, 70, 59, 1));
+//     border: 1px solid #3DCFB6;
+//     border-radius: 30px; 
+//     padding: 80px
+// }
+
 .project-overlay-container {
-   user-select: none;
+    user-select: none;
     display: flex;
     justify-content: space-between;
     z-index: 99999;
-    position:absolute;
-    width: 80%; 
-    height: auto; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+ 
+    width: 80%;
+    height: auto;
     background: linear-gradient(to top right, rgba(28, 28, 28, 1), rgba(8, 70, 59, 1));
     border: 1px solid #3DCFB6;
     border-radius: 30px;
-   
-    padding: 80px
-}
+    padding: 80px;
+  }
+  
+
+
+
+
+
+
 
 .left-card-side{
     display: flex;

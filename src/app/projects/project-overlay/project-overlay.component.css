@@ -3,7 +3,10 @@
   display: flex;
   justify-content: space-between;
   z-index: 99999;
-  position: absolute;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 80%;
   height: auto;
   background: linear-gradient(to top right, #1c1c1c, #08463b);
