@@ -20,7 +20,7 @@ export class ProjectOverlayComponent {
     this.close.emit();
   }
 
-
+  // isHovered: boolean = false;
 
 
  

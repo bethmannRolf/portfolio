@@ -125,4 +125,16 @@
 
 .close-button {
   cursor: pointer;
+  width: 48px;
+  height: 48px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../../assets/img/projects/close_button.svg");
+  transition: scale 150ms ease-in-out;
+}
+
+.close-button:hover {
+  scale: 1.2;
+  background-image: url("../../../assets/img/projects/close_hover.svg");
+  transition: scale 150ms ease-in-out;
 }
