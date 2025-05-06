@@ -47,6 +47,20 @@ export class ProjectsComponent {
       projectNumber: 1,
       imageSource: 'assets/img/projects/epl_preview.png',
       usedTechnologies: ['JavaScript', 'HTML', 'CSS'],
+      usedTechOverlay: [
+        {
+          imgSource: 'assets/img/icons/js.svg',
+          techName: 'JavaScript'
+        },
+        {
+          imgSource: 'assets/img/icons/html.svg',
+          techName: 'HTML'
+        },
+        {
+          imgSource: 'assets/img/icons/css.svg',
+          techName: 'CSS'
+        }
+      ],
       additionalInformation: 'Jump, run and throw game...'
     },
     {
@@ -54,14 +68,44 @@ export class ProjectsComponent {
       projectNumber: 2,
       imageSource: 'assets/img/projects/join_preview.png',
       usedTechnologies: ['JavaScript', 'HTML', 'CSS'],
+      usedTechOverlay: [
+        {
+          imgSource: 'assets/img/icons/js.svg',
+          techName: 'JavaScript'
+        },
+        {
+          imgSource: 'assets/img/icons/html.svg',
+          techName: 'HTML'
+        },
+        {
+          imgSource: 'assets/img/icons/css.svg',
+          techName: 'CSS'
+        }
+      ],
       additionalInformation: 'Task manager inspired...'
+    
     },
     {
       projectTitle: 'Portfolio',
       projectNumber: 3,
       imageSource: 'assets/img/projects/portfolio_preview.png',
       usedTechnologies: ['Angular', 'Typescript', 'HTML', 'SCSS'],
+      usedTechOverlay: [
+        {
+          imgSource: 'assets/img/icons/js.svg',
+          techName: 'JavaScript'
+        },
+        {
+          imgSource: 'assets/img/icons/html.svg',
+          techName: 'HTML'
+        },
+        {
+          imgSource: 'assets/img/icons/css.svg',
+          techName: 'CSS'
+        }
+      ],
       additionalInformation: 'Overview about my skills...'
     }
   ];
+  
 }

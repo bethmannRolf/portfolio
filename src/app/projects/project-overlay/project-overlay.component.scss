@@ -1,12 +1,31 @@
-.single-project-container {
-    width: 400px; 
-    height: 200px; 
+.project-overlay-container {
+   
+    display: flex;
+    justify-content: space-between;
+    z-index: 99999;
+    position:absolute;
+    width: 80%; 
+    height: auto; 
     background: linear-gradient(to top right, rgba(28, 28, 28, 1), rgba(8, 70, 59, 1));
     border: 1px solid #3DCFB6;
+    border-radius: 30px;
+   
+    padding: 80px
+}
+
+.left-card-side{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 
-
+.right-card-side{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+}
 
 .project-number {
 
@@ -43,45 +62,55 @@
 
 
 
-// .source-buttons {
-//     display: flex;
-//     gap: 32px;
-// }
+.source-buttons {
+    display: flex;
+    gap: 32px;
+}
 
-// .single-source-button {
-//     height: 48px;
-//     width: auto;
+.single-source-button {
+    height: 48px;
+    width: auto;
+    display: flex;
+   
+    align-items: center;
+    gap: 10px;
+    padding-right: 24px;
+    padding-left: 24px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 100px;
+}
 
-//     padding-right: 24px;
-//     padding-left: 24px;
-
-//     border: 1px solid white;
-// }
-
-// .source-button-text{
-//     font-weight: 400;
-//     font-size: 18px;
-//     line-height: 120%;
-//     letter-spacing: 0%;
-//     color: white;
-// }
+.source-button-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: white;
+}
 
 
 
-// .next-project-span {
+.next-project-span {
 
-//     font-weight: 400;
-//     font-size: 18px;
-//     line-height: 120%;
-//     letter-spacing: 0%;
-//     color: #3DCFB6;
-// }
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #3DCFB6;
+}
 
-// .arrow-right {
-//     width: 40px;
-//     height: 40px;
-// }
+.arrow-right {
+    width: 40px;
+    height: 40px;
+}
 
-// .project-preview-image {
-// border-radius: 30px;
-// }
+.project-preview-image {
+border-radius: 30px;
+}
+
+.next-project-container-right{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
