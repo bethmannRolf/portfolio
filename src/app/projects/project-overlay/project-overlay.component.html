@@ -6,26 +6,27 @@
     <span class="what-about-question"></span>
     <span class="what-about-text">{{ project.additionalInformation }}</span>
 
-    <div class="source-buttons">
-      <button class="single-source-button gitHub-button"><a href="#"><span class="source-button-text">GitHub</span><img
-            class="arrow-up-right" src="../../../assets/img/projects/arrow_outward_lightgreen.svg"></a></button>
-      <button class=" single-source-button live-test-button"><a href="#"><span class="source-button-text">Live
-            Test</span><img class="arrow-up-right"
-            src="../../../assets/img/projects/arrow_outward_lightgreen.svg"></a></button>
-    </div>
     <div class="used-technologies">
       <div class="tech-overlay-item" *ngFor="let tech of project.usedTechOverlay">
         <img class="tech-icon" [src]="tech.imgSource" [alt]="tech.techName">
         <span class="tech-name">{{ tech.techName }}</span>
       </div>
     </div>
+    <div class="source-buttons">
+      <button class="single-source-button gitHub-button"><a href="#" class="single-source-button-content"><span class="source-button-text">GitHub</span><img
+            class="arrow-up-right" src="../../../assets/img/projects/arrow_outward_lightgreen.svg"></a></button>
+      <button class=" single-source-button live-test-button"><a  href="#" class="single-source-button-content"><span class="source-button-text">Live
+            Test</span><img class="arrow-up-right"
+            src="../../../assets/img/projects/arrow_outward_lightgreen.svg"></a></button>
+    </div>
+
 
 
   </div>
   <div class="right-card-side">
 
     <div class="close-button" (click)="onCloseClick()"></div>
- 
+
 
     <img class="project-preview-image" src={{project.imageSource}}>
     <div class="next-project-container-right" (click)="nextProject()">
@@ -35,5 +36,3 @@
 
   </div>
 </div>
-
-

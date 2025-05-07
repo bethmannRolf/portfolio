@@ -42,6 +42,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    justify-content: flex-start;
 }
 
 
@@ -95,15 +96,20 @@
 .single-source-button {
     height: 48px;
     width: auto;
-    display: flex;
-   
+ 
+   cursor: pointer;
     align-items: center;
-    gap: 10px;
+   
     padding-right: 24px;
     padding-left: 24px;
     background-color: transparent;
     border: 1px solid white;
     border-radius: 100px;
+}
+
+.single-source-button-content{
+    display: flex;
+    gap:4px;
 }
 
 .source-button-text{
@@ -114,10 +120,7 @@
     color: white;
 }
 
-
-
 .next-project-span {
-
     font-weight: 400;
     font-size: 18px;
     line-height: 120%;
@@ -143,7 +146,7 @@ border-radius: 30px;
 
 .used-technologies{
     display: flex;
-    justify-content: center;
+ 
     gap: 16px;
 }
 
@@ -176,4 +179,11 @@ letter-spacing: 0%;
 scale: 1.2;
     background-image: url('../../../assets/img/projects/close_hover.svg');
     transition: scale 150ms ease-in-out;
+  }
+
+
+  .tech-overlay-item{
+    display: flex;
+    align-items: center;
+    gap:4px;
   }
