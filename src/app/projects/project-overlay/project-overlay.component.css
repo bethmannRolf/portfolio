@@ -66,14 +66,28 @@
 
 .single-source-button {
   height: 48px;
-  width: auto;
-  cursor: pointer;
-  align-items: center;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding: 0 24px;
   background-color: transparent;
   border: 1px solid white;
   border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: border 0.3s  ease-in-out;
+}
+
+.single-source-button:hover {
+  border: 1px solid #3DCFB6;
+}
+
+.single-source-button:hover .source-button-text {
+  color: #3DCFB6;
+  transition: color 0.3s  ease-in-out;
+}
+
+.single-source-button:hover img {
+  transform: translate(5px, -5px);
+  transition: transform 0.3s  ease-in-out;
 }
 
 .single-source-button-content {
@@ -100,6 +114,7 @@
 .arrow-right {
   width: 40px;
   height: 40px;
+  transition: transform 0.3s  ease-in-out;
 }
 
 .project-preview-image {
@@ -111,6 +126,18 @@
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.next-project-container-right img {
+  transition: ease-in-out 0.15s;
+}
+
+.next-project-container-right:hover span {
+  color: white;
+}
+
+.next-project-container-right:hover img {
+  transform: translateX(10px);
 }
 
 .used-technologies {
