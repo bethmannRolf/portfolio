@@ -13,11 +13,11 @@ import { ProjectOverlayComponent } from './project-overlay/project-overlay.compo
 })
 export class ProjectsComponent {
 
-//new for open and close overlay
+
 @Input() project!: ProjectData;
 @Input() close!: () => void;
 
-////////////////////////
+
 
 
   hoveredImage: string = '';

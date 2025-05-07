@@ -2,7 +2,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectData } from '../../../app/models/project-data.model';
-// import { ProjectsComponent } from '../projects.component';
+
 @Component({
   selector: 'app-project-overlay',
   standalone: true,
@@ -20,7 +20,7 @@ export class ProjectOverlayComponent {
     this.close.emit();
   }
 
-  // isHovered: boolean = false;
+  
 
 
  

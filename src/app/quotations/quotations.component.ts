@@ -107,15 +107,16 @@ export class QuotationsComponent {
   slides = [
     { text: 'Erstes Zitat...', name: 'Max Mustermann', position: 'Entwickler' },
     { text: 'Zweites Zitat...', name: 'Name 2', position: 'Designer' },
-    { text: 'Drittes Zitat...', name: 'John Doe', position: 'Manager' }
-    // { text: 'Viertes Zitat...', name: 'Name 4', position: 'Developer' },
-    // { text: 'Fünftes Zitat...', name: 'Name 5', position: 'UX Expert' },
-    // { text: 'Sechstes Zitat...', name: 'Name 6', position: 'Engineer' }
+    { text: 'Drittes Zitat...', name: 'John Doe', position: 'Manager' },
+    { text: 'Viertes Zitat...', name: 'Name 4', position: 'Developer' },
+    { text: 'Fünftes Zitat...', name: 'Name 5', position: 'UX Expert' },
+    { text: 'Sechstes Zitat...', name: 'Name 6', position: 'Engineer' }
   ];
 
   onSlideChanged(index: number) {
     const slidesLength = this.slides.length;
     this.currentIndex = (index + slidesLength) % slidesLength;
+    console.log(this.currentIndex)
   }
 
   getVisibleSlides() {
