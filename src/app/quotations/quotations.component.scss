@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    width: 100vw;
+    width: 100%;
 
 }
 
@@ -18,23 +18,12 @@
     color: rgba(61, 207, 182, 1)
 }
 
-// app-quotation-card {
 
-
-// }
-
-// .slider-container {
-//   overflow: hidden;
-//   width: 100%;
-//   display: flex;
-//   justify-content: center;
-//   margin: 40px 0;
-//   }
   
 .slider-container {
   .slider-container {
     overflow: hidden;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
@@ -45,16 +34,41 @@
 .slides-wrapper {
   display: flex;
   transition: transform 0.5s ease;
-  gap: 80px; /* statt margin an jeder Slide */
-  padding: 0 40px; /* sorgt für gleichmäßigen Abstand links/rechts */
+  gap: 80px; 
+  padding: 0 40px; 
 }
 
 
 
-  // .slides-wrapper {
-  //   display: flex;
-  //   transition: transform 0.5s ease-in-out;
-  // }
+
+
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 80px;
+  will-change: transform;
+}
+
+.carousel-slide {
+  flex: 0 0 auto;
+  width: 632px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
   
   .slide {
     flex-shrink: 0;
@@ -73,14 +87,8 @@
 
     &.active {
       opacity: 1;
-      transform: scale(1);
+      transform: scale(1.1);
     }
   }
   
 
-  
-  .slide.active {
-    opacity: 1;
-    transform: scale(1);
-  }
-  

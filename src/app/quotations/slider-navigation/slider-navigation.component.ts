@@ -22,10 +22,6 @@ previousSlide() {
   this.indexChanged.emit(this.currentIndex - 1);
 }
 
-
-
-
-
   goToSlide(index: number) {
     this.indexChanged.emit(index);
   }
