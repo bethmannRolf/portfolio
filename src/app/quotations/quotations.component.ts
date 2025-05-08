@@ -44,7 +44,17 @@ export class QuotationsComponent {
     return `translateX(${translateX}px)`;
   }
   
+  ///for later use
+  // get extendedSlides() {
+  //   if (this.slides.length === 0) return [];
   
+  //   const first = this.slides[0];
+  //   const last = this.slides[this.slides.length - 1];
   
+  //   return [last, ...this.slides, first];
+  // }
+  
+
+
 }
 

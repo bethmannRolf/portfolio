@@ -63,13 +63,6 @@
 }
 
 
-
-
-
-
-
-
-  
   .slide {
     flex-shrink: 0;
     width: 632px;
@@ -92,3 +85,30 @@
   }
   
 
+  .carousel-slide {
+    position: relative;
+  }
+  
+  .quote-sign-in-card {
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    width: 40px;
+    height: auto;
+   
+    z-index:10;
+  }
+  
+
+  .carousel-container {
+    width: 100%;
+    overflow: visible;  
+    position: relative;
+  }
+  
+  .slider-container {
+    overflow: visible; 
+  }
+  
+
+  
