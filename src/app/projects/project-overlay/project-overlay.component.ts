@@ -4,11 +4,10 @@ import { CommonModule } from '@angular/common';
 import { ProjectData } from '../../../app/models/project-data.model';
 
 @Component({
-  selector: 'app-project-overlay',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './project-overlay.component.html',
-  styleUrl: './project-overlay.component.scss'
+    selector: 'app-project-overlay',
+    imports: [CommonModule],
+    templateUrl: './project-overlay.component.html',
+    styleUrl: './project-overlay.component.scss'
 })
 export class ProjectOverlayComponent {
   @Input() project!: ProjectData;

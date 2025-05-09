@@ -5,11 +5,10 @@ import { ProjectData } from '../models/project-data.model';
 import { ProjectOverlayComponent } from './project-overlay/project-overlay.component';
 
 @Component({
-  selector: 'app-projects',
-  standalone: true,
-  imports: [CommonModule, SingleProjectComponent, ProjectOverlayComponent],
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+    selector: 'app-projects',
+    imports: [CommonModule, SingleProjectComponent, ProjectOverlayComponent],
+    templateUrl: './projects.component.html',
+    styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
 

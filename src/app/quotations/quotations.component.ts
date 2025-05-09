@@ -5,11 +5,10 @@ import { QuotationCardComponent } from './quotation-card/quotation-card.componen
 import { SliderNavigationComponent } from './slider-navigation/slider-navigation.component';
 
 @Component({
-  selector: 'app-quotations',
-  standalone: true,
-  imports: [CommonModule, QuotationCardComponent, SliderNavigationComponent],
-  templateUrl: './quotations.component.html',
-  styleUrls: ['./quotations.component.scss']
+    selector: 'app-quotations',
+    imports: [CommonModule, QuotationCardComponent, SliderNavigationComponent],
+    templateUrl: './quotations.component.html',
+    styleUrls: ['./quotations.component.scss']
 })
 export class QuotationsComponent {
   currentIndex = 0;

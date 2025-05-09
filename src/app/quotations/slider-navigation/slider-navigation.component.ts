@@ -1,11 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 @Component({
-  selector: 'app-slider-navigation',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './slider-navigation.component.html',
-  styleUrls: ['./slider-navigation.component.scss']
+    selector: 'app-slider-navigation',
+    imports: [CommonModule],
+    templateUrl: './slider-navigation.component.html',
+    styleUrls: ['./slider-navigation.component.scss']
 })
 export class SliderNavigationComponent {
   @Input() slides: any[] = [];

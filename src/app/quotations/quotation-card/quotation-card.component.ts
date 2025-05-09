@@ -1,11 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 @Component({
-  selector: 'app-quotation-card',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './quotation-card.component.html',
-  styleUrl: './quotation-card.component.scss'
+    selector: 'app-quotation-card',
+    imports: [CommonModule],
+    templateUrl: './quotation-card.component.html',
+    styleUrl: './quotation-card.component.scss'
 })
 export class QuotationCardComponent {
   @Input() text: string = '';

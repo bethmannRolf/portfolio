@@ -16,11 +16,10 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-cursor-highlight',
-  standalone: true,
-  imports: [],
-  templateUrl: './cursor-highlight.component.html',
-  styleUrls: ['./cursor-highlight.component.css']
+    selector: 'app-cursor-highlight',
+    imports: [],
+    templateUrl: './cursor-highlight.component.html',
+    styleUrls: ['./cursor-highlight.component.css']
 })
 export class CursorHighlightComponent implements OnInit {
 
