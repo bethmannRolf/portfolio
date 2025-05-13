@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { HeaderComponent } from '../shared/header/header.component';
 import { LanguageSwitcherComponent } from '../language-switcher/language-switcher.component';
+import { ScrollService } from "../core/scroll.service";
 
 @Component({
     selector: 'app-atf',
@@ -11,4 +12,15 @@ import { LanguageSwitcherComponent } from '../language-switcher/language-switche
 })
 export class AtfComponent {
 
+  constructor(private scrollService: ScrollService) {}
+
+scrollToSection(sectionId: string) {
+  this.scrollService.scrollTo(sectionId);
 }
+
+
+
+}
+
+
+

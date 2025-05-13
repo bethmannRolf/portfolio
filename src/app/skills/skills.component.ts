@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ScrollService } from "../core/scroll.service";
 
 @Component({
     selector: 'app-skills',
@@ -9,6 +10,11 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent {
 
+  constructor(private scrollService: ScrollService) {}
+
+scrollToSection(sectionId: string) {
+  this.scrollService.scrollTo(sectionId);
+}
 
 
 images = [
