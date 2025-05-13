@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ContactFormComponent } from '../contact-form/contact-form.component';
-import { ScrollService } from "../core/scroll.service";
+
 
 @Component({
     selector: 'app-contact',
