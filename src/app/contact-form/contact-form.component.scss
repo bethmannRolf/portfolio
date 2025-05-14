@@ -95,8 +95,8 @@
 
 .contact-submit-button {
     background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    color: rgba(255, 255, 255, 0.8);
+    // border: 1px solid rgba(255, 255, 255, 1);
+   
     padding: 12px 30px;
     border-radius: 50px;
     font-size: 16px;
@@ -131,12 +131,20 @@
 .contact-submit-button:disabled {
 
     border: 1px solid gray;
+     color: rgba(255, 255, 255, 0.8);
+    
+}
+
+.contact-submit-button:enabled {
+ cursor: pointer;
+  
+     border: 1px solid rgba(255, 255, 255, 1);
+     color: rgba(255, 255, 255, 1);
+ 
 }
 
 
-.contact-submit-button.hover-enabled {
-    cursor: pointer;
-}
+
 
 .contact-submit-button.hover-enabled:hover {
     border: 1px solid #3DCFB6;
@@ -288,13 +296,19 @@ input {
     line-height: 120%;
     color: white;
 
-    input {
-        border: none;
-        outline: none;
-    }
+
 
 
 }
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+
+
+
 
 textarea {
     font-weight: 400;
@@ -303,9 +317,12 @@ textarea {
     line-height: 120%;
     color: white;
 
-    input {
-        border: none;
-        outline: none;
-    }
 
+
+}
+
+
+textarea:focus {
+  border: none;
+  outline: none;
 }

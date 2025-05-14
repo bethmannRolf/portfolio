@@ -94,8 +94,6 @@
 
 .contact-submit-button {
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  color: rgba(255, 255, 255, 0.8);
   padding: 12px 30px;
   border-radius: 50px;
   font-size: 16px;
@@ -124,10 +122,13 @@
 
 .contact-submit-button:disabled {
   border: 1px solid gray;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.contact-submit-button.hover-enabled {
+.contact-submit-button:enabled {
   cursor: pointer;
+  border: 1px solid white;
+  color: white;
 }
 
 .contact-submit-button.hover-enabled:hover {
@@ -271,7 +272,7 @@ input {
   color: white;
 }
 
-input input {
+input:focus {
   border: none;
   outline: none;
 }
@@ -284,7 +285,7 @@ textarea {
   color: white;
 }
 
-textarea input {
+textarea:focus {
   border: none;
   outline: none;
 }
