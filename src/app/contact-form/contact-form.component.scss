@@ -92,14 +92,15 @@
     letter-spacing: -3%;
 }
 
+
 .contact-submit-button {
     background-color: transparent;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
     padding: 12px 30px;
     border-radius: 50px;
     font-size: 16px;
-    cursor: pointer;
+
     transition: all 0.3s ease-in-out;
     overflow: hidden;
     position: relative;
@@ -110,14 +111,11 @@
     justify-content: center;
 }
 
-.submit-span {
-    display: inline-block;
-    white-space: nowrap;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+
+.contact-submit-button.hover-enabled:hover .submit-span {
     animation: marquee 4s linear infinite;
 }
+
 
 @keyframes marquee {
     from {
@@ -129,15 +127,38 @@
     }
 }
 
-.contact-submit-button:hover .submit-span {
-    animation: none;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+.contact-submit-button:disabled {
+
+    border: 1px solid gray;
 }
 
-.contact-submit-button:hover {
-    border: 1px solid #3DCFB6;
+
+.contact-submit-button.hover-enabled {
+    cursor: pointer;
 }
+
+.contact-submit-button.hover-enabled:hover {
+    border: 1px solid #3DCFB6;
+
+}
+
+
+
+.submit-span {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
 
 .question-name-input {
     font-size: 24px;
@@ -242,4 +263,49 @@ textarea::placeholder {
     line-height: 120%;
     letter-spacing: 0%;
     color: rgba(255, 255, 255, 0.8);
+}
+
+input::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0%;
+    line-height: 120%;
+    color: white;
+}
+
+textarea::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0%;
+    line-height: 120%;
+    color: white;
+}
+
+input {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0%;
+    line-height: 120%;
+    color: white;
+
+    input {
+        border: none;
+        outline: none;
+    }
+
+
+}
+
+textarea {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0%;
+    line-height: 120%;
+    color: white;
+
+    input {
+        border: none;
+        outline: none;
+    }
+
 }

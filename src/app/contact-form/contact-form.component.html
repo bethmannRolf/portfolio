@@ -1,7 +1,7 @@
 <form class="contact-form-container" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
     <div class="name-input-section">
         <label for="name"><span class="question-name-input">What's your name?</span></label>
-        <input placeholder="Wert..." id="name" formControlName="name" required />
+        <input placeholder="Your name goes here" id="name" formControlName="name" required />
     </div>
     <div class="email-input-section">
         <label for="email"><span class="question-mail-input">What's your email?</span></label>
@@ -9,21 +9,27 @@
     </div>
     <div class="message-area-section">
         <label for="message"><span class="question-message-input">How can I help you?</span></label>
-        <textarea placeholder="Hello Lukas, I am interested in ..." id="message" formControlName="message"
+        <textarea placeholder="Hello, I am interested in ..." id="message" formControlName="message"
             required></textarea>
     </div>
     <div class="policy-button-section">
         <div class="checkbox-section">
             <input id="acceptTerms" type="checkbox" formControlName="acceptTerms" />
-            <label for="acceptTerms">
+            <label for="acceptTerms" [ngClass]="{ 'hover-enabled': contactForm.get('acceptTerms')?.value && contactForm.valid }"
+>
                 <span class="privacy-confirmation-text">I've read the </span>
                 <a class="privacy-policy-link privacy-confirmation-text" href="#">privacy policy</a>
                 <span class="privacy-confirmation-text"> and agree to the processing of my data as outlined.</span>
             </label>
         </div>
 
-        <button class="contact-submit-button" type="submit" [disabled]="contactForm.invalid"><span
-                class="submit-span">Say
-                Hello ;)</span></button>
+<button
+          class="contact-submit-button"
+          type="submit"
+          [disabled]="contactForm.invalid"
+          [ngClass]="{ 'hover-enabled': contactForm.valid && contactForm.get('acceptTerms')?.value }"
+        >
+  <span class="submit-span">Say Hello ;) </span>
+</button>
     </div>
 </form>
