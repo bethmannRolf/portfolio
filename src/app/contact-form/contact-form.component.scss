@@ -111,7 +111,6 @@
     justify-content: center;
 }
 
-
 .contact-submit-button.hover-enabled:hover .submit-span {
     animation: marquee 4s linear infinite;
 }
@@ -143,15 +142,10 @@
  
 }
 
-
-
-
 .contact-submit-button.hover-enabled:hover {
     border: 1px solid #3DCFB6;
 
 }
-
-
 
 .submit-span {
     display: inline-block;
@@ -162,11 +156,6 @@
     transform: translate(-50%, -50%);
     transition: all 0.3s ease-in-out;
 }
-
-
-
-
-
 
 .question-name-input {
     font-size: 24px;
@@ -325,4 +314,16 @@ textarea {
 textarea:focus {
   border: none;
   outline: none;
+}
+
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
+input.ng-invalid, textarea.ng-invalid, .checkbox-section.ng-invalid {
+  border-color: red;
 }

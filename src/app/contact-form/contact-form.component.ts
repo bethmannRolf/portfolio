@@ -1,12 +1,16 @@
+
+
+
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
-    selector: 'app-contact-form',
-    templateUrl: './contact-form.component.html',
-    styleUrls: ['./contact-form.component.scss'],
-    imports: [ReactiveFormsModule, CommonModule] // 
+  selector: 'app-contact-form',
+  templateUrl: './contact-form.component.html',
+  styleUrls: ['./contact-form.component.scss'],
+  standalone: true, 
+  imports: [ReactiveFormsModule, CommonModule]
 })
 export class ContactFormComponent {
   contactForm: FormGroup;
@@ -19,9 +23,11 @@ export class ContactFormComponent {
       acceptTerms: [false, Validators.requiredTrue] 
     });
   }
+
   onSubmit() {
     if (this.contactForm.valid) {
       console.log('Form data:', this.contactForm.value);
+     
     }
   }
 }
