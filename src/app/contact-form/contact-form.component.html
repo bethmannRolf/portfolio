@@ -6,7 +6,7 @@
     <label for="name"><span class="question-name-input">What's your name?</span></label>
     <input placeholder="Your name goes here" id="name" formControlName="name" required />
     <div *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid" class="error-message">
-      oops, it seems your name is missing
+      Oops, it seems your name is missing
     </div>
   </div>
 
@@ -26,7 +26,7 @@
     <div *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid" class="error-message">
       What do you need to develop ?
     </div>
-  </div>
+  </div> als
 
  
   <div class="policy-button-section">
