@@ -1,7 +1,90 @@
 {
-  "HELLO": "Hello world!",
-  "WELCOME": "Welcome to our site",
-  "CONTACT": "Contact me"
- 
-  
+  "ATF": {
+    "DEVELOPER": "Frontend Developer",
+    "CONTACT": "Contact me",
+    "CHECK_WORK": "Check my work",
+    "AVAILABLE": "Available for remote work",
+    "OPEN_TO": "About me"
+  },
+  "ABOUT_ME": {
+    "WHO": "Who I Am",
+    "ABOUT_ME": "About me",
+    "INTRO": "",
+    "LOCALISATION": "",
+    "EFFORT": "",
+    "DESCRIPTION": ""
+  },
+  "SKILLS": {
+    "TECHS": "Technologies",
+    "SKILL_SET": "Skill Set",
+    "INTRO": "",
+    "ANOTHER": "You need another skill?",
+    "EXPANDING": "Feel free to contact me . Ilook forward to expanding on my previous knowledge.",
+    "TALK": "Let's Talk"
+  },
+  "PROJECTS": {
+    "PORTFOLIO": "Portfolio",
+    "FEATURED_PROJECTS": "Featured Projects",
+    "EXPLANATION": "Explore a selection of my work here - interact with projects to see my skills in action.",
+    "SINGLE_PROJECT": {
+      "ABOUT_QUESTION": "What is this project about?",
+      "NEXT": "Next project",
+      "EPL": {
+        "About_CONTENT": "Jump run and..."
+      },
+      "JOIN": {
+        "ABOUT_CONTENT": "Inspired by Kanban board... "
+      },
+      "PORTFOLIO": {
+        "ABOUT_CONTENT": "JUMP run and..."
+      }
+    }
+  },
+  "QUOTATIONS": {
+    "HEADING": "What my  colleages say about me",
+    "SINGLE_CARD": {}
+  },
+  "CONTACT": {
+    "CONTACT_ME": "Contact me",
+    "HEADING": "Let's work together",
+    "SUBHEADING": "Got a problem to solve?",
+    "CONTENT": "",
+    "NEED_DEVELOPER": "Need a Frontend developer?",
+    "TALK": "Let's talk!",
+    "CONTACT_FORM": {
+      "QUESTIONS": {
+        "NAME": "What's your name?",
+        "MAIL": "What'S your email?",
+        "CONTENT": "How can I help you?"
+      },
+      "PLACEHOLDER": {
+        "NAME": "Your name goes here",
+        "MAIL": "youremail@email.com",
+        "CONTENT": "Hello Rolf I am interested in..."
+      },
+      "WARNINGS": {
+        "NAME": "Oops, it seems your name is missing",
+        "MAIL": "  Hoppla! Your email is required.",
+        "CONTENT": " What do you need to develop ?",
+        "PP": "  Please accept the privacy policy."
+      },
+      "READ": "I have read the",
+      "AGREE_DATA": "and agree to the processing of my data as outlined",
+      "PP_LINK": "privacy policy",
+      "SUBMIT_BTN": "Say Hello ;)"
+    }
+  },
+  "SHARED": {
+    "FOOTER": {
+      "DEVELOPER": "Web Developer",
+      "LOC": "Blankenburg(Harz) Germany",
+      "LN": "Legal Notice",
+      "PP": "Privacy Policy"
+    },
+    "HEADER": {
+      "ABOUT": "About me",
+      "SKILLS": "Skills",
+      "PROJECTS": "Projects"
+    }
+  }
 }
