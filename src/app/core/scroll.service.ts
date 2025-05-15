@@ -10,7 +10,7 @@ import { Injectable } from '@angular/core';
 export class ScrollService {
 scrollTo(id: string) {
   const el = document.getElementById(id);
-  console.log('Found element:', el); // DEBUG
+  console.log('Found element:', el); 
   if (el) {
     el.scrollIntoView({ behavior: 'smooth' });
   }
