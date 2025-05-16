@@ -2,10 +2,11 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectData } from '../../../app/models/project-data.model';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-project-overlay',
-    imports: [CommonModule],
+    imports: [CommonModule, TranslateModule],
     templateUrl: './project-overlay.component.html',
     styleUrl: './project-overlay.component.scss'
 })

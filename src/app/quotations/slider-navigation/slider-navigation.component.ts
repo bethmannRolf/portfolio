@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 @Component({
     selector: 'app-slider-navigation',
-    imports: [CommonModule],
+    imports: [CommonModule, TranslateModule],
     templateUrl: './slider-navigation.component.html',
     styleUrls: ['./slider-navigation.component.scss']
 })

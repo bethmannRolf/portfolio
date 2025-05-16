@@ -3,10 +3,11 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { QuotationCardComponent } from './quotation-card/quotation-card.component';
 import { SliderNavigationComponent } from './slider-navigation/slider-navigation.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-quotations',
-    imports: [CommonModule, QuotationCardComponent, SliderNavigationComponent],
+    imports: [CommonModule, QuotationCardComponent, SliderNavigationComponent, TranslateModule],
     templateUrl: './quotations.component.html',
     styleUrls: ['./quotations.component.scss']
 })
