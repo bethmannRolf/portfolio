@@ -1,34 +1,35 @@
 {
   "ATF": {
-    "DEVELOPER": "Frontend Developer",
+    "DEVELOPER": "Frontend-Entwickler",
     "CONTACT": "Kontakt",
-    "CHECK_WORK": "Check my work",
-    "AVAILABLE": "Available for remote work",
-    "OPEN_TO": "About me"
+    "CHECK_WORK": "Arbeitsproben",
+    "BASED_IN": "beheimatet in Blankenburg",
+    "AVAILABLE": "offen für Remote-Arbeit",
+    "OPEN_TO": "Über mich"
   },
   "ABOUT_ME": {
-    "WHO": "Who I Am",
-    "ABOUT_ME": "About me",
+    "WHO": "Wer ich bin",
+    "ABOUT_ME": "Über mich",
     "INTRO": "",
     "LOCALISATION": "",
     "EFFORT": "",
     "DESCRIPTION": ""
   },
   "SKILLS": {
-    "TECHS": "Technologies",
-    "SKILL_SET": "Skill Set",
+    "TECHS": "Technologien",
+    "SKILL_SET": "Fertigkeiten",
     "INTRO": "",
-    "ANOTHER": "You need another skill?",
-    "EXPANDING": "Feel free to contact me . Ilook forward to expanding on my previous knowledge.",
-    "TALK": "Let's Talk"
+    "ANOTHER": "Brauchen Sie eine andere Fertigkeit?",
+    "EXPANDING": "Feel free to contact me . look forward to expanding on my previous knowledge.",
+    "TALK": "Lassen Sie uns reden"
   },
   "PROJECTS": {
     "PORTFOLIO": "Portfolio",
-    "FEATURED_PROJECTS": "Featured Projects",
-    "EXPLANATION": "Explore a selection of my work here - interact with projects to see my skills in action.",
+    "FEATURED_PROJECTS": "Umgesetzte Projekte",
+    "EXPLANATION": "Entdecke hier eine Auswahl meiner Arbeiten - Interagiere mit den Projekten und schau dir meine Fertigkeiten in Aktion an.",
     "SINGLE_PROJECT": {
-      "ABOUT_QUESTION": "What is this project about?",
-      "NEXT": "Next project",
+      "ABOUT_QUESTION": "Worum geht es ?",
+      "NEXT": "Nächstes Projekt",
       "EPL": {
         "About_CONTENT": "Springen, rennen und ..."
       },
@@ -36,55 +37,55 @@
         "ABOUT_CONTENT": "Inspired by Kanban board... "
       },
       "PORTFOLIO": {
-        "ABOUT_CONTENT": "JUMP run and..."
+        "ABOUT_CONTENT": "Jump run and..."
       }
     }
   },
   "QUOTATIONS": {
-    "HEADING": "What my  colleages say about me",
+    "HEADING": "Was sagen meine Kollegen über mich",
     "SINGLE_CARD": {}
   },
   "CONTACT": {
-    "CONTACT_ME": "Contact me",
-    "HEADING": "Let's work together",
-    "SUBHEADING": "Got a problem to solve?",
+    "CONTACT_ME": "Kontakt",
+    "HEADING": "Lass uns zusammen arbeiten.",
+    "SUBHEADING": "Gibt es ein Problem zu lösen?",
     "CONTENT": "",
-    "NEED_DEVELOPER": "Need a Frontend developer?",
-    "TALK": "Let's talk!",
+    "NEED_DEVELOPER": "Brauchst du einen Frontend-Entwickler",
+    "TALK": "Lass uns reden !",
     "CONTACT_FORM": {
       "QUESTIONS": {
-        "NAME": "What's your name?",
-        "MAIL": "What'S your email?",
-        "CONTENT": "How can I help you?"
+        "NAME": "Wie leutet dein Name",
+        "MAIL": "Wie lautet deine Email-Adresse",
+        "CONTENT": "Wie kann ich helfen?"
       },
       "PLACEHOLDER": {
-        "NAME": "Your name goes here",
-        "MAIL": "youremail@email.com",
-        "CONTENT": "Hello Rolf I am interested in..."
+        "NAME": "Hier kommt der Name rein",
+        "MAIL": " mail@mail.de",
+        "CONTENT": "Hallo Rolf. Ich habe folgendes Problem..."
       },
       "WARNINGS": {
-        "NAME": "Oops, it seems your name is missing",
-        "MAIL": "  Hoppla! Your email is required.",
-        "CONTENT": " What do you need to develop ?",
-        "PP": "  Please accept the privacy policy."
+        "NAME": "Oops, hier scheint der Name zu fehlen",
+        "MAIL": "  Hoppla! deine Mailadresse wird benötigt.",
+        "CONTENT": " Was möchtest deu entwickeln ?",
+        "PP": "Bitte akzeptiere die Datenschutzrichtlinien."
       },
-      "READ": "I have read the",
-      "AGREE_DATA": "and agree to the processing of my data as outlined",
-      "PP_LINK": "privacy policy",
-      "SUBMIT_BTN": "Say Hello ;)"
+      "READ": "Gelesen habe ich die",
+      "AGREE_DATA": "und der Verarbeitung wie aufgeführt zugestimmt.",
+      "PP_LINK": "Datenschutzrichtlinien",
+      "SUBMIT_BTN": "Sag Hallo ;)"
     }
   },
   "SHARED": {
     "FOOTER": {
-      "DEVELOPER": "Web Developer",
+      "DEVELOPER": "Web-Entwickler",
       "LOC": "Blankenburg(Harz) Germany",
-      "LN": "Legal Notice",
-      "PP": "Privacy Policy"
+      "LN": "Rechtlicher Hinweis",
+      "PP": "Datenschutzrichtlinien"
     },
     "HEADER": {
-      "ABOUT": "About me",
-      "SKILLS": "Skills",
-      "PROJECTS": "Projects"
+      "ABOUT": "Über mich",
+      "SKILLS": "Fertigkeiten",
+      "PROJECTS": "Projekte"
     }
   }
 }
