@@ -4,7 +4,7 @@
     <span class="project-number">{{ project.projectNumber }}</span>
     <span class="project-name">{{ project.projectTitle }}</span>
     <span class="what-about-question"></span>
-    <span class="what-about-text">{{ project.additionalInformation }}</span>
+    <span class="what-about-text">{{ project.additionalInformation | translate }}</span>
 
     <div class="used-technologies">
       <div class="tech-overlay-item" *ngFor="let tech of project.usedTechOverlay">

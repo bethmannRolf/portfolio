@@ -20,7 +20,7 @@
     "SKILL_SET": "Fertigkeiten",
     "INTRO": "",
     "ANOTHER": "Brauchen Sie eine andere Fertigkeit?",
-    "EXPANDING": "Feel free to contact me . look forward to expanding on my previous knowledge.",
+    "EXPANDING": "Nehmen Sie gerne Kontakt mit mir auf. Ich freue mich darauf, meine bisherigen Kenntnisse zu erweitern.",
     "TALK": "Lassen Sie uns reden"
   },
   "PROJECTS": {
@@ -31,19 +31,21 @@
       "ABOUT_QUESTION": "Worum geht es ?",
       "NEXT": "Nächstes Projekt",
       "EPL": {
-        "About_CONTENT": "Springen, rennen und ..."
+        "ABOUT_CONTENT": "Objektorientiertes Sprung-, Lauf- und Wurfspiel. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen."
       },
       "JOIN": {
-        "ABOUT_CONTENT": "Inspired by Kanban board... "
+        "ABOUT_CONTENT": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu. "
       },
       "PORTFOLIO": {
-        "ABOUT_CONTENT": "Jump run and..."
+        "ABOUT_CONTENT": "Beispiele meienr Arbeit..."
       }
     }
   },
   "QUOTATIONS": {
     "HEADING": "Was sagen meine Kollegen über mich",
-    "SINGLE_CARD": {}
+    "SINGLE_CARD": {
+      
+    }
   },
   "CONTACT": {
     "CONTACT_ME": "Kontakt",

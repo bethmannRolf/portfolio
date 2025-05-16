@@ -20,6 +20,7 @@
   flex-direction: column;
   gap: 40px;
   justify-content: flex-start;
+  max-width: 50%;
 }
 
 .right-card-side {

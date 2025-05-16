@@ -20,7 +20,7 @@
     "SKILL_SET": "Skill Set",
     "INTRO": "",
     "ANOTHER": "You need another skill?",
-    "EXPANDING": "Feel free to contact me . Ilook forward to expanding on my previous knowledge.",
+    "EXPANDING": "Feel free to contact me . I look forward to expanding on my previous knowledge.",
     "TALK": "Let's Talk"
   },
   "PROJECTS": {
@@ -31,13 +31,13 @@
       "ABOUT_QUESTION": "What is this project about?",
       "NEXT": "Next project",
       "EPL": {
-        "About_CONTENT": "Jump run and..."
+        "ABOUT_CONTENT": "Jump, run and throw game based on object-orientated approach. Help Pepe to find coins and tabasco salsa to to fight against the crazy hen."
       },
       "JOIN": {
-        "ABOUT_CONTENT": "Inspired by Kanban board... "
+        "ABOUT_CONTENT": "Task manager inspired by the Kanban System, Create and organize tasks using drag and drop functions, assign users and categories."
       },
       "PORTFOLIO": {
-        "ABOUT_CONTENT": "JUMP run and..."
+        "ABOUT_CONTENT": "Collection of my work..."
       }
     }
   },

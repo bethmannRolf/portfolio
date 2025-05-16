@@ -66,7 +66,7 @@ export class ProjectsComponent {
           techName: 'CSS'
         }
       ],
-      additionalInformation: 'Jump, run and throw game...'
+      additionalInformation: 'PROJECTS.SINGLE_PROJECT.EPL.ABOUT_CONTENT'
     },
     {
       projectTitle: 'Join',
@@ -87,7 +87,7 @@ export class ProjectsComponent {
           techName: 'CSS'
         }
       ],
-      additionalInformation: 'Task manager inspired...'
+      additionalInformation: 'PROJECTS.SINGLE_PROJECT.JOIN.ABOUT_CONTENT'
     
     },
     {
