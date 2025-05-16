@@ -10,16 +10,16 @@
     transition: ease-in 150ms;
 
     &:hover {
-        background-color: rgba(61, 207, 182, 0.3); 
+        background-color: rgba(61, 207, 182, 0.3);
         cursor: pointer;
         transition: ease-in 150ms;
         cursor: pointer;
+
         .outwards-arrow-white {
             transform: translate(4px, -4px);
         }
     }
 }
-
 
 .left-projectline-side {
     display: flex;
@@ -51,26 +51,22 @@
 
 .outwards-arrow-white {
     transition: transform 150ms ease;
-  }
+}
 
-  .tech {
+.tech {
     font-size: 18px;
     font-weight: 400;
     line-height: 120%;
     letter-spacing: 0%;
- 
-    color: white; 
-  
-    .tech-item {
-      color: #fff;
-    }
-  
-    .pipe {
-      margin: 0 6px;
-      color: rgba(61, 207, 182, 1); 
-      font-weight: 400;
-    }
-  }
-  
+    color: white;
 
-  
+    .tech-item {
+        color: #fff;
+    }
+
+    .pipe {
+        margin: 0 6px;
+        color: rgba(61, 207, 182, 1);
+        font-weight: 400;
+    }
+}

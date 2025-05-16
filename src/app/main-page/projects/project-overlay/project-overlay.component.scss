@@ -179,7 +179,7 @@ letter-spacing: 0%;
     height: 48px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../../../assets/img/projects/close_button.svg');
+    background-image: url('../../../../assets/img/projects/close_button.svg');
     transition: scale 150ms ease-in-out;
 }
 
@@ -187,7 +187,7 @@ letter-spacing: 0%;
 
 .close-button:hover {
 scale: 1.2;
-    background-image: url('../../../assets/img/projects/close_hover.svg');
+    background-image: url('../../../../assets/img/projects/close_hover.svg');
     transition: scale 150ms ease-in-out;
   }
 

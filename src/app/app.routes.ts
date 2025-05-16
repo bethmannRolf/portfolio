@@ -5,10 +5,11 @@
 
 
 import { Routes } from '@angular/router';
-import { AtfComponent } from './atf/atf.component';
+import { MainPageComponent } from './main-page/main-page.component';
+
 
 
 export const routes: Routes = [
-  { path: '', component: AtfComponent },
+  { path: '', component: MainPageComponent },
  
 ];

@@ -1,7 +1,7 @@
 
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProjectData } from '../../../app/models/project-data.model';
+import { ProjectData } from '../../../../app/models/project-data.model';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({

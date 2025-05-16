@@ -8,14 +8,12 @@
 
 .landingpage {
     background-color: rgb(28, 28, 28);
-    background-image: url(../../assets/img/backgrounds/landingpage_bg.svg);
+    background-image: url(../../../assets/img/backgrounds/landingpage_bg.svg);
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
-
-///////////////////////////////
 
 .marquee {
     overflow-x: hidden;
@@ -36,8 +34,6 @@
     left: 0;
     backdrop-filter: blur(5.3px);
     z-index: 10;
-
-
     transform: skewY(-3deg);
     transform-origin: top right;
 }
@@ -53,7 +49,6 @@
     0% {
         transform: translateX(0);
     }
-
     100% {
         transform: translateX(-50%);
     }
@@ -62,7 +57,6 @@
 .marquee:hover .marquee-content {
     animation-play-state: paused;
 }
-
 
 .main-text-landingpage {
     display: flex;
@@ -82,20 +76,12 @@
 }
 
 .name-title {
-
     font-weight: 700;
     font-size: 128px;
     line-height: 100%;
     letter-spacing: -2%;
-
     color: #D9D9D9;
 }
-
-//////////////////////////////////////////////
-
-
-
-
 
 .atf-button {
     background-color: transparent;
@@ -137,13 +123,11 @@
     animation: marqueeButton 4s linear infinite;
 }
 
-
 .atf-button:hover {
     transition: all 0.5s ease-in;
     border: 1px solid #3DCFB6;
 }
 
-////////////////////////////////////////
 .sub-heading-buttons {
     display: flex;
     align-items: center;
@@ -164,7 +148,6 @@
     text-align: center;
     user-select: none;
 }
-
 
 .line-buttons-mail-container {
     position: absolute;
@@ -214,23 +197,19 @@
     0% {
         transform: translateY(0px);
     }
-
     50% {
         transform: translateY(10px);
     }
-
     100% {
         transform: translateY(0px);
     }
 }
 
-/////////////////////////////////////
 .vertical-line-right {
     width: 2px;
     height: 33vh;
     background-color: white;
     margin-right: 10px;
-
 }
 
 .vertical-line-left {
@@ -241,18 +220,14 @@
 
 .rotated-text {
     display: inline-block;
-
     transform: rotate(270deg);
     color: white;
     padding-left: 168px;
     padding-bottom: 10px;
-
-
 }
 
 .rotated-text:hover {
     color: #3DCFB6;
-
 }
 
 .mail-font-style {
@@ -260,8 +235,6 @@
     font-weight: 400;
     line-height: 120%;
     letter-spacing: 0%;
-
-
 }
 
 svg path {

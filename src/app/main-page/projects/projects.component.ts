@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SingleProjectComponent } from './single-project/single-project.component';
-import { ProjectData } from '../models/project-data.model';
+import { ProjectData } from '../../models/project-data.model';
 import { ProjectOverlayComponent } from './project-overlay/project-overlay.component';
 import { TranslateModule } from '@ngx-translate/core';
 
