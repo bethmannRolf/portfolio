@@ -9,6 +9,7 @@ import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-atf',
+
     imports: [CommonModule, HeaderComponent, TranslateModule],
     templateUrl: './atf.component.html',
     styleUrl: './atf.component.scss'
