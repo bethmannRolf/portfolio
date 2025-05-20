@@ -30,21 +30,23 @@ gap: 32px;
 
 
 .footer-left-bottom{
-display: flex;   ///Web Developer Area
+display: flex;  
 flex-direction: column;
 gap: 8px;
 font-size: 16px;
 font-weight: 400;
 line-height: 120%;
+  font-family: 'Karla';
 }
 
 .footer-center{
-display: flex;     //copyright area
+display: flex;     
 align-items: center;
 font-size: 18px;
 font-weight: 400;
 line-height: 120%;
 color: #3DCFB6;
+  font-family: 'Fira Code';
 }
 
 .footer-right{
@@ -54,20 +56,19 @@ gap: 8px;
 font-size: 16px;
 font-weight: 400;
 line-height: 120%;
+  font-family: 'Karla';
 
 
 
 }
 a{
     color: white;
-    text-decoration: none;  /* Optional: entfernt die Unterstreichung des Links */
-    position: relative;  /* Damit das Pseudoelement absolut positioniert werden kann */
+    text-decoration: none;  
+    position: relative;  
 
 }
 
-// .initials-name-logo:hover svg .inner-fill {
-//     fill: transparent;
-// }
+
 
 a:hover{
     color: #3DCFB6;
@@ -77,8 +78,8 @@ a:hover{
 
 
 a:hover::before {
-    content: "• ";  /* Punkt vor dem Link */
+    content: "• "; 
     position: absolute;
-    left: -20px;  /* Positioniere den Punkt links vom Text */
-    top: 0;  /* Vertikale Position des Punkts anpassen, wenn nötig */
+    left: -20px;  
+    top: 0;  
 }
