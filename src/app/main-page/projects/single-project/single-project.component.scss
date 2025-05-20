@@ -34,6 +34,8 @@
     line-height: 120%;
     letter-spacing: 0%;
     color: white;
+     font-family: 'Fira Code';
+
 }
 
 .tech {
@@ -62,11 +64,15 @@
 
     .tech-item {
         color: #fff;
+         font-family: 'Karla';
+          font-weight: 400;
+
     }
 
     .pipe {
         margin: 0 6px;
         color: rgba(61, 207, 182, 1);
         font-weight: 400;
+         font-family: 'Karla';
     }
 }

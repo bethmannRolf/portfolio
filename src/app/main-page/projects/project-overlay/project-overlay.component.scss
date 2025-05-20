@@ -38,6 +38,7 @@
     line-height: 100%;
     letter-spacing: -2%;
     color: #3DCFB6;
+      font-family: 'Karla';
 }
 
 .project-name {
@@ -45,6 +46,7 @@
     font-size: 64px;
     line-height: 80%;
     letter-spacing: -3%;
+      font-family: 'Fira Code';
 }
 
 .what-about-question {
@@ -53,6 +55,7 @@
     line-height: 120%;
     letter-spacing: 0%;
     color: #3DCFB6;
+      font-family: 'Fira Code';
 }
 
 .what-about-text {
@@ -60,6 +63,7 @@
     font-size: 18px;
     line-height: 120%;
     letter-spacing: 0%;
+    font-family: 'Karla';
 }
 
 .source-buttons {
@@ -77,6 +81,7 @@
     display: flex;
     align-items: center;
     transition: border 0.3s  ease-in-out;
+    font-family: 'Karla';
 
   
     &:hover {
@@ -117,6 +122,7 @@
     line-height: 120%;
     letter-spacing: 0%;
     color: #3DCFB6;
+    font-family: 'Karla';
 }
 
 .arrow-right {
@@ -170,7 +176,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 120%;
 letter-spacing: 0%;
-
+font-family: 'Karla';
 }
 
 .close-button{
