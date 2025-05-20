@@ -43,12 +43,14 @@
     justify-content: space-between;
     min-width: 200%;
     animation: marquee-animation 15s linear infinite;
+    font-family: 'Karla';
 }
 
 @keyframes marquee-animation {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -73,15 +75,17 @@
     line-height: 100%;
     letter-spacing: 0%;
     color: #D9D9D9;
+    font-family: 'Fira Code';
 }
 
 .name-title {
-     font-family: 'Karla';
+    font-family: 'Karla';
     font-weight: 700;
     font-size: 128px;
     line-height: 100%;
     letter-spacing: -2%;
     color: #D9D9D9;
+    font-family: 'Karla';
 }
 
 .atf-button {
@@ -109,12 +113,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'Karla';
 }
 
 @keyframes marqueeButton {
     from {
         left: 100%;
     }
+
     to {
         left: -100%;
     }
@@ -198,9 +204,11 @@
     0% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(10px);
     }
+
     100% {
         transform: translateY(0px);
     }
@@ -236,6 +244,7 @@
     font-weight: 400;
     line-height: 120%;
     letter-spacing: 0%;
+    font-family: 'Karla';
 }
 
 svg path {

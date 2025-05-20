@@ -19,6 +19,7 @@
   font-weight: 500;
   line-height: 100%;
   letter-spacing: 0%;
+  font-family: 'Karla';
 }
 
 .profile-image-about-me {
@@ -33,6 +34,7 @@
   font-weight: 700;
   line-height: 100%;
   letter-spacing: -3%;
+  font-family: 'Fira Code';
 }
 
 .about-me-introduction {
@@ -41,6 +43,7 @@
   font-weight: 400;
   line-height: 120%;
   letter-spacing: 0%;
+  font-family: 'Karla';
 }
 
 .card-content-section {
@@ -63,6 +66,7 @@
   letter-spacing: 0%;
   display: flex;
   gap: 24px;
+  font-family: 'Karla';
 }
 
 .about-me-card {

@@ -39,6 +39,7 @@
   font-size: 24px;
   line-height: 120%;
   letter-spacing: 0%;
+  font-family: 'Fira Code';
 }
 
 .skills-subheading-green {
@@ -47,6 +48,7 @@
   line-height: 120%;
   letter-spacing: 0%;
   color: #3DCFB6;
+  font-family: 'Fira Code';
 }
 
 .skills-subtext {
@@ -54,6 +56,7 @@
   font-size: 16px;
   line-height: 120%;
   letter-spacing: 0%;
+  font-family: 'Karla';
 }
 
 .skills-frame-heading {
@@ -62,6 +65,7 @@
   font-weight: 700;
   line-height: 100%;
   letter-spacing: -3%;
+  font-family: 'Fira Code';
 }
 
 .skills-heading {
@@ -70,6 +74,7 @@
   font-weight: 500;
   line-height: 100%;
   letter-spacing: 0%;
+  font-family: 'Karla';
 }
 
 .right-side {
@@ -165,11 +170,13 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 108%;
+  font-family: 'Fira Code';
 }
 
 .last-image .skill-font-styling {
   color: #ffffff;
   transition: color 0.3s ease-in-out;
+  font-family: 'Fira Code';
 }
 
 .last-image:hover .skill-font-styling {
@@ -192,6 +199,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Karla';
 }
 
 .talk-button-text {
@@ -219,4 +227,12 @@
 .talk-button:hover {
   transition: all 0.5s ease-in;
   border: 1px solid #3DCFB6;
+}
+
+.skills-main-text {
+  font-family: 'Karla';
+}
+
+.special-interest-styling {
+  font-family: 'Fira Code';
 }

@@ -8,13 +8,17 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    // justify-content: space-between;
+    
     cursor: pointer;
     font-size: 16px;
     font-weight: normal;
     user-select: none;
     transition: background 0.3s ease-in-out, border 0.3s;
+     font-family: 'Fira Code';
   }
+
+
+
 
 
   .language-toggle:hover{
