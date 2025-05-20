@@ -1,4 +1,4 @@
-.quotation-card-div{
+.quotation-card-div {
     display: flex;
     flex-direction: column;
     gap: 44px;
@@ -10,37 +10,48 @@
 
 
 
-.quotation-lower-part{
+.quotation-lower-part {
     display: flex;
     align-items: center;
 
 
 }
 
-.horizontal-line{
-flex: 1;
-height: 1px;
-background-color: white;
-margin-right: 16px;
+.horizontal-line {
+    flex: 1;
+    height: 1px;
+    background-color: white;
+    margin-right: 16px;
 
 }
 
-.quotation-text{
+.quotation-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    font-family: 'Karla';
+}
+
+.quoting-person-name {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    font-family: 'Karla';
+}
+
+.hyphen {
     font-size: 18px;
     font-weight: 400;
     line-height: 120%;
     letter-spacing: 0%;
 }
 
-.quoting-person-name{
+.quoting-person-position {
     font-size: 18px;
     font-weight: 400;
     line-height: 120%;
     letter-spacing: 0%;
-}
-.hyphen{
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 120%;
-    letter-spacing: 0%;
+    font-family: 'Karla';
 }
