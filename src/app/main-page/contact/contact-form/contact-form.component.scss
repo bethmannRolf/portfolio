@@ -163,6 +163,7 @@
     line-height: 120%;
     letter-spacing: 0%;
     color: #3DCFB6;
+     font-family: 'Fira Code';
 }
 
 .question-mail-input {
@@ -171,6 +172,7 @@
     line-height: 120%;
     letter-spacing: 0%;
     color: #3DCFB6;
+     font-family: 'Fira Code';
 }
 
 .question-message-input {
@@ -179,6 +181,7 @@
     line-height: 120%;
     letter-spacing: 0%;
     color: #3DCFB6;
+     font-family: 'Fira Code';
 }
 
 .name-input-section {
@@ -189,6 +192,7 @@
     flex-direction: column;
     gap: 16px;
     padding: 32px;
+     font-family: 'Karla';
 }
 
 .email-input-section {
@@ -199,6 +203,7 @@
     flex-direction: column;
     gap: 16px;
     padding: 32px;
+     font-family: 'Karla';
 }
 
 .message-area-section {
@@ -209,6 +214,7 @@
     flex-direction: column;
     gap: 16px;
     padding: 32px;
+     font-family: 'Karla';
 }
 
 .policy-button-section {
@@ -216,6 +222,7 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
+     font-family: 'Karla';
 }
 
 .name-input-section:hover {
@@ -242,6 +249,7 @@ input::placeholder {
     line-height: 120%;
     letter-spacing: 0%;
     color: rgba(255, 255, 255, 0.8);
+     font-family: 'Karla';
 }
 
 input {
@@ -260,6 +268,7 @@ textarea::placeholder {
     line-height: 120%;
     letter-spacing: 0%;
     color: rgba(255, 255, 255, 0.8);
+     font-family: 'Karla';
 }
 
 input::placeholder {
@@ -284,6 +293,7 @@ input {
     letter-spacing: 0%;
     line-height: 120%;
     color: white;
+     font-family: 'Karla';
 
 
 
@@ -305,6 +315,7 @@ textarea {
     letter-spacing: 0%;
     line-height: 120%;
     color: white;
+     font-family: 'Karla';
 
 
 
@@ -321,9 +332,11 @@ textarea:focus {
   color: red;
   font-size: 16px;
   margin-top: 5px;
+   font-family: 'Karla';
 }
 
 
 input.ng-invalid, textarea.ng-invalid, .checkbox-section.ng-invalid {
   border-color: red;
+   font-family: 'Karla';
 }
