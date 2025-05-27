@@ -1,7 +1,3 @@
-// import { Routes } from '@angular/router';
-
-// export const routes: Routes = [];
-
 
 
 import { Routes } from '@angular/router';
@@ -12,10 +8,12 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 
 
 
+
 export const routes: Routes = [
   { path: '', component: MainPageComponent },
-   { path: '', component: ImprintComponent },
-    // { path: '', component: PrivacyPolicyComponent },
-    //  { path: '', component: LegalNoticeComponent },
- 
+  { path: 'imprint', component: ImprintComponent },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent },
+  { path: 'legal-notice', component: LegalNoticeComponent },
+
+
 ];

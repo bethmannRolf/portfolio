@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { LanguageSwitcherComponent } from '../../language-switcher/language-switcher.component';
-import { ScrollService } from "../../core/scroll.service";
+import { LanguageSwitcherComponent } from '../../../language-switcher/language-switcher.component';
+import { ScrollService } from "../../../core/scroll.service";
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
