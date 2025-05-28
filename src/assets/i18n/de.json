@@ -1,10 +1,15 @@
 {
+  "HEADER": {
+    "ABOUT": "Über mich",
+    "SKILLS": "Fertigkeiten",
+    "PROJECTS": "Projekte"
+  },
   "ATF": {
     "DEVELOPER": "Frontend-Entwickler",
     "CONTACT": "Kontakt",
     "CHECK_WORK": "Arbeitsproben",
-    "BASED_IN": "beheimatet in Blankenburg",
-    "AVAILABLE": "offen für Remote-Arbeit",
+    "BASED_IN": "Beheimatet in Blankenburg",
+    "AVAILABLE": "Offen für Remote-Arbeit",
     "OPEN_TO": "Über mich"
   },
   "ABOUT_ME": {
@@ -19,9 +24,11 @@
     "TECHS": "Technologien",
     "SKILL_SET": "Fertigkeiten",
     "INTRO": "",
-    "ANOTHER": "Brauchen Sie eine andere Fertigkeit?",
+    "YOU_NEED": "Brauchen Sie",
+    "ANOTHER": "eine andere Fertigkeit?",
     "EXPANDING": "Nehmen Sie gerne Kontakt mit mir auf. Ich freue mich darauf, meine bisherigen Kenntnisse zu erweitern.",
-    "TALK": "Lassen Sie uns reden"
+    "TALK": "Lassen Sie uns reden",
+    "SPECIAL_INT": "Was ich als Nächstes lerne"
   },
   "PROJECTS": {
     "PORTFOLIO": "Portfolio",
@@ -43,9 +50,7 @@
   },
   "QUOTATIONS": {
     "HEADING": "Was sagen meine Kollegen über mich",
-    "SINGLE_CARD": {
-      
-    }
+    "SINGLE_CARD": {}
   },
   "CONTACT": {
     "CONTACT_ME": "Kontakt",
@@ -83,11 +88,6 @@
       "LOC": "Blankenburg(Harz) Germany",
       "LN": "Rechtlicher Hinweis",
       "PP": "Datenschutzrichtlinien"
-    },
-    "HEADER": {
-      "ABOUT": "Über mich",
-      "SKILLS": "Fertigkeiten",
-      "PROJECTS": "Projekte"
     }
   }
 }

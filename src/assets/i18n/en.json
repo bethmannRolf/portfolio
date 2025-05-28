@@ -19,9 +19,11 @@
     "TECHS": "Technologies",
     "SKILL_SET": "Skill Set",
     "INTRO": "",
-    "ANOTHER": "You need another skill?",
+  "YOU_NEED":"You need",
+    "ANOTHER": "another skill?",
     "EXPANDING": "Feel free to contact me . I look forward to expanding on my previous knowledge.",
-    "TALK": "Let's Talk"
+    "TALK": "Let's Talk",
+     "SPECIAL_INT":"I have a special interest in learning"
   },
   "PROJECTS": {
     "PORTFOLIO": "Portfolio",

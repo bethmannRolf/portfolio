@@ -231,54 +231,7 @@
 
 
 
-.talk-button {
-  background-color: transparent;
-  border: 1px solid white;
-  color: white;
-  padding: 12px 30px;
-  border-radius: 50px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  overflow: hidden;
-  position: relative;
-  width: 160px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Karla';
 
-}
-
-.talk-button-text {
-  display: inline-block;
-  white-space: nowrap;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-@keyframes marqueeButton {
-  from {
-    left: 100%;
-  }
-
-  to {
-    left: -100%;
-  }
-}
-
-.talk-button:hover .talk-button-text {
-  animation: marqueeButton 4s linear infinite;
-}
-
-
-.talk-button:hover {
-  transition: all 0.5s ease-in;
-  border: 1px solid #3DCFB6;
-}
 
 .skills-main-text {
   font-family: 'Karla';
@@ -287,3 +240,48 @@
 .special-interest-styling {
   font-family: 'Fira Code';
 }
+
+
+
+    .talk-button {
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      overflow: hidden;
+      position: relative;
+      display: inline-flex; 
+      align-items: center;
+      justify-content: center;
+      font-family: 'Karla';
+      width: fit-content; 
+      height: fit-content; 
+    }
+
+    .talk-button-text {
+      display: inline-block;
+      white-space: nowrap;
+      position: relative; 
+    }
+
+    @keyframes marqueeButton {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    .talk-button:hover .talk-button-text {
+      animation: marqueeButton 4s linear infinite;
+    }
+
+    .talk-button:hover {
+      transition: all 0.5s ease-in;
+      border: 1px solid #3DCFB6;
+    }
