@@ -54,11 +54,11 @@
   },
   "CONTACT": {
     "CONTACT_ME": "Kontakt",
-    "HEADING": "Lass uns zusammen arbeiten.",
+    "HEADING": "Lass Sie uns zusammen arbeiten.",
     "SUBHEADING": "Gibt es ein Problem zu lösen?",
     "CONTENT": "",
-    "NEED_DEVELOPER": "Brauchst du einen Frontend-Entwickler",
-    "TALK": "Lass uns reden !",
+    "NEED_DEVELOPER": "Brauchen SIE einen Frontend-Entwickler?",
+    "TALK": "Lassen Sie uns reden!",
     "CONTACT_FORM": {
       "QUESTIONS": {
         "NAME": "Wie leutet dein Name",
