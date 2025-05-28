@@ -85,9 +85,10 @@
   "SHARED": {
     "FOOTER": {
       "DEVELOPER": "Web-Entwickler",
-      "LOC": "Blankenburg(Harz) Germany",
+      "LOC": "Blankenburg(Harz) Deutschland",
       "LN": "Rechtlicher Hinweis",
-      "PP": "Datenschutzrichtlinien"
+      "PP": "Datenschutzrichtlinien",
+      "IMPRINT": "Impressum"
     }
   }
 }
