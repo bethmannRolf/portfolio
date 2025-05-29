@@ -36,13 +36,13 @@
         formControlName="acceptTerms"
       />
       <label for="acceptTerms" [ngClass]="{ 'hover-enabled': contactForm.get('acceptTerms')?.value && contactForm.valid }">
-        <span class="privacy-confirmation-text">I've read the </span>
-        <a class="privacy-policy-link privacy-confirmation-text" href="#">privacy policy</a>
-        <span class="privacy-confirmation-text"> and agree to the processing of my data as outlined.</span>
+        <span class="privacy-confirmation-text">{{'CONTACT.CONTACT_FORM.READ'| translate}} </span>
+        <a class="privacy-policy-link privacy-confirmation-text" href="#">{{'CONTACT.CONTACT_FORM.PP_LINK'| translate}}</a>
+        <span class="privacy-confirmation-text"> {{'CONTACT.CONTACT_FORM.AGREE_DATA'| translate}}</span>
       </label>
      
       <div *ngIf="contactForm.get('acceptTerms')?.touched && contactForm.get('acceptTerms')?.invalid" class="error-message">
-        Please accept the privacy policy.
+        {{'CONTACT.CONTACT_FORM.WARNINGS.PP'| translate}}
       </div>
     </div>
 
@@ -53,7 +53,7 @@
       [disabled]="contactForm.invalid"
       [ngClass]="{ 'hover-enabled': contactForm.valid && contactForm.get('acceptTerms')?.value }"
     >
-      <span class="submit-span">Say Hello ;) </span>
+      <span class="submit-span">{{'CONTACT.CONTACT_FORM.SUBMIT_BTN'| translate}}</span>
     </button>
   </div>
 </form>
