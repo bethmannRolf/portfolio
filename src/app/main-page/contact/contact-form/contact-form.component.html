@@ -3,28 +3,28 @@
 <form class="contact-form-container" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
  
   <div class="name-input-section">
-    <label for="name"><span class="question-name-input">What's your name?</span></label>
-    <input placeholder="Your name goes here" id="name" formControlName="name" required />
+    <label for="name"><span class="question-name-input">{{'CONTACT.CONTACT_FORM.QUESTIONS.NAME'| translate}}</span></label>
+    <input placeholder="{{'CONTACT.CONTACT_FORM.PLACEHOLDER.NAME'| translate}}" id="name" formControlName="name" required />
     <div *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid" class="error-message">
-      Oops, it seems your name is missing
+      {{'CONTACT.CONTACT_FORM.WARNINGS.NAME'| translate}}
     </div>
   </div>
 
  
   <div class="email-input-section">
-    <label for="email"><span class="question-mail-input">What's your email?</span></label>
-    <input placeholder="your@email.com" id="email" formControlName="email" required type="email" />
+    <label for="email"><span class="question-mail-input">{{'CONTACT.CONTACT_FORM.QUESTIONS.MAIL'| translate}}</span></label>
+    <input placeholder="{{'CONTACT.CONTACT_FORM.PLACEHOLDER.MAIL'| translate}}" id="email" formControlName="email" required type="email" />
     <div *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid" class="error-message">
-      Hoppla! Your email is required.
+      {{'CONTACT.CONTACT_FORM.WARNINGS.MAIL'| translate}}
     </div>
   </div>
 
  
   <div class="message-area-section">
-    <label for="message"><span class="question-message-input">How can I help you?</span></label>
-    <textarea placeholder="Hello, I am interested in ..." id="message" formControlName="message" required></textarea>
+    <label for="message"><span class="question-message-input">{{'CONTACT.CONTACT_FORM.QUESTIONS.CONTENT'| translate}}</span></label>
+    <textarea placeholder="{{'CONTACT.CONTACT_FORM.PLACEHOLDER.CONTENT'| translate}}" id="message" formControlName="message" required></textarea>
     <div *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid" class="error-message">
-      What do you need to develop ?
+      {{'CONTACT.CONTACT_FORM.WARNINGS.CONTENT'| translate}}
     </div>
   </div> 
  

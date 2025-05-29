@@ -57,29 +57,29 @@
     "HEADING": "Lass Sie uns zusammen arbeiten.",
     "SUBHEADING": "Gibt es ein Problem zu lösen?",
     "CONTENT": "",
-    "NEED_DEVELOPER": "Brauchen SIE einen Frontend-Entwickler?",
+    "NEED_DEVELOPER": "Brauchen Sie einen Frontend-Entwickler?",
     "TALK": "Lassen Sie uns reden!",
     "CONTACT_FORM": {
       "QUESTIONS": {
-        "NAME": "Wie leutet dein Name",
-        "MAIL": "Wie lautet deine Email-Adresse",
+        "NAME": "Wie lautet Ihr Name?",
+        "MAIL": "Wie lautet Ihre Email-Adresse?",
         "CONTENT": "Wie kann ich helfen?"
       },
       "PLACEHOLDER": {
         "NAME": "Hier kommt der Name rein",
-        "MAIL": " mail@mail.de",
+        "MAIL": " ihre@mail.de",
         "CONTENT": "Hallo Rolf. Ich habe folgendes Problem..."
       },
       "WARNINGS": {
         "NAME": "Oops, hier scheint der Name zu fehlen",
-        "MAIL": "  Hoppla! deine Mailadresse wird benötigt.",
-        "CONTENT": " Was möchtest deu entwickeln ?",
-        "PP": "Bitte akzeptiere die Datenschutzrichtlinien."
+        "MAIL": "  Hoppla! Ihre Mailadresse wird benötigt.",
+        "CONTENT": " Was möchten Sie entwickeln ?",
+        "PP": "Bitte akzeptieren Sie die Datenschutzrichtlinien."
       },
       "READ": "Gelesen habe ich die",
       "AGREE_DATA": "und der Verarbeitung wie aufgeführt zugestimmt.",
       "PP_LINK": "Datenschutzrichtlinien",
-      "SUBMIT_BTN": "Sag Hallo ;)"
+      "SUBMIT_BTN": "Sagen Sie Hallo ;)"
     }
   },
   "SHARED": {
@@ -90,5 +90,14 @@
       "PP": "Datenschutzrichtlinien",
       "IMPRINT": "Impressum"
     }
+  },
+  "PP":{
+
+  },
+  "IMPRINT":{
+
+  },
+  "LN":{
+
   }
 }
