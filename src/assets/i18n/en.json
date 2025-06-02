@@ -89,5 +89,64 @@
       "PP": "Privacy Policy",
       "IMPRINT": "Impressum"
     }
+  },
+  "PP": {
+    "MAIN_HEADING": "1. Privacy Policy",
+    "BACK_TO_PORTFOLIO": "Home",
+    "GEN_INFO": "General Information",
+    "GEN_INFO_CONTENT": "I take the protection of your personal data very seriously. This privacy policy informs you about what data is collected on my website and how it is used. The website serves to introduce myself and links to various projects hosted on separate subdomains.",
+    "RES_PARTY_HEADING": "2. Responsible Party",
+    "RES_PARTY_CONTENT": "I am responsible for data processing on this website:",
+    "PERS_HEADING": "3. Collection and Storage of Personal Data",
+    "PERS_DATA_CONTENT": "When visiting this website, certain information about your access is automatically stored, including:",
+    "PERS_DATA_IP": "-IP address",
+    "PERS_DATA_DATE": "Date and time of access",
+    "PERS_DATA_BROWSER": "Browser type and version",
+    "PERS_DATA_OS": "Operating system",
+    "PERS_DATA_REFERRER": "Referrer URL (the previously visited page)",
+    "PERS_DATA_EXPL":"This data is used for security and website improvement purposes and is not used to personally identify you.",
+    "COOKIE_HEADING":"4. Use of Cookies",
+    "COOKIE_CONNTENT":"This website does not use tracking cookies. If individual linked subdomains or projects use cookies, separate privacy policies will be provided there.",
+    "EXT_LINKS_HEADING":"5. External Links and Embedded Content",
+    "EXT_LINKS_CONTENT":"My website contains links to my own projects hosted on separate subdomains. When accessing these pages, their respective privacy policies apply. I have no control over what data is collected there.",
+"PROCESSING_HEADING":"6. Legal Basis for Processing",
+"PROCESSING_INFO":"The processing of personal data is based on my legitimate interest (Art. 6(1)(f) GDPR) to ensure the security and functionality of the website.",
+"RIGHTS_HEADING":"7. Your Rights",
+"RIGHTS_INTRO":"You have the following rights regarding your personal data:",
+"RIGHTS_ACCESS":"Right to access (Art. 15 GDPR)",
+"RIGHTS_RECTIFICATION":"Right to rectification (Art. 16 GDPR)",
+"RIGHTS_ERASURE":"Right to erasure (Art. 17 GDPR)",
+"RIGHTS_RESTRICTION":"Right to restriction of processing (Art. 18 GDPR)",
+"RIGHTS_OBJECTS":"Right to object to processing (Art. 21 GDPR)",
+"RIGHTS_DATA":"Right to data portability (Art. 20 GDPR)",
+"RIGHTS_EXPL":"To exercise these rights, you can contact me using the details provided above.",
+"CHANGES__PP_HEADING":"8. Changes to this Privacy Policy",
+"CHANGES_PP_CONTENT":"I reserve the right to modify this privacy policy at any time to comply with legal requirements or to reflect changes on the website.",
+"UPDATE":"Last updated:"
+  },
+
+
+  "IMPRINT": {
+
+
+
+  },
+  "LN": {
+    "MAIN_HEADING":"Legal Notice",
+    "OWNER_HEADING":"Website Owner",
+    "DISCLAIMER_HEADING":"Disclaimer",
+    "DISCLAIMER_CONTENT":"The contents of this website have been created with the utmost care. However, I cannot guarantee the accuracy, completeness, or timeliness of the content. As a service provider, I am responsible for my own content on these pages in accordance with § 7 Abs.1 TMG. According to §§ 8 to 10 TMG, I am not obliged to monitor transmitted or stored third-party information or investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information according to general laws remain unaffected. However, liability in this regard is only possible from the moment knowledge of a specific legal violation is obtained. If I become aware of any legal violations, I will remove the relevant content immediately.",
+    "EXT_LINKS_HEADING":"External Links",
+    "EXT_LINKS_CONTENT":"My website contains links to external third-party websites. I have no influence on the content of these external sites and therefore cannot assume any liability for their content. The respective provider or operator of the linked pages is always responsible for their content. The linked pages were checked for possible legal violations at the time of linking. No illegal content was identified at that time. However, permanent monitoring of the content of linked pages is not reasonable without concrete evidence of a legal violation. If I become aware of any legal violations, I will remove such links immediately.",
+    "COP_NOT_HEADING":"Copyright Notice",
+    "COP_NOT_CONTENT":"The content and works created by me on this website are subject to German copyright law. Any reproduction, modification, distribution, or any other form of use beyond the scope of copyright law requires my written consent. Downloads and copies of this website are only permitted for private, non-commercial use.",
+    "COP_NOT_THIRD":"If content on this website was not created by me, the copyrights of third parties are respected. Third-party content is marked as such. Should you become aware of a copyright infringement, please notify me accordingly. If I become aware of any legal violations, I will remove such content immediately.",
+    "CONTACT_INFO_HEADING":"Contact Information",
+    "UPDATE":"Last updated:"
+
+
+
+
+
   }
 }
