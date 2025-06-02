@@ -90,6 +90,81 @@
       "PP": "Datenschutzrichtlinien",
       "IMPRINT": "Impressum"
     }
+  },
+  "PP": {
+    "MAIN_HEADING": "Datenschutzerklärung",
+    "BACK_TO_PORTFOLIO": "Startseite",
+    "GEN_INFO": "Allgemeine Hinweise",
+    "GEN_INFO_CONTENT": "Ich nehme den Schutz deiner persönlichen Daten sehr ernst. Diese Datenschutzerklärung informiert dich darüber, welche Daten auf meiner Website erfasst und wie sie verwendet werden. Die Website dient der Vorstellung meiner Person und verlinkt auf verschiedene Projekte, die auf eigenen Subdomains gehostet werden.",
+    "RES_PARTY_HEADING": "2. Verantwortliche Stelle",
+    "RES_PARTY_CONTENT": "Verantwortlich für die Datenverarbeitung auf dieser Website bin ich:",
+    "PERS_HEADING": "3. Erhebung und Speicherung personenbezogener Daten",
+    "PERS_DATA_CONTENT": "Beim Besuch dieser Website werden automatisch bestimmte Informationen über deinen Zugriff gespeichert, insbesondere:",
+    "PERS_DATA_IP": "-IP-Adresse",
+    "PERS_DATA_DATE": "-Datum und Uhrzeit des Zugriffs",
+    "PERS_DATA_BROWSER": "Browsertyp und -version",
+    "PERS_DATA_OS": "-Betriebssystem",
+    "PERS_DATA_REFERRER": "-Referrer-URL (die zuvor besuchte Seite)",
+    "PERS_DATA_EXPL":"Diese Daten dienen der Sicherheit und Verbesserung der Website und werden nicht dazu genutzt, dich persönlich zu identifizieren.",
+    "COOKIE_HEADING":"4. Verwendung von Cookies",
+    "COOKIE_CONNTENT":"Diese Website verwendet keine Tracking-Cookies. Falls einzelne verlinkte Subdomains oder Projekte Cookies nutzen, findest du dort separate Datenschutzerklärungen.",
+    "EXT_LINKS_HEADING":"5. Externe Links und eingebettete Inhalte",
+    "EXT_LINKS_CONTENT":"Meine Website enthält Links zu meinen eigenen Projekten, die auf separaten Subdomains gehostet werden. Beim Aufrufen dieser Seiten gelten deren eigene Datenschutzrichtlinien. Ich habe keinen Einfluss darauf, welche Daten dort erfasst werden.",
+"PROCESSING_HEADING":"6. Rechtsgrundlagen der Verarbeitung",
+"PROCESSING_INFO":"Die Verarbeitung personenbezogener Daten erfolgt auf Grundlage meines berechtigten Interesses (Art. 6 Abs. 1 lit. f DSGVO), um die Sicherheit und Funktionalität der Website zu gewährleisten.",
+"RIGHTS_HEADING":"7. Deine Rechte",
+"RIGHTS_INTRO":"Du hast folgende Rechte hinsichtlich deiner personenbezogenen Daten:",
+"RIGHTS_ACCESS":"-Recht auf Auskunft (Art. 15 DSGVO)",
+"RIGHTS_RECTIFICATION":"-Recht auf Berichtigung (Art. 16 DSGVO)",
+"RIGHTS_ERASURE":"-Recht auf Löschung (Art. 17 DSGVO)",
+"RIGHTS_RESTRICTION":"-Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+"RIGHTS_OBJECTS":"-Recht auf Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)",
+"RIGHTS_DATA":"-Recht auf Datenübertragbarkeit (Art. 20 DSGVO)",
+"RIGHTS_EXPL":"Zur Ausübung dieser Rechte kannst du mich unter den oben angegebenen Kontaktdaten erreichen.",
+"CHANGES__PP_HEADING":"8. Änderungen dieser Datenschutzerklärung",
+"CHANGES_PP_CONTENT":"Ich behalte mir vor, diese Datenschutzerklärung jederzeit anzupassen, um rechtlichen Anforderungen zu entsprechen oder Änderungen auf der Website widerzuspiegeln.",
+"UPDATE":"Stand:"
+  },
+
+
+  "IMPRINT": {
+    "MAIN_HEADING":"Impressum",
+     "BACK_TO_PORTFOLIO": "Startseite",
+    "INFO_TMG_HEADING":"Angaben gemäß § 5 TMG",
+    "RES_CONT_HEADING":"Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
+    "LIAB_CONT_HEADING":"Haftung für Inhalte",
+    "LIAB_CONTENT_CONTENT":"Als Diensteanbieter bin ich gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
+    "LIAB_CONTENT_INFO":"Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werde ich diese Inhalte umgehend entfernen.",
+    "LIAB_LINKS_HEADING":"Haftung für Links",
+    "LIAB_LINKS_CONTENT":"Mein Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.",
+    "LIAB_LINKS_INFO":"Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.",
+    "COPYRIGHT_HEADING":"Urheberrecht",
+    "COPYRIGHT_CONTENT":"Die durch mich erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.",
+    "COPYRIGHT_INFO":"Soweit die Inhalte auf dieser Seite nicht von mir erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Solltest du trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitte ich um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Inhalte umgehend entfernen.",
+    "CONTACT_HEADING":"Kontakt",
+    "UPDATE":"Stand:"
+
+
+
+  },
+  "LN": {
+    "MAIN_HEADING":"Rechtlicher Hinweis",
+     "BACK_TO_PORTFOLIO": "Startseite",
+    "OWNER_HEADING":"Website-Betreiber",
+    "DISCLAIMER_HEADING":"Haftungsausschluss",
+    "DISCLAIMER_CONTENT":"Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann ich jedoch keine Gewähr übernehmen. Als Dienstanbieter bin ich gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG bin ich jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werde ich diese Inhalte umgehend entfernen.",
+    "EXT_LINKS_HEADING":"Externe Links",
+    "EXT_LINKS_CONTENT":"Meine Website enthält Links zu externen Webseiten Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.",
+    "COP_NOT_HEADING":"Urheberrechtshinweis",
+    "COP_NOT_CONTENT":"Die durch mich erstellten Inhalte und Werke auf dieser Website unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen meiner schriftlichen Zustimmung. Downloads und Kopien dieser Website sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.",
+    "COP_NOT_THIRD":"Sofern Inhalte auf dieser Website nicht von mir erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitte ich um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Inhalte umgehend entfernen.",
+    "CONTACT_INFO_HEADING":"Kontaktinformationen",
+    "UPDATE":"Stand:"
+
+
+
+
+
   }
 
 }
