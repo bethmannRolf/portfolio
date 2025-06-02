@@ -1,6 +1,7 @@
 * {
   background-color: #1c1c1c;
   font-family: 'Karla';
+  user-select: none;
 }
 
 h1 {

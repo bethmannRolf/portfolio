@@ -1,3 +1,7 @@
+* {
+  user-select: none;
+}
+
 .quotation-card-div {
   display: flex;
   flex-direction: column;

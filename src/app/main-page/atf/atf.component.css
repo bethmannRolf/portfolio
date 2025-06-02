@@ -1,3 +1,7 @@
+* {
+  user-select: none;
+}
+
 .landingpage-below-header {
   height: 90vh;
 }

@@ -1,3 +1,7 @@
+* {
+  user-select: none;
+}
+
 .projects-section {
   background-color: #1c1c1c;
   display: flex;

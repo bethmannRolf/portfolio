@@ -1,3 +1,7 @@
+* {
+  user-select: none;
+}
+
 .quotations-section {
   background-color: #1c1c1c;
   color: white;

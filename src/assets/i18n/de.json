@@ -68,7 +68,7 @@
       "PLACEHOLDER": {
         "NAME": "Hier kommt der Name rein",
         "MAIL": " ihre@mail.de",
-        "CONTENT": "Hallo Rolf. Ich habe folgendes Problem..."
+        "CONTENT": "Hallo Rolf.  Ich habe folgendes Problem..."
       },
       "WARNINGS": {
         "NAME": "Oops, hier scheint der Name zu fehlen",
