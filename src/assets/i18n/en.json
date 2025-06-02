@@ -127,6 +127,20 @@
 
 
   "IMPRINT": {
+    "MAIN_HEADING":"Imprint",
+    "INFO_TMG_HEADING":"Information according to § 5 TMG",
+    "RES_CONT_HEADING":"Responsible for content according to § 55 Abs. 2 RStV",
+    "LIAB_CONT_HEADING":"Liability for Content",
+    "LIAB_CONTENT_CONTENT":"As a service provider, I am responsible for my own content on these pages in accordance with § 7 Abs.1 TMG and general laws. However, according to §§ 8 to 10 TMG, I am not obliged to monitor transmitted or stored external information or to investigate circumstances that indicate illegal activity.",
+    "LIAB_CONTENT_INFO":"Obligations to remove or block the use of information under general laws remain unaffected. However, liability in this regard is only possible from the time of knowledge of a specific legal violation. If I become aware of any such legal violations, I will remove this content immediately.",
+    "LIAB_LINKS_HEADING":"Liability for Links",
+    "LIAB_LINKS_CONTENT":"My website contains links to external third-party websites, over whose content I have no influence. Therefore, I cannot assume any liability for these external contents. The respective provider or operator of the linked sites is always responsible for their content. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at that time.",
+    "LIAB_LINKS_INFO":"However, permanent monitoring of the linked pages is not reasonable without concrete evidence of a legal violation. If I become aware of any legal violations, I will remove such links immediately.",
+    "COPYRIGHT_HEADING":"Copyright",
+    "COPYRIGHT_CONTENT":"The content and works created by me on these pages are subject to German copyright law. The reproduction, editing, distribution, and any kind of use beyond the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use.",
+    "COPYRIGHT_INFO":"If content on this site was not created by me, the copyrights of third parties are respected. In particular, third-party content is marked as such. Should you nevertheless become aware of a copyright infringement, please inform me accordingly. If I become aware of any legal violations, I will remove such content immediately.",
+    "CONTACT_HEADING":"Contact",
+    "UPDATE":"Last updated:"
 
 
 
