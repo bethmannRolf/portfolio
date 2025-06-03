@@ -20,7 +20,8 @@ import { QuotationService } from './quotations.service';
 import { CommonModule } from '@angular/common';
 import { QuotationCardComponent } from './quotation-card/quotation-card.component';
 import { SliderNavigationComponent } from './slider-navigation/slider-navigation.component';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-quotations',
@@ -32,18 +33,29 @@ export class QuotationsComponent implements OnInit {
   currentIndex = 0;
   slides: Quotation[] = [];
 
-  constructor(private quotationService: QuotationService) {}
+constructor(
+  private quotationService: QuotationService,
+  private translate: TranslateService
+) {}
 
-  ngOnInit(): void {
-    this.quotationService.getQuotations().subscribe(data => {
-      this.slides = data;
-    });
-  }
+
+ngOnInit(): void {
+  this.loadQuotations();
+  this.translate.onLangChange.subscribe(() => {
+    this.loadQuotations();
+  });
+}
+
+loadQuotations(): void {
+  this.quotationService.getQuotations().subscribe(data => {
+
+    this.slides = data;
+  });
+}
 
   onSlideChanged(index: number) {
     const slidesLength = this.slides.length;
     this.currentIndex = (index + slidesLength) % slidesLength;
-    console.log(this.currentIndex)
   }
 
   getSlideTransform(): string {

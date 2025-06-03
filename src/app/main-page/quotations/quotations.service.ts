@@ -1,24 +1,24 @@
 import { Injectable } from '@angular/core';
-import { Quotation } from '../../models/quotations.model';
-import { Observable, of } from 'rxjs';
+import { TranslateService } from '@ngx-translate/core';
+ import { Quotation } from '../../models/quotations.model';
+import { Observable, map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class QuotationService {
+  constructor(private translate: TranslateService) {}
 
-  private quotations: Quotation[] = [
-    { text: 'Erstes Zitat...', name: 'Max Mustermann', position: 'Entwickler' },
-    { text: 'Zweites Zitat...', name: 'Name 2', position: 'Designer' },
-    { text: 'Drittes Zitat...', name: 'John Doe', position: 'Manager' },
-    { text: 'Viertes Zitat...', name: 'Name 4', position: 'Developer' },
-    { text: 'Fünftes Zitat...', name: 'Name 5', position: 'UX Expert' },
-    { text: 'Sechstes Zitat...', name: 'Name 6', position: 'Engineer' }
-  ];
+getQuotations(): Observable<Quotation[]> {
+  return this.translate.get('QUOTATIONS.SINGLE_CARD').pipe(
+    map((quotesObj: any) => {
+      return Object.values(quotesObj).map((quote: any) => ({
+        text: quote.TEXT,
+        name: quote.NAME,
+        position: quote.POSITION
+      }));
+    })
+  );
+}
 
-  constructor() { }
-
-  getQuotations(): Observable<Quotation[]> {
-    return of(this.quotations); 
-  }
 }

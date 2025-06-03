@@ -48,9 +48,40 @@
       }
     }
   },
-  "QUOTATIONS": {
-    "HEADING": "What my  colleages say about me",
-    "SINGLE_CARD": {}
+ "QUOTATIONS": {
+    "HEADING": "What my colleagues say about me",
+    "SINGLE_CARD": {
+      "QUO_1": {
+        "TEXT": "First Quotation",
+        "NAME": "Erika Musterfrau",
+        "POSITION": "Hoi Hoi"
+      },
+      "QUO_2": {
+        "TEXT": "Second quotation ...",
+        "NAME": "Lisa",
+        "POSITION": "Test en"
+      },
+      "QUO_3": {
+        "TEXT": "Third quotation....",
+        "NAME": "Fritz....",
+        "POSITION": "empty"
+      },
+      "QUO_4": {
+        "TEXT": "",
+        "NAME": "",
+        "POSITION": ""
+      },
+      "QUO_5": {
+        "TEXT": "",
+        "NAME": "",
+        "POSITION": ""
+      },
+      "QUO_6": {
+        "TEXT": "",
+        "NAME": "",
+        "POSITION": ""
+      }
+    }
   },
   "CONTACT": {
     "CONTACT_ME": "Contact me",

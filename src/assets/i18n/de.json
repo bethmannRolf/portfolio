@@ -50,7 +50,38 @@
   },
   "QUOTATIONS": {
     "HEADING": "Was sagen meine Kollegen über mich",
-    "SINGLE_CARD": {}
+    "SINGLE_CARD": {
+      "QUO_1": {
+        "TEXT": "Erstes Zitat...",
+        "NAME": "Max Mustermann",
+        "POSITION": "Entwickler"
+      },
+      "QUO_2": {
+        "TEXT": "Zweites Zitat...",
+        "NAME": "Paul",
+        "POSITION": "Test de"
+      },
+      "QUO_3": {
+        "TEXT": "Drittes Zitat...",
+        "NAME": "Lumpi........",
+        "POSITION": "vakant"
+      },
+      "QUO_4": {
+        "TEXT": "",
+        "NAME": "",
+        "POSITION": ""
+      },
+      "QUO_5": {
+        "TEXT": "",
+        "NAME": "",
+        "POSITION": ""
+      },
+      "QUO_6": {
+        "TEXT": "",
+        "NAME": "",
+        "POSITION": ""
+      }
+    }
   },
   "CONTACT": {
     "CONTACT_ME": "Kontakt",
