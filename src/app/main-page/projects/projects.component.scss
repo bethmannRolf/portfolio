@@ -1,16 +1,19 @@
-*{
-        user-select: none;
+* {
+  user-select: none;
 }
+
 .projects-section {
   background-color: rgb(28, 28, 28);
   display: flex;
-  align-items: flex-start;
+  // align-items: flex-start;
   padding: 96px;
   gap: 64px;
 
   .content-area {
     color: white;
-    width: 880px;
+    // width: 880px;
+
+    width:100%;
     display: flex;
     flex-direction: column;
     gap: 41px;
@@ -27,7 +30,7 @@
         font-size: 24px;
         line-height: 100%;
         color: rgba(61, 207, 182, 1);
-          font-family: 'Karla';
+        font-family: 'Karla';
       }
 
       .upper-large-heading {
@@ -36,7 +39,7 @@
         line-height: 100%;
         letter-spacing: -3%;
         color: rgba(61, 207, 182, 1);
-         font-family: 'Fira Code';
+        font-family: 'Fira Code';
       }
     }
 
@@ -50,26 +53,46 @@
 
     .single-project-area {
       display: flex;
+       justify-content: space-between;
       width: 100%;
-      padding-right: 64px;
-      border-top: 1px solid #3DCFB6;
+      // padding-right: 64px;
+      // border-top: 1px solid #3DCFB6;
     }
   }
 
+
+.single-project-area {
+  position: relative;
+}
+
+.half-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 1px;
+  background-color: #3DCFB6;
+}
+
+
+
+
+
+
   .projects-preview {
-    flex-shrink: 0;
+    // flex-shrink: 0;
     animation: fadeIn 0.3s ease-in-out;
-    position: relative;
-    top: 0;
+    // position: relative;
+    // top: 0;
 
     img {
-      padding-left: 300px;
+      // padding-left: 300px;
       padding-right: 200px;
-      width: 100%;
+      // width: 100%;
       max-width: 300px;
       border-radius: 10px;
       transition: transform 0.3s;
-      display: block;
+      // display: block;
     }
   }
 }
@@ -85,3 +108,36 @@
     transform: translateX(0);
   }
 }
+
+.test-wrapper {
+  width: 50%;
+}
+.single-project-area {
+width: 50%;
+}
+
+
+// .single-project-area {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .projects-preview {
+//   width: 50%;
+//   display: flex;
+//   ;
+//   justify-content: center;
+//   animation: fadeIn 0.3s ease-in-out;
+
+
+
+//   img {
+
+
+
+//     max-width: 300px;
+//     border-radius: 10px;
+//     transition: transform 0.3s;
+
+//   }
+// }
