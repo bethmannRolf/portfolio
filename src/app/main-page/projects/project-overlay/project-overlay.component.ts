@@ -21,7 +21,7 @@ export class ProjectOverlayComponent {
   }
 
     onBackdropClick(event: MouseEvent): void {
-    this.close.emit(); // bei Klick auf dunklen Hintergrund
+    this.close.emit(); 
   }
 
 
