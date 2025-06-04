@@ -52,3 +52,12 @@ a:hover::after {
 a:active {
   color: #3DCFB6;
 }
+
+@media (max-width: 900px) {
+  .header {
+    font-size: 5px !important;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+  }
+}

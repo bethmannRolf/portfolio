@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .whole-footer {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   color: #FFFFFF;
@@ -63,4 +64,50 @@ a:hover::before {
   position: absolute;
   left: -20px;
   top: 0;
+}
+
+@media (max-width: 800px) {
+  .whole-footer {
+    display: grid;
+    grid-template-areas: "left right" "center center";
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    padding: 40px;
+  }
+  .footer-left {
+    grid-area: left;
+    justify-self: start;
+  }
+  .footer-right {
+    grid-area: right;
+    justify-self: end;
+  }
+  .footer-center {
+    grid-area: center;
+    justify-self: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer-left,
+  .footer-right {
+    gap: 16px;
+    font-size: 14px;
+  }
+  .footer-center {
+    font-size: 16px;
+  }
+  .r-letter-svg {
+    width: 18.5px;
+    height: 14px;
+  }
+  .b-letter-svg {
+    width: 13px;
+    height: 18.5px;
+  }
+  .name-svg {
+    width: 81px;
+    height: 31.5px;
+  }
 }
