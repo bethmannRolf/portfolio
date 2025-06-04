@@ -93,7 +93,7 @@
     "CONTACT_FORM": {
       "QUESTIONS": {
         "NAME": "What's your name?",
-        "MAIL": "What'S your email?",
+        "MAIL": "What's your email?",
         "CONTENT": "How can I help you?"
       },
       "PLACEHOLDER": {
