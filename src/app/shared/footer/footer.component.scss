@@ -60,9 +60,6 @@
   font-weight: 400;
   line-height: 120%;
   font-family: 'Karla';
-
-
-
 }
 
 a {
@@ -72,14 +69,10 @@ a {
 
 }
 
-
-
 a:hover {
   color: #3DCFB6;
 
 }
-
-
 
 a:hover::before {
   content: "• ";
@@ -87,9 +80,6 @@ a:hover::before {
   left: -20px;
   top: 0;
 }
-
-
-
 
 @media (max-width: 800px) {
   .whole-footer {
