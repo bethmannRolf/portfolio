@@ -95,13 +95,33 @@ div::placeholder {
     padding-right: 50px;
 }
 
-.work-together-heading{
-    text-align: center;
-}
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 560px) {
+.left-contact-side {
+
+    gap: 20px;
+}
+
+.left-lower-heading {
+
+    font-size: 20px;
+
+}
+
+.work-together-heading {
+
+    font-size: 50px;
+
+}
+
+.contact-me-span {
+
+    font-size: 20px;
+
+}
+
 
 }
 

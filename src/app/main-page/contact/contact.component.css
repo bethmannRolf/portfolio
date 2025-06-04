@@ -91,7 +91,19 @@ div::placeholder {
     padding-left: 50px;
     padding-right: 50px;
   }
+}
+
+@media (max-width: 560px) {
+  .left-contact-side {
+    gap: 20px;
+  }
+  .left-lower-heading {
+    font-size: 20px;
+  }
   .work-together-heading {
-    text-align: center;
+    font-size: 50px;
+  }
+  .contact-me-span {
+    font-size: 20px;
   }
 }

@@ -22,7 +22,7 @@
 .checkbox-section input[type="checkbox"] {
   appearance: none;
   width: 24px;
-  height: 24px;
+  aspect-ratio: 1/1;
   border: 2px solid #1abc9c;
   border-radius: 4px;
   background-color: transparent;
@@ -225,7 +225,7 @@
 
 input::placeholder {
   font-weight: 400;
-  font-size: 18;
+  font-size: 18px;
   line-height: 120%;
   letter-spacing: 0%;
   color: rgba(255, 255, 255, 0.8);
@@ -244,7 +244,7 @@ textarea {
 
 textarea::placeholder {
   font-weight: 400;
-  font-size: 18;
+  font-size: 18px;
   line-height: 120%;
   letter-spacing: 0%;
   color: rgba(255, 255, 255, 0.8);
@@ -313,5 +313,22 @@ textarea.ng-invalid,
   .contact-form-container {
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+
+@media (max-width: 560px) {
+  .checkbox-section input[type="checkbox"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+  }
+  .question {
+    font-size: 20px;
+  }
+  input::placeholder {
+    font-size: 16px;
+  }
+  textarea::placeholder {
+    font-size: 16px;
   }
 }
