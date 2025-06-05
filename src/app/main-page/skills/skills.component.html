@@ -21,7 +21,7 @@
 
         <div class="image-container" *ngFor="let image of images; let last = last" [class.last-image]="last">
             <div class="single-skill-container">
-                <img [src]="image.src" [alt]="image.title" />
+                <img class="skill-image" [src]="image.src" [alt]="image.title" />
                 <span class="skill-font-styling">{{ image.title }}</span>
             </div>
 
