@@ -1,8 +1,10 @@
-*{
-        user-select: none;
+* {
+  user-select: none;
 }
+
 .skills-section {
   display: flex;
+ justify-content: center;
   width: 100%;
   background-color: rgb(28, 28, 28);
   background-image: url(../../../assets/img/backgrounds/skills_background.svg);
@@ -217,21 +219,6 @@
 
 
 
-///////For later use responssivenes
-
-// @media (max-width: 900px) {
-//   .image-container {
-//     flex: 0 1 calc(50% - 24px); 
-//   }
-// }
-
-// @media (max-width: 500px) {
-//   .image-container {
-//     flex: 0 1 100%; 
-//   }
-// }
-
-
 
 
 
@@ -246,45 +233,80 @@
 
 
 
-    .talk-button {
-      background-color: transparent;
-      border: 1px solid white;
-      color: white;
-      padding: 12px 30px;
-      border-radius: 50px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-      overflow: hidden;
-      position: relative;
-      display: inline-flex; 
-      align-items: center;
-      justify-content: center;
-      font-family: 'Karla';
-      width: fit-content; 
-      height: fit-content; 
-    }
+.talk-button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Karla';
+  width: fit-content;
+  height: fit-content;
+}
 
-    .talk-button-text {
-      display: inline-block;
-      white-space: nowrap;
-      position: relative; 
-    }
+.talk-button-text {
+  display: inline-block;
+  white-space: nowrap;
+  position: relative;
+}
 
-    @keyframes marqueeButton {
-      from {
-        transform: translateX(100%);
-      }
-      to {
-        transform: translateX(-100%);
-      }
-    }
+@keyframes marqueeButton {
+  from {
+    transform: translateX(100%);
+  }
 
-    .talk-button:hover .talk-button-text {
-      animation: marqueeButton 4s linear infinite;
-    }
+  to {
+    transform: translateX(-100%);
+  }
+}
 
-    .talk-button:hover {
-      transition: all 0.5s ease-in;
-      border: 1px solid #3DCFB6;
-    }
+.talk-button:hover .talk-button-text {
+  animation: marqueeButton 4s linear infinite;
+}
+
+.talk-button:hover {
+  transition: all 0.5s ease-in;
+  border: 1px solid #3DCFB6;
+}
+
+@media (max-width: 1400px) {
+
+
+
+  
+  .skills-section {
+    flex-direction: column;
+    padding: 0px;
+
+  }
+
+  .left-side {
+    justify-content: center;
+    align-items: center;
+  }
+
+.right-side {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 40px;
+    justify-items: center; 
+}
+
+  .test{
+        justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+}
+

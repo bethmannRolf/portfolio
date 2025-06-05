@@ -1,5 +1,6 @@
 <div class="skills-section" id="skills-section-path">
     <div class="left-side">
+        <div class="test">
         <span class="skills-heading">{{'SKILLS.TECHS'| translate}}</span>
         <div class="skills-card">
             <span class="skills-frame-heading">{{'SKILLS.SKILL_SET'| translate}}</span>
@@ -7,15 +8,18 @@
                 different front-end technologies and emphasise openess to learning and adapting to new technologies.
                 Show how important it is for your to keep up with the rapid changes in web development.</span>
             <div class="lower-card-content">
-                <span class="skills-subheading-white">{{'SKILLS.YOU_NEED'| translate}} <span class="skills-subheading-green">{{'SKILLS.ANOTHER'| translate}}</span></span>
+                <span class="skills-subheading-white">{{'SKILLS.YOU_NEED'| translate}} <span
+                        class="skills-subheading-green">{{'SKILLS.ANOTHER'| translate}}</span></span>
                 <span class="skills-subtext">{{'SKILLS.EXPANDING'| translate}}</span>
             </div>
-            <button class="talk-button" (click)="scrollToSection('contact-section-path')"><span class="talk-button-text">{{'SKILLS.TALK'| translate}}</span></button>
+            <button class="talk-button" (click)="scrollToSection('contact-section-path')"><span
+                    class="talk-button-text">{{'SKILLS.TALK'| translate}}</span></button>
+        </div>
         </div>
     </div>
     <div class="right-side">
 
-        <div class="image-container" *ngFor="let image of images; let last = last" [class.last-image]="last" >
+        <div class="image-container" *ngFor="let image of images; let last = last" [class.last-image]="last">
             <div class="single-skill-container">
                 <img [src]="image.src" [alt]="image.title" />
                 <span class="skill-font-styling">{{ image.title }}</span>
@@ -24,13 +28,13 @@
             <div class="info-box" *ngIf="last">
                 <span class="special-interest-styling">{{'SKILLS.SPECIAL_INT'| translate}}</span>
                 <div class="growth-images-row">
-                  <div class="growth-image-container" *ngFor="let image of imagesGrowth">
-                    <img class="images-growth-styling" [src]="image.src" [alt]="image.title">
-                    <span class="images-growth-text-styling">{{ image.title }}</span>
-                  </div>
+                    <div class="growth-image-container" *ngFor="let image of imagesGrowth">
+                        <img class="images-growth-styling" [src]="image.src" [alt]="image.title">
+                        <span class="images-growth-text-styling">{{ image.title }}</span>
+                    </div>
                 </div>
-              </div>
-              
+            </div>
+
         </div>
 
 
