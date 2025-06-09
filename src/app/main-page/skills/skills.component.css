@@ -277,9 +277,6 @@
     width: 40px;
     height: 40px;
   }
-  .skills-section {
-    padding-left: 16px;
-  }
   .right-side {
     padding-top: 96px;
   }
@@ -299,11 +296,7 @@
     padding: 16px;
   }
   .skills-section {
-    padding-left: 16px;
-  }
-  .skills-section {
-    gap: 40px;
-    padding-left: 0;
+    gap: 20px;
   }
 }
 

@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-evenly;
   padding-top: 100px;
+  width: 100%;
 }
 
 .about-me-right {
@@ -83,4 +84,59 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+@media (max-width: 1400px) {
+  .about-me-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 730px) {
+  .about-me-card {
+    width: 568px;
+    padding: 16px;
+  }
+  .profile-image-about-me {
+    width: 568px;
+    height: auto;
+  }
+}
+
+@media (max-width: 670px) {
+  .about-me-card {
+    width: 450px;
+    height: auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .about-me-card {
+    width: 390px;
+  }
+  .profile-image-about-me {
+    width: 390px;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-me-card {
+    width: 300px;
+  }
+  .profile-image-about-me {
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media (max-width: 390px) {
+  .about-me-card {
+    width: 250px;
+  }
+  .profile-image-about-me {
+    width: 250px;
+    height: auto;
+  }
 }

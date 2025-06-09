@@ -312,6 +312,10 @@
     width: 50%;
   }
 
+  //   .skills-section {
+  //   padding-left: 0px;
+  // }
+
   .right-side {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -324,9 +328,9 @@
     height: 40px;
   }
 
-  .skills-section {
-    padding-left: 16px;
-  }
+  // .skills-section {
+  //   padding-left: 16px;
+  // }
 
   .right-side {
     padding-top: 96px;
@@ -349,13 +353,13 @@
     padding: 16px;
   }
 
-  .skills-section {
-    padding-left: 16px;
-  }
+  // .skills-section {
+  //   padding-left: 16px;
+  // }
 
   .skills-section {
-    gap: 40px;
-    padding-left: 0;
+    gap: 20px;
+    // padding-left: 0;
   }
 }
 
