@@ -3,6 +3,10 @@
   user-select: none;
 }
 
+.resp-navigation {
+  display: none;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -59,5 +63,30 @@ a:active {
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 50px;
+  }
+}
+
+@media (max-width: 900px) and (max-width: 790px) {
+  .whole-name-figma {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) and (max-width: 600px) {
+  .navigation {
+    display: none;
+  }
+  .resp-navigation {
+    display: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .burger-menu-image {
+    width: 32px;
+    height: 45px;
+  }
+  .header {
+    flex-direction: row-reverse;
   }
 }

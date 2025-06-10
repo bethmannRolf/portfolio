@@ -216,14 +216,14 @@
 
 .vertical-line-right {
   width: 2px;
-  height: 33vh;
+  height: 25vh;
   background-color: white;
   margin-right: 10px;
 }
 
 .vertical-line-left {
   width: 2px;
-  height: 25vh;
+  height: 33vh;
   background-color: #3DCFB6;
 }
 
@@ -279,4 +279,15 @@ svg:hover path {
   opacity: 1;
 }
 
+.mail-resp {
+  display: none;
+}
 
+@media (max-width: 1400px) {
+  .mail-resp {
+    display: initial;
+  }
+  .mail-font-style {
+    display: none;
+  }
+}
