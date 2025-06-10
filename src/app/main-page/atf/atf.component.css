@@ -291,3 +291,12 @@ svg:hover path {
     display: none;
   }
 }
+
+@media (max-width: 1150px) {
+  .first {
+    display: none;
+  }
+  .first-dot {
+    display: none;
+  }
+}
