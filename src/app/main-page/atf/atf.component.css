@@ -423,6 +423,14 @@ svg:hover path {
     font-weight: 600;
     font-size: 48px;
   }
+  .marquee {
+    font-size: 16px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .sub-heading-buttons {
+    gap: 24px;
+  }
   .line-content {
     display: flex;
     justify-content: center;
@@ -433,5 +441,26 @@ svg:hover path {
   }
   .line-buttons-mail-container {
     margin-right: 16px;
+  }
+}
+
+@media (max-width: 390px) {
+  .sub-heading-buttons {
+    gap: 16px;
+  }
+  .job-title {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .name-title {
+    font-weight: 600;
+    font-size: 40px;
+  }
+  .atf-button {
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-size: 14px;
+    width: 140px;
+    height: 40px;
   }
 }
