@@ -289,6 +289,39 @@ svg:hover path {
 
 }
 
+.line-content{
+       
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0;
+    right: 50px;
+    gap: 24px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1600px) {
+
+.mail-resp{
+    display: initial;
+    
+}
+.mail-font-style{
+    display: none;
+}
+   
+}
+
+
+
+
 @media (max-width: 1400px) {
 
 .mail-resp{
@@ -360,7 +393,19 @@ display:none;
 
 }
 
+
 }
+
+@media (max-width: 800px) {
+.main-text-landingpage{
+ margin-top: 150px;
+}
+}
+
+
+
+
+
 
 @media (max-width: 650px) {
 
@@ -380,10 +425,104 @@ display:none;
     bottom: 0;
     right: 0%;
     gap: 16px;
+
+}
+.line-container-left {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    left: 10%;
+    gap: 32px;
+}
+
+
+.line-content{
+       
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    bottom: 0;
+    right: 50px;
+    gap: 24px;
+}
+
+
+
+
+.line-buttons-mail-container{
+margin-right:50px;
+}
+
+
+a.dotted{
+    padding-right:  0px !important;
+}
+
+.vertical-line-right{
+   margin-right: 15px;
+}
+
+
+}
+
+@media (max-width: 600px) {
+.main-text-landingpage{
+ margin-top: 80px;
+}
+}
+
+
+
+
+@media (max-width: 550px) {
+
+.line-container-left {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    left: 16px;
+    gap: 32px;
+}
+
+.job-title {
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+.name-title {
+    font-family: 'Karla';
+    font-weight: 600;
+    font-size: 48px;
+  
 }
 
 
 
 
 
+.line-content{
+       
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    bottom: 0;
+    // right: 16px;
+    gap: 24px;
 }
+
+.line-buttons-mail-container{
+margin-right:16px;
+}
+
+
+}
+
+
+

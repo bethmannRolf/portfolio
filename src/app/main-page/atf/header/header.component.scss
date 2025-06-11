@@ -110,6 +110,18 @@ a:active {
   }
 
 
+    @media (max-width: 550px) {
+
+  .header {
+    font-size: 5px !important;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 50px;
+  }
+
+
+  }
+
 
 
 }
