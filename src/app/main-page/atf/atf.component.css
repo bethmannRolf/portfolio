@@ -300,3 +300,15 @@ svg:hover path {
     display: none;
   }
 }
+
+@media (max-width: 960px) {
+  .job-title {
+    font-weight: 400;
+    font-size: 28px;
+  }
+  .name-title {
+    font-family: 'Karla';
+    font-weight: 600;
+    font-size: 72px;
+  }
+}
