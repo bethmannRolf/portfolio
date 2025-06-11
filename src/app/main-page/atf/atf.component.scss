@@ -360,6 +360,28 @@ display:none;
 
 }
 
+}
+
+@media (max-width: 650px) {
+
+.vertical-line-right{
+    height: 20vh;
+}
+   
+.line-buttons-mail-container{
+
+
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    bottom: 0;
+    right: 0%;
+    gap: 16px;
+}
+
 
 
 
