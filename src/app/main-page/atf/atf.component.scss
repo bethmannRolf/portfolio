@@ -331,4 +331,37 @@ display:none;
   
 }
    
+
+.line-container-left {
+
+    left: 5%;
+    gap: 32px;
+}
+
+
+
+.line-buttons-mail-container{
+
+
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0;
+    right: 0%;
+    gap: 16px;
+}
+
+.marquee {
+
+    font-size: 28px;
+
+}
+
+
+
+
+
 }
