@@ -1,6 +1,6 @@
 <div class="header">
     <div class="resp-navigation">
-        <img class="burger-menu-image" src="./../../../../assets/img/atf/b_menu.svg">
+        <img (click)="toggleMenu($event)"class="burger-menu-image" src="./../../../../assets/img/atf/b_menu.svg">
     </div>
     <div class="navigation">
         <app-language-switcher></app-language-switcher>
@@ -12,7 +12,7 @@
                 {{'HEADER.SKILLS'| translate}}
             </span></a>
         <a (click)="scrollToSection('projects-section-path')"> <span class="header-link-span">
-              {{'HEADER.SKILLS'| translate}}
+              {{'HEADER.PROJECTS'| translate}}
             </span></a>
 
     </div>

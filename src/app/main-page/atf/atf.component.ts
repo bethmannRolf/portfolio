@@ -1,30 +1,53 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild, OnInit, OnDestroy } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
-// import { LanguageSwitcherComponent } from '../../language-switcher/language-switcher.component';
-import { ScrollService } from "../../core/scroll.service";
+import { ScrollService } from '../../core/scroll.service';
 import { TranslateModule } from '@ngx-translate/core';
-
-
+import { LanguageSwitcherComponent } from '../../language-switcher/language-switcher.component';
+import { MenuService } from '../../core/menu.service'; // Import des neuen Service
+import { Subscription } from 'rxjs';
 
 @Component({
-    selector: 'app-atf',
-
-    imports: [CommonModule, HeaderComponent, TranslateModule ],
-    templateUrl: './atf.component.html',
-    styleUrl: './atf.component.scss'
+  selector: 'app-atf',
+  standalone: true,
+  imports: [CommonModule, HeaderComponent, TranslateModule, LanguageSwitcherComponent],
+  templateUrl: './atf.component.html',
+  styleUrl: './atf.component.scss',
 })
-export class AtfComponent {
+export class AtfComponent implements OnInit, OnDestroy {
+  @ViewChild('menuRef') menuRef!: ElementRef;
+  menuOpen = false;
+  private menuSub!: Subscription;
 
-  constructor(private scrollService: ScrollService) {}
+  constructor(
+    private scrollService: ScrollService,
+    private menuService: MenuService
+  ) {}
 
-scrollToSection(sectionId: string) {
-  this.scrollService.scrollTo(sectionId);
+  ngOnInit(): void {
+    this.menuSub = this.menuService.menuOpen$.subscribe((open) => {
+      this.menuOpen = open;
+      console.log('menuOpen$ Wert:', open);
+    });
+  }
+
+
+  
+
+  scrollToSection(sectionId: string) {
+    this.scrollService.scrollTo(sectionId);
+    this.menuService.closeMenu(); 
+  }
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent): void {
+    const clickedInside = this.menuRef?.nativeElement.contains(event.target);
+    if (!clickedInside && this.menuOpen) {
+      this.menuService.closeMenu();
+    }
+  }
+
+  ngOnDestroy(): void {
+    this.menuSub.unsubscribe();
+  }
 }
-
-
-
-}
-
-
-

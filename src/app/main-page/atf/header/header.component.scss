@@ -62,7 +62,7 @@ a:active {
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
   .header {
     font-size: 5px !important;
@@ -73,7 +73,7 @@ a:active {
 
 
 
-  @media (max-width: 790px) {
+  @media (max-width: 880px) {
 
     .whole-name-figma {
       display: none;
@@ -82,7 +82,7 @@ a:active {
 
 
 
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
 
     .navigation {
       display: none;
@@ -92,11 +92,12 @@ a:active {
 
     .resp-navigation {
       display: initial;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;  
     }
+
+
     .burger-menu-image{
       width: 32px;
       height:45px;
