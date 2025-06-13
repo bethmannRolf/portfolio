@@ -1,6 +1,7 @@
-*{
-        user-select: none;
+* {
+    user-select: none;
 }
+
 .project-card {
     display: flex;
     justify-content: space-between;
@@ -38,7 +39,7 @@
     letter-spacing: 0%;
     color: white;
     white-space: nowrap;
-     font-family: 'Fira Code';
+    font-family: 'Fira Code';
 
 }
 
@@ -68,8 +69,8 @@
 
     .tech-item {
         color: #fff;
-         font-family: 'Karla';
-          font-weight: 400;
+        font-family: 'Karla';
+        font-weight: 400;
 
     }
 
@@ -77,6 +78,27 @@
         margin: 0 6px;
         color: rgba(61, 207, 182, 1);
         font-weight: 400;
-         font-family: 'Karla';
+        font-family: 'Karla';
     }
+
+}
+
+@media (max-width: 1100px) {
+
+    .project-card {
+        display: flex;
+        justify-content: space-between;
+       
+        padding-right: 0px;
+       
+        padding-left: 0px;
+        max-width: 880px;
+        border-bottom: 1px solid #3DCFB6;
+        
+
+    }
+.tech{
+    padding-left: 10px;
+}
+
 }
