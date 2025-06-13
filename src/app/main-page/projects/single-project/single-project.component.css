@@ -38,6 +38,7 @@
   line-height: 120%;
   letter-spacing: 0%;
   color: white;
+  white-space: nowrap;
   font-family: 'Fira Code';
 }
 

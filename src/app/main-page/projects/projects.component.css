@@ -2,6 +2,10 @@
   user-select: none;
 }
 
+.responsive-line {
+  display: none;
+}
+
 .projects-section {
   background-color: #1c1c1c;
   display: flex;
@@ -97,4 +101,44 @@
 
 .single-project-area {
   width: 50%;
+}
+
+@media (max-width: 1500px) {
+  .content-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .upper-headings {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 200px;
+  }
+  .test-heading {
+    display: flex;
+    align-items: flex-start;
+  }
+  .single-project-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .half-border {
+    display: none;
+  }
+  .responsive-line {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #3DCFB6;
+  }
+}
+
+@media (max-width: 1250px) {
+  .projects-section {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
