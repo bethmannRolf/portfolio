@@ -1,42 +1,55 @@
 <div class="overlay-backdrop" (click)="onBackdropClick($event)">
 
-<div class="project-overlay-container" (click)="$event.stopPropagation()">
+  <div class="project-overlay-container" (click)="$event.stopPropagation()">
 
-  <div class="left-card-side">
-    <span class="project-number">{{ project.projectNumber }}</span>
-    <span class="project-name">{{ project.projectTitle }}</span>
-    <span class="what-about-question"></span>
-    <span class="what-about-text">{{ project.additionalInformation | translate }}</span>
+    <div class="left-card-side">
+      <span class="project-number">{{ project.projectNumber }}</span>
+      <span class="project-name">{{ project.projectTitle }}</span>
+      <span class="what-about-question"></span>
+      <span class="what-about-text">{{ project.additionalInformation | translate }}</span>
 
-    <div class="used-technologies">
-      <div class="tech-overlay-item" *ngFor="let tech of project.usedTechOverlay">
-        <img class="tech-icon" [src]="tech.imgSource" [alt]="tech.techName">
-        <span class="tech-name">{{ tech.techName }}</span>
+      <div class="used-technologies">
+        <div class="tech-overlay-item" *ngFor="let tech of project.usedTechOverlay">
+          <img class="tech-icon" [src]="tech.imgSource" [alt]="tech.techName">
+          <span class="tech-name">{{ tech.techName }}</span>
+        </div>
       </div>
+      <div class="source-buttons">
+        <button class="single-source-button gitHub-button"><a href="#" class="single-source-button-content"><span
+              class="source-button-text">GitHub</span><img class="arrow-up-right"
+              src="../../../assets/img/projects/arrow_outward_lightgreen.svg"></a></button>
+        <button class=" single-source-button live-test-button"><a href="#" class="single-source-button-content"><span
+              class="source-button-text">Live
+              Test</span><img class="arrow-up-right"
+              src="../../../assets/img/projects/arrow_outward_lightgreen.svg"></a></button>
+      </div>
+
+
+
     </div>
-    <div class="source-buttons">
-      <button class="single-source-button gitHub-button"><a href="#" class="single-source-button-content"><span class="source-button-text">GitHub</span><img
-            class="arrow-up-right" src="../../../assets/img/projects/arrow_outward_lightgreen.svg"></a></button>
-      <button class=" single-source-button live-test-button"><a  href="#" class="single-source-button-content"><span class="source-button-text">Live
-            Test</span><img class="arrow-up-right"
-            src="../../../assets/img/projects/arrow_outward_lightgreen.svg"></a></button>
+    <div class="right-card-side">
+
+      <div class="close-button" (click)="onCloseClick()"></div>
+
+
+      <img class="project-preview-image" src={{project.imageSource}}>
+      <div class="next-project-container-right" (click)="nextProject()">
+        <span class="next-project-span">Next Project</span>
+        <img class="arrow-right" src="../../../assets/img/projects/arrow_forward.svg">
+      </div>
+
     </div>
-
-
-
   </div>
-  <div class="right-card-side">
 
-    <div class="close-button" (click)="onCloseClick()"></div>
-
-
-    <img class="project-preview-image" src={{project.imageSource}}>
-    <div class="next-project-container-right" (click)="nextProject()">
-      <span class="next-project-span">Next Project</span>
-      <img class="arrow-right" src="../../../assets/img/projects/arrow_forward.svg">
-    </div>
-
-  </div>
 </div>
 
+
+
+
+<div>
+  <span>02</span>
+  <span>El Pollo Loco</span>
+  <span>What ist this Project about </span>
+  <span>Longer description</span>
+  
 </div>
