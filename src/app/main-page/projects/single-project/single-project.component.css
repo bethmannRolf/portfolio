@@ -100,3 +100,13 @@
     padding-left: 10px;
   }
 }
+
+@media (max-width: 560px) {
+  .project-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .tech {
+    padding-left: 0;
+  }
+}
