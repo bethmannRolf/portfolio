@@ -142,3 +142,9 @@
     padding-right: 0px;
   }
 }
+
+@media (max-width: 950px) {
+  .test-wrapper {
+    width: 85%;
+  }
+}
