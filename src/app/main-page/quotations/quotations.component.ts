@@ -1,20 +1,11 @@
-
-  
-  ///for later use
-  // get extendedSlides() {
-  //   if (this.slides.length === 0) return [];
-  
-  //   const first = this.slides[0];
-  //   const last = this.slides[this.slides.length - 1];
-  
-  //   return [last, ...this.slides, first];
-  // }
-  
-
-
-// }
-
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  OnDestroy,
+  ElementRef,
+  ViewChild,
+  AfterViewInit,
+} from '@angular/core';
 import { Quotation } from '../../models/quotations.model';
 import { QuotationService } from './quotations.service';
 import { CommonModule } from '@angular/common';
@@ -22,49 +13,81 @@ import { QuotationCardComponent } from './quotation-card/quotation-card.componen
 import { SliderNavigationComponent } from './slider-navigation/slider-navigation.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
-
 @Component({
   selector: 'app-quotations',
+  standalone: true,
   imports: [CommonModule, QuotationCardComponent, SliderNavigationComponent, TranslateModule],
   templateUrl: './quotations.component.html',
-  styleUrls: ['./quotations.component.scss']
+  styleUrls: ['./quotations.component.scss'],
 })
-export class QuotationsComponent implements OnInit {
+export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
   currentIndex = 0;
   slides: Quotation[] = [];
 
-constructor(
-  private quotationService: QuotationService,
-  private translate: TranslateService
-) {}
+  @ViewChild('carouselSlide', { static: false }) slideRef!: ElementRef;
 
+  constructor(
+    private quotationService: QuotationService,
+    private translate: TranslateService
+  ) {}
 
-ngOnInit(): void {
-  this.loadQuotations();
-  this.translate.onLangChange.subscribe(() => {
+  ngOnInit(): void {
     this.loadQuotations();
-  });
-}
+    this.translate.onLangChange.subscribe(() => {
+      this.loadQuotations();
+    });
 
-loadQuotations(): void {
-  this.quotationService.getQuotations().subscribe(data => {
+    window.addEventListener('resize', this.onResize);
+  }
 
-    this.slides = data;
-  });
-}
+  ngAfterViewInit(): void {
+    // Timeout to ensure DOM is ready
+    setTimeout(() => this.triggerChangeDetection(), 0);
+  }
 
-  onSlideChanged(index: number) {
+  ngOnDestroy(): void {
+    window.removeEventListener('resize', this.onResize);
+  }
+
+  loadQuotations(): void {
+    this.quotationService.getQuotations().subscribe((data) => {
+      this.slides = data;
+      setTimeout(() => this.triggerChangeDetection(), 0);
+    });
+  }
+
+  onSlideChanged(index: number): void {
     const slidesLength = this.slides.length;
     this.currentIndex = (index + slidesLength) % slidesLength;
   }
 
-  getSlideTransform(): string {
-    const slideWidth = 632;
-    const gap = 80;
-    const totalSlideWidth = slideWidth + gap;
-    const containerWidth = window.innerWidth;
-    const centerOffset = (containerWidth / 2) - (slideWidth / 2);
-    const translateX = -(this.currentIndex * totalSlideWidth) + centerOffset;
-    return `translateX(${translateX}px)`;
+
+
+getSlideTransform(): string {
+  if (!this.slideRef?.nativeElement) return '';
+
+  const slideWidth = this.slideRef.nativeElement.offsetWidth;
+  const gap = 80; // oder per CSS‑Variable/Media‑Query ändern
+  const total = slideWidth + gap;
+
+  const centerOffset = (window.innerWidth / 2) - (slideWidth / 2);
+  const translateX = -(this.currentIndex * total) + centerOffset;
+
+  return `translateX(${translateX}px)`;
+}
+
+
+
+
+
+
+  // force re-evaluation of transform on resize
+  onResize = () => {
+    this.triggerChangeDetection();
+  };
+
+  private triggerChangeDetection(): void {
+    // Angular's change detection will pick up transform recalculation
+    this.currentIndex = this.currentIndex; // triggers update
   }
 }

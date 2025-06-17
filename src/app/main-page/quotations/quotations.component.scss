@@ -114,6 +114,49 @@
     overflow: visible; 
   }
   
+.carousel-slide, .slide {
+  flex: 0 0 auto;
+  width: 90vw; // oder max-width: 632px;
+  max-width: 632px;
+  
+  // height: auto;
+}
+
+
+.carousel-track {
+  transition: transform 0.5s ease-in-out;
+}
+
+
+ .carousel-slide,
+.slide {
+  flex: 0 0 auto;
+  width: 90vw;
+  max-width: 632px;
+  height: 274px; // ← DAS ist wichtig
+  box-sizing: border-box;
+  display: flex; // ← damit Kindkomponenten nicht größer „drücken“
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
 
 
 
+@media (max-width:800px) {
+
+.carousel-slide,
+.slide {
+ 
+  width: 75vw;         
+
+}
+.what-colleagues-say{
+  font-size: 24px;
+  white-space: normal;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+}
+
+}

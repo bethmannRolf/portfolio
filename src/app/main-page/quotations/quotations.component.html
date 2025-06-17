@@ -7,7 +7,11 @@
   <div class="carousel-container">
 
     <div class="carousel-track" [ngStyle]="{ transform: getSlideTransform() }">
-      <div *ngFor="let slide of slides; let i = index" class="carousel-slide slide"  [class.active]="i === currentIndex">
+    <div *ngFor="let slide of slides; let i = index"
+     class="carousel-slide slide"
+     [class.active]="i === currentIndex"
+     #carouselSlide>
+
         <img *ngIf="i === currentIndex" 
         class="quote-sign-in-card" 
         src="../../assets/img/quotations/quotes.png" 
