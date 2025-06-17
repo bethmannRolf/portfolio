@@ -79,7 +79,7 @@
 .arrow-right {
   width: 40px;
   height: 40px;
-  transition: transform 0.3s  ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .close-button {
@@ -129,7 +129,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  transition: border 0.3s  ease-in-out;
+  transition: border 0.3s ease-in-out;
   font-family: 'Karla';
 }
 
@@ -139,12 +139,12 @@
 
 .single-source-button:hover .source-button-text {
   color: #3DCFB6;
-  transition: color 0.3s  ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .single-source-button:hover img {
   transform: translate(5px, -5px);
-  transition: transform 0.3s  ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .single-source-button-content {
@@ -333,5 +333,14 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+  }
+  .project-number {
+    font-size: 60px;
+  }
+  .project-name {
+    font-size: 30px;
+  }
+  .what-about-question {
+    font-size: 16px;
   }
 }
