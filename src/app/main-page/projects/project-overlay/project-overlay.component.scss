@@ -413,3 +413,23 @@ font-size: 40px;
 
 
 }
+@media (max-width:600px) {
+
+.lower-right-card{
+    padding-right:0;
+}
+
+.source-buttons{
+    gap: 24px;
+    padding-left: 0px;
+}
+
+.upper-left-side{
+    padding-left: 0px;
+}
+
+.upper-right-card{
+    padding: 0;
+}
+
+}
