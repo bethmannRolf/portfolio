@@ -2,7 +2,8 @@
 
 
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -14,6 +15,12 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [ReactiveFormsModule, CommonModule, TranslateModule]
 })
 export class ContactFormComponent {
+
+  http = inject(HttpClient)  //added
+
+
+
+
   contactForm: FormGroup;
 
   constructor(private fb: FormBuilder) {
@@ -25,10 +32,14 @@ export class ContactFormComponent {
     });
   }
 
+contactData = this.fb.group;
+
+
+
   onSubmit() {
     if (this.contactForm.valid) {
-      console.log('Form data:', this.contactForm.value);
-     
+      console.log('Erfolg:', this.contactForm.value);
+       console.log('Erfolg Nr. 2', this.contactData)
     }
   }
 }
