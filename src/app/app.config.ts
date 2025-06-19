@@ -6,3 +6,7 @@ import { provideHttpClient } from '@angular/common/http';
 export const appConfig = [
   provideRouter(routes)  , provideHttpClient()
 ];
+
+
+//http client added 
+

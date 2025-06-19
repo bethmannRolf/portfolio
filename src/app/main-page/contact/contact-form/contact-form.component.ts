@@ -2,7 +2,7 @@
 
 
 import { CommonModule } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http'; //added
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
@@ -11,12 +11,12 @@ import { TranslateModule } from '@ngx-translate/core';
   selector: 'app-contact-form',
   templateUrl: './contact-form.component.html',
   styleUrls: ['./contact-form.component.scss'],
-  standalone: true, 
+  standalone: true,
   imports: [ReactiveFormsModule, CommonModule, TranslateModule]
 })
 export class ContactFormComponent {
 
-  http = inject(HttpClient)  //added
+  http = inject(HttpClient)
 
 
 
@@ -28,18 +28,55 @@ export class ContactFormComponent {
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required],
-      acceptTerms: [false, Validators.requiredTrue] 
+      acceptTerms: [false, Validators.requiredTrue]
     });
   }
 
-contactData = this.fb.group;
 
 
 
   onSubmit() {
     if (this.contactForm.valid) {
-      console.log('Erfolg:', this.contactForm.value);
-       console.log('Erfolg Nr. 2', this.contactData)
+      const formData = this.contactForm.value;
+
+      this.http.post('https://rolf-bethmann.de/sendMail.php', formData).subscribe({
+        next: (response) => {
+          console.log('E-Mail erfolgreich gesendet', response);
+          this.successMessage = 'Nachricht wurde erfolgreich gesendet!';
+          this.errorMessage = '';
+
+          // Optional: Benutzerfeedback anzeigen
+          alert('Nachricht wurde erfolgreich versendet!');
+          this.contactForm.reset(); // Formular zurücksetzen
+        },
+        error: (error) => {
+          this.errorMessage = 'Fehler beim Senden.';
+          this.successMessage = '';
+
+          console.error('Fehler beim Senden der Nachricht', error);
+          alert('Fehler beim Senden. Bitte später erneut versuchen.');
+        }
+      });
     }
+
+
+
+
+
+
   }
+
+  successMessage = '';
+  errorMessage = '';
+
+
+
+
+
+  // onSubmit() {
+  //   if (this.contactForm.valid) {
+  //     console.log('Erfolg:', this.contactForm.value);
+  //      console.log('Erfolg Nr. 2', this.contactData)
+  //   }
+  // }
 }
