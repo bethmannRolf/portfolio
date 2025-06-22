@@ -1,61 +1,56 @@
-*{
- background-color: rgb(28, 28, 28);  
- font-family: 'Karla';
- user-select: none;
-
+* {
+    background-color: rgb(28, 28, 28);
+    font-family: 'Karla';
+    user-select: none;
 }
 
-h1{
+h1 {
     text-align: center;
-font-weight: 400;
-margin-bottom: 50px;
- color: whitesmoke;
+    font-weight: 400;
+    margin-bottom: 50px;
+    color: whitesmoke;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-h2{
+h2 {
     margin-top: 50px;
     text-align: center;
     font-weight: 400;
     margin-bottom: 80px;
     color: whitesmoke;
-     color: #3DCFB6;
-  
+    color: #3DCFB6;
 }
 
-h2:hover{
-    
+h2:hover {
     scale: 1.2;
 }
 
-
-h3{
+h3 {
     text-decoration: underline;
     font-weight: 400;
     margin-bottom: 5px;
-     color: whitesmoke;
+    color: whitesmoke;
 }
 
-p{
-     margin-bottom: 5px;
-      color: whitesmoke;
-}
-span{
- margin-bottom: 5px;
-  color: whitesmoke;
+p {
+    margin-bottom: 5px;
+    color: whitesmoke;
 }
 
-.legal-notice-container{
-padding: 100px;
-
+span {
+    margin-bottom: 5px;
+    color: whitesmoke;
 }
 
-.contact-data-div{
+.legal-notice-container {
+    padding: 100px;
+}
+
+.contact-data-div {
     display: flex;
     flex-direction: column;
-     margin-bottom: 5px;
+    margin-bottom: 5px;
 }
-
