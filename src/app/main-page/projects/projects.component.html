@@ -1,27 +1,21 @@
 <div class="projects-section" id="projects-section-path">
-
   <div class="content-area">
     <div class="upper-headings">
       <div class="test-heading">
         <span class="upper-small-heading">Portfolio</span>
       </div>
-
       <span class="upper-large-heading">Featured Projects</span>
       <span class="short-section-description">
         Explore a selection of my work here - interact with projects to see my skills in action
       </span>
     </div>
-
-
     <div class="single-project-area">
-
       <div class="half-border"></div>
       <div class="test-wrapper">
         <div class="responsive-line "></div>
         <div class="project-hover-wrapper" *ngFor="let project of projectsData; let i = index"
           (mouseenter)="onHover(project.imageSource, i)" (mouseleave)="hoveredImage = ''"
           (click)="openOverlay(project)">
-
           <app-single-project [project]="project" (projectSelected)="openOverlay($event)"></app-single-project>
         </div>
       </div>

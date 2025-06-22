@@ -6,8 +6,6 @@
   display: none;
 }
 
-
-
 .projects-section {
   background-color: rgb(28, 28, 28);
   display: flex;
@@ -17,8 +15,6 @@
 
   .content-area {
     color: white;
-
-
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -48,7 +44,7 @@
         color: rgba(61, 207, 182, 1);
         font-family: 'Fira Code';
         word-break: break-word;
-overflow-wrap: break-word;
+        overflow-wrap: break-word;
 
       }
     }
@@ -60,18 +56,15 @@ overflow-wrap: break-word;
       color: rgba(255, 255, 255, 1);
       font-family: 'Karla';
       word-break: break-word;
-overflow-wrap: break-word;
-
+      overflow-wrap: break-word;
     }
 
     .single-project-area {
       display: flex;
       justify-content: space-between;
       width: 100%;
-
     }
   }
-
 
   .single-project-area {
     position: relative;
@@ -86,25 +79,14 @@ overflow-wrap: break-word;
     background-color: #3DCFB6;
   }
 
-
-
-
-
-
   .projects-preview {
-    // flex-shrink: 0;
     animation: fadeIn 0.3s ease-in-out;
-    // position: relative;
-    // top: 0;
 
     img {
-      // padding-left: 300px;
       padding-right: 200px;
-      // width: 100%;
       max-width: 300px;
       border-radius: 10px;
       transition: transform 0.3s;
-      // display: block;
     }
   }
 }
@@ -129,16 +111,12 @@ overflow-wrap: break-word;
   width: 50%;
 }
 
-
 @media (max-width: 1500px) {
-
-
 
   .content-area {
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
 
   .upper-headings {
@@ -146,12 +124,10 @@ overflow-wrap: break-word;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 200px;
-
   }
 
   .test-heading {
     display: flex;
-    //  width: 100%;
     align-items: flex-start;
   }
 
@@ -172,22 +148,14 @@ overflow-wrap: break-word;
     width: 100%;
     background-color: #3DCFB6;
   }
-
-
-
-
 }
-
-
 
 @media (max-width: 1250px) {
   .projects-section {
     padding-left: 0px;
     padding-right: 0px;
   }
-
 }
-
 
 @media (max-width: 950px) {
   .single-project-area {}
@@ -195,49 +163,35 @@ overflow-wrap: break-word;
   .test-wrapper {
     width: 85%;
   }
-
-
 }
 
 @media (max-width: 900px) {
 
-.upper-headings {
-  width: 100%;
-  max-width: 880px;
-  padding: 0 54px; 
-  box-sizing: border-box;
-  // margin: 0 auto; 
-}
-
-
-
+  .upper-headings {
+    width: 100%;
+    max-width: 880px;
+    padding: 0 54px;
+    box-sizing: border-box;
+  }
 }
 
 @media (max-width:560px) {
 
-.upper-large-heading{
-  font-size: 5px;
+  .upper-large-heading {
+    font-size: 5px;
+  }
+
+  .upper-small-heading {
+    font-size: 20px;
+  }
+
+  .projects-section {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .upper-headings {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
-.upper-small-heading{
-  font-size: 20px;
-}
-
-.projects-section{
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.upper-headings{
-  padding-left: 0;
-  padding-right: 0;
-
-}
-
-
-}
-
-
-
-// @media (max-width:650px) {}
-
-// @media (max-width:650px) {}
