@@ -15,7 +15,6 @@
     z-index: 1000;
 }
 
-
 .project-overlay-container {
     user-select: none;
     z-index: 99999;
@@ -29,10 +28,6 @@
     border: 1px solid #3DCFB6;
     border-radius: 30px;
     padding: 80px;
-
-    //   overflow-y: auto;
-
-
 }
 
 .project-name {
@@ -54,8 +49,6 @@
 
 }
 
-
-
 .what-about-question {
     font-weight: 700;
     font-size: 24px;
@@ -73,7 +66,6 @@
     letter-spacing: 0%;
     font-family: 'Karla';
     width: 150%;
-
 }
 
 .next-project-span {
@@ -101,8 +93,6 @@
     transition: scale 150ms ease-in-out;
 }
 
-
-
 .close-button:hover {
     scale: 1.2;
     background-image: url('../../../../assets/img/projects/close_hover.svg');
@@ -110,12 +100,7 @@
 }
 
 .project-preview-image {
-
-    //   max-width: 100%;
-    //   height: auto;
     border-radius: 30px;
-
-
 }
 
 .tech-icon {
@@ -148,7 +133,6 @@
     transition: border 0.3s ease-in-out;
     font-family: 'Karla';
 
-
     &:hover {
         border: 1px solid #3DCFB6;
 
@@ -163,10 +147,6 @@
         }
     }
 }
-
-
-
-
 
 .single-source-button-content {
     display: flex;
@@ -184,8 +164,6 @@
 .upper-card {
     display: flex;
     padding-bottom: 40px;
-
-
 }
 
 .upper-left-side {
@@ -200,7 +178,6 @@
     gap: 40px;
     justify-content: flex-start;
     max-width: 50%;
-
 }
 
 .upper-right-card {
@@ -210,14 +187,10 @@
     gap: 40px;
 }
 
-.close-button {}
-
 .lower-card {
     display: flex;
     justify-content: space-between;
 }
-
-.lower-right-card {}
 
 .next-project-container-right {
     display: flex;
@@ -258,71 +231,11 @@
 }
 
 
-// .left-card-side{
-//     display: flex;
-//     flex-direction: column;
-//     gap: 40px;
-//     justify-content: flex-start;
-//     max-width: 50%;
-// }
-
-// .right-card-side{
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-end;
-//     gap: 40px;
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .next-project-container-right{
-//     cursor: pointer;
-//     display: flex;
-//     align-items: center;
-//     gap: 8px;
-// }
-
-
-
-
-
-// .used-technologies{
-//     display: flex;
-
-//     gap: 16px;
-// }
-
-
-
-
-
-//   .tech-overlay-item{
-//     display: flex;
-//     align-items: center;
-//     gap:4px;
-//   }
-
-
 @media (max-width:1400px) {
-
-    // .project-overlay-container{
-    //     max-height: 80dvh;
-    // }
 
     .upper-right-card {
         gap: 16px;
     }
-
 
     .upper-card {
         flex-direction: row-reverse;
@@ -332,12 +245,9 @@
     }
 
     .project-preview-image {
-
         max-width: 80%;
         height: auto;
         border-radius: 30px;
-
-
     }
 
     .project-overlay-container {
@@ -347,7 +257,6 @@
         padding-left: 16px;
         width: 90%;
         height: 90%;
-
     }
 
     .upper-card {
@@ -357,7 +266,6 @@
 
     .upper-left-side {
         align-items: center;
-        // padding-left: 30px;
     }
 
     .project-number {
@@ -379,11 +287,7 @@
     .lower-right-card {
         padding-right: 160px;
     }
-
-
 }
-
-
 
 @media (max-width:950px) {
     .source-buttons {
@@ -409,31 +313,20 @@
         align-items: flex-start;
         padding-left: 40px;
     }
-
-
-
 }
-
 
 @media (max-width:650px) {
 
     .what-about-text {
         font-size: 14px;
     }
-
-
 }
 
-
-
-
 @media (max-width:600px) {
-
 
     .project-overlay-container {
         padding-top: 16px;
     }
-
 
     .lower-right-card {
         padding-right: 0;
@@ -451,8 +344,6 @@
     .upper-right-card {
         padding-left: 0;
     }
-
-
 }
 
 
@@ -487,7 +378,4 @@
     .what-about-question {
         font-size: 16px;
     }
-
-
-
 }

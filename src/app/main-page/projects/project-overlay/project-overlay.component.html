@@ -1,54 +1,7 @@
-<!-- <div class="overlay-backdrop" (click)="onBackdropClick($event)">
-
+<div class="overlay-backdrop" (click)="onBackdropClick($event)">
   <div class="project-overlay-container" (click)="$event.stopPropagation()">
-
-    <div class="left-card-side">
-      <span class="project-number">{{ project.projectNumber }}</span>
-      <span class="project-name">{{ project.projectTitle }}</span>
-      <span class="what-about-question"></span>
-      <span class="what-about-text">{{ project.additionalInformation | translate }}</span>
-
-      <div class="used-technologies">
-        <div class="tech-overlay-item" *ngFor="let tech of project.usedTechOverlay">
-          <img class="tech-icon" [src]="tech.imgSource" [alt]="tech.techName">
-          <span class="tech-name">{{ tech.techName }}</span>
-        </div>
-      </div>
-      <div class="source-buttons">
-        <button class="single-source-button gitHub-button"><a href="#" class="single-source-button-content"><span
-              class="source-button-text">GitHub</span><img class="arrow-up-right"
-              src="../../../assets/img/projects/arrow_outward_lightgreen.svg"></a></button>
-        <button class=" single-source-button live-test-button"><a href="#" class="single-source-button-content"><span
-              class="source-button-text">Live
-              Test</span><img class="arrow-up-right"
-              src="../../../assets/img/projects/arrow_outward_lightgreen.svg"></a></button>
-      </div>
-
-
-
-    </div>
-    <div class="right-card-side">
-
-      <div class="close-button" (click)="onCloseClick()"></div>
-
-
-      <img class="project-preview-image" src={{project.imageSource}}>
-      <div class="next-project-container-right" (click)="nextProject()">
-        <span class="next-project-span">Next Project</span>
-        <img class="arrow-right" src="../../../assets/img/projects/arrow_forward.svg">
-      </div>
-
-    </div>
-  </div>
-
-</div> -->
-
-<!-- new -->
-
-<div class="overlay-backdrop" (click)="onBackdropClick($event)"> <!--overlay backdrop container  -->
-  <div class="project-overlay-container" (click)="$event.stopPropagation()"><!--whole-overlay  -->
-    <div class="upper-card"> <!--upper-card  -->
-      <div class="upper-left-side"><!--upper-left-side  -->
+    <div class="upper-card">
+      <div class="upper-left-side">
         <div class="upper-left-texts">
           <span class="project-number">{{ project.projectNumber }}</span>
           <span class="project-name">{{ project.projectTitle }}</span>
@@ -62,16 +15,13 @@
           </div>
         </div>
       </div>
-
-      <div class="upper-right-card"><!--upper-right-card  -->
+      <div class="upper-right-card">
         <div class="close-button" (click)="onCloseClick()"></div>
         <img class="project-preview-image" src={{project.imageSource}}>
       </div>
     </div>
-
-
-    <div class="lower-card"><!--lower-card  -->
-      <div class="source-buttons"> <!--lower-left-side  -->
+    <div class="lower-card">
+      <div class="source-buttons">
         <button class="single-source-button gitHub-button"><a href="#" class="single-source-button-content"><span
               class="source-button-text">GitHub</span><img class="arrow-up-right"
               src="../../../assets/img/projects/arrow_outward_lightgreen.svg"></a></button>
@@ -80,15 +30,12 @@
               Test</span><img class="arrow-up-right"
               src="../../../assets/img/projects/arrow_outward_lightgreen.svg"></a></button>
       </div>
-      <div class="lower-right-card"><!--lower-right-card  -->
+      <div class="lower-right-card">
         <div class="next-project-container-right" (click)="nextProject()">
           <span class="next-project-span">Next Project</span>
           <img class="arrow-right" src="../../../assets/img/projects/arrow_forward.svg">
         </div>
       </div>
     </div>
-
-
-
   </div>
 </div>
