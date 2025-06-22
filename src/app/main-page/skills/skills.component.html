@@ -1,30 +1,28 @@
 <div class="skills-section" id="skills-section-path">
     <div class="left-side">
         <div class="test">
-        <span class="skills-heading">{{'SKILLS.TECHS'| translate}}</span>
-        <div class="skills-card">
-            <span class="skills-frame-heading">{{'SKILLS.SKILL_SET'| translate}}</span>
-            <span class="skills-main-text">A short introduction of your skills. Highlight your experience of using
-                different front-end technologies and emphasise openess to learning and adapting to new technologies.
-                Show how important it is for your to keep up with the rapid changes in web development.</span>
-            <div class="lower-card-content">
-                <span class="skills-subheading-white">{{'SKILLS.YOU_NEED'| translate}} <span
-                        class="skills-subheading-green">{{'SKILLS.ANOTHER'| translate}}</span></span>
-                <span class="skills-subtext">{{'SKILLS.EXPANDING'| translate}}</span>
+            <span class="skills-heading">{{'SKILLS.TECHS'| translate}}</span>
+            <div class="skills-card">
+                <span class="skills-frame-heading">{{'SKILLS.SKILL_SET'| translate}}</span>
+                <span class="skills-main-text">A short introduction of your skills. Highlight your experience of using
+                    different front-end technologies and emphasise openess to learning and adapting to new technologies.
+                    Show how important it is for your to keep up with the rapid changes in web development.</span>
+                <div class="lower-card-content">
+                    <span class="skills-subheading-white">{{'SKILLS.YOU_NEED'| translate}} <span
+                            class="skills-subheading-green">{{'SKILLS.ANOTHER'| translate}}</span></span>
+                    <span class="skills-subtext">{{'SKILLS.EXPANDING'| translate}}</span>
+                </div>
+                <button class="talk-button" (click)="scrollToSection('contact-section-path')"><span
+                        class="talk-button-text">{{'SKILLS.TALK'| translate}}</span></button>
             </div>
-            <button class="talk-button" (click)="scrollToSection('contact-section-path')"><span
-                    class="talk-button-text">{{'SKILLS.TALK'| translate}}</span></button>
-        </div>
         </div>
     </div>
     <div class="right-side">
-
         <div class="image-container" *ngFor="let image of images; let last = last" [class.last-image]="last">
             <div class="single-skill-container">
                 <img class="skill-image" [src]="image.src" [alt]="image.title" />
                 <span class="skill-font-styling">{{ image.title }}</span>
             </div>
-
             <div class="info-box" *ngIf="last">
                 <span class="special-interest-styling">{{'SKILLS.SPECIAL_INT'| translate}}</span>
                 <div class="growth-images-row">
@@ -36,8 +34,5 @@
             </div>
 
         </div>
-
-
-
     </div>
 </div>

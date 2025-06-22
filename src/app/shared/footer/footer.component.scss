@@ -1,7 +1,6 @@
 .whole-footer {
-
   display: flex;
-    flex-wrap: wrap; 
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   color: #FFFFFF;
@@ -11,26 +10,13 @@
   padding-right: 100px;
   user-select: none;
   background-color: rgb(28, 28, 28);
-
-
 }
-
-
-
-
-
-
-
-
 
 .footer-left {
   display: flex;
   flex-direction: column;
   gap: 32px;
-
-
 }
-
 
 .footer-left-bottom {
   display: flex;
@@ -66,12 +52,10 @@ a {
   color: white;
   text-decoration: none;
   position: relative;
-
 }
 
 a:hover {
   color: #3DCFB6;
-
 }
 
 a:hover::before {
@@ -110,31 +94,29 @@ a:hover::before {
 }
 
 @media (max-width: 450px) {
-.footer-left,
-.footer-right {
-  gap: 16px;
-  font-size: 14px;
+
+  .footer-left,
+  .footer-right {
+    gap: 16px;
+    font-size: 14px;
+  }
+
+  .footer-center {
+    font-size: 16px;
+  }
+
+  .r-letter-svg {
+    width: 18.5px;
+    height: 14px;
+  }
+
+  .b-letter-svg {
+    width: 13px;
+    height: 18.5px;
+  }
+
+  .name-svg {
+    width: 81px;
+    height: 31.5px;
+  }
 }
-
-.footer-center {
-  font-size: 16px;
-}
-
-.r-letter-svg{
-width:18.5px;
-height:14px;
-}
-
-.b-letter-svg{
-  width:13px;
-height:18.5px;
-}
-
-.name-svg{
-width:81px;
-height:31.5px;
-
-}
-
-}
-

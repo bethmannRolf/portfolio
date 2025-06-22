@@ -135,12 +135,10 @@
 
     &:hover {
         border: 1px solid #3DCFB6;
-
         .source-button-text {
             color: #3DCFB6;
             transition: color 0.3s ease-in-out;
         }
-
         img {
             transform: translate(5px, -5px);
             transition: transform 0.3s ease-in-out;

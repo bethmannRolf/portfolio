@@ -1,58 +1,48 @@
-
-
 <form class="contact-form-container" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
- 
   <div class="name-input-section">
-    <label for="name"><span class="question-name-input question">{{'CONTACT.CONTACT_FORM.QUESTIONS.NAME'| translate}}</span></label>
-    <input placeholder="{{'CONTACT.CONTACT_FORM.PLACEHOLDER.NAME'| translate}}" id="name" formControlName="name" required />
+    <label for="name"><span class="question-name-input question">{{'CONTACT.CONTACT_FORM.QUESTIONS.NAME'|
+        translate}}</span></label>
+    <input placeholder="{{'CONTACT.CONTACT_FORM.PLACEHOLDER.NAME'| translate}}" id="name" formControlName="name"
+      required />
     <div *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid" class="error-message">
       {{'CONTACT.CONTACT_FORM.WARNINGS.NAME'| translate}}
     </div>
   </div>
-
- 
   <div class="email-input-section">
-    <label for="email"><span class="question-mail-input question">{{'CONTACT.CONTACT_FORM.QUESTIONS.MAIL'| translate}}</span></label>
-    <input placeholder="{{'CONTACT.CONTACT_FORM.PLACEHOLDER.MAIL'| translate}}" id="email" formControlName="email" required type="email" />
+    <label for="email"><span class="question-mail-input question">{{'CONTACT.CONTACT_FORM.QUESTIONS.MAIL'|
+        translate}}</span></label>
+    <input placeholder="{{'CONTACT.CONTACT_FORM.PLACEHOLDER.MAIL'| translate}}" id="email" formControlName="email"
+      required type="email" />
     <div *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid" class="error-message">
       {{'CONTACT.CONTACT_FORM.WARNINGS.MAIL'| translate}}
     </div>
   </div>
-
- 
   <div class="message-area-section">
-    <label for="message"><span class="question-message-input question">{{'CONTACT.CONTACT_FORM.QUESTIONS.CONTENT'| translate}}</span></label>
-    <textarea placeholder="{{'CONTACT.CONTACT_FORM.PLACEHOLDER.CONTENT'| translate}}" id="message" formControlName="message" required></textarea>
+    <label for="message"><span class="question-message-input question">{{'CONTACT.CONTACT_FORM.QUESTIONS.CONTENT'|
+        translate}}</span></label>
+    <textarea placeholder="{{'CONTACT.CONTACT_FORM.PLACEHOLDER.CONTENT'| translate}}" id="message"
+      formControlName="message" required></textarea>
     <div *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid" class="error-message">
       {{'CONTACT.CONTACT_FORM.WARNINGS.CONTENT'| translate}}
     </div>
-  </div> 
- 
+  </div>
   <div class="policy-button-section">
     <div class="checkbox-section">
-      <input
-        id="acceptTerms"
-        type="checkbox"
-        formControlName="acceptTerms"
-      />
-      <label for="acceptTerms" [ngClass]="{ 'hover-enabled': contactForm.get('acceptTerms')?.value && contactForm.valid }">
+      <input id="acceptTerms" type="checkbox" formControlName="acceptTerms" />
+      <label for="acceptTerms"
+        [ngClass]="{ 'hover-enabled': contactForm.get('acceptTerms')?.value && contactForm.valid }">
         <span class="privacy-confirmation-text">{{'CONTACT.CONTACT_FORM.READ'| translate}} </span>
-        <a class="privacy-policy-link privacy-confirmation-text" href="#">{{'CONTACT.CONTACT_FORM.PP_LINK'| translate}}</a>
+        <a class="privacy-policy-link privacy-confirmation-text" href="#">{{'CONTACT.CONTACT_FORM.PP_LINK'|
+          translate}}</a>
         <span class="privacy-confirmation-text"> {{'CONTACT.CONTACT_FORM.AGREE_DATA'| translate}}</span>
       </label>
-     
-      <div *ngIf="contactForm.get('acceptTerms')?.touched && contactForm.get('acceptTerms')?.invalid" class="error-message">
+      <div *ngIf="contactForm.get('acceptTerms')?.touched && contactForm.get('acceptTerms')?.invalid"
+        class="error-message">
         {{'CONTACT.CONTACT_FORM.WARNINGS.PP'| translate}}
       </div>
     </div>
-
- 
-    <button
-      class="contact-submit-button"
-      type="submit"
-      [disabled]="contactForm.invalid"
-      [ngClass]="{ 'hover-enabled': contactForm.valid && contactForm.get('acceptTerms')?.value }"
-    >
+    <button class="contact-submit-button" type="submit" [disabled]="contactForm.invalid"
+      [ngClass]="{ 'hover-enabled': contactForm.valid && contactForm.get('acceptTerms')?.value }">
       <span class="submit-span">{{'CONTACT.CONTACT_FORM.SUBMIT_BTN'| translate}}</span>
     </button>
   </div>

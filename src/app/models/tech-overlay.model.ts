@@ -1,4 +1,4 @@
 export interface TechOverlay {
-    imgSource: string;
-    techName: string;
-  }
+  imgSource: string;
+  techName: string;
+}

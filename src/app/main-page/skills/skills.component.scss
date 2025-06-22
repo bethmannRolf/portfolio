@@ -46,7 +46,6 @@
   line-height: 120%;
   letter-spacing: 0%;
   font-family: 'Fira Code';
-
 }
 
 .skills-subheading-green {
@@ -66,8 +65,6 @@
   font-family: 'Karla';
 }
 
-
-
 .skills-frame-heading {
   color: #3DCFB6;
   font-size: 64px;
@@ -86,23 +83,16 @@
   font-family: 'Karla';
 }
 
-
-
-
-
 .right-side {
   width: 100%;
   display: flex;
   padding-top: 190px;
   flex-wrap: wrap;
-
   justify-content: flex-start;
-
 }
 
 .image-container {
   width: 632px;
-
   flex: 0 1 calc(25% - 24px);
   box-sizing: border-box;
   display: flex;
@@ -121,15 +111,12 @@
 
 .image-container img {
   transition: transform 0.3s ease-in;
-
 }
 
 .image-container img:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
-
-
 
 .info-box {
   position: absolute;
@@ -146,23 +133,16 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-
 .info-box::after {
   content: '';
   position: absolute;
   bottom: -20px;
   left: 30%;
   transform: translateX(-50%);
-
   border-width: 10px;
   border-style: solid;
   border-color: #ffffff transparent transparent transparent;
 }
-
-
-
-
-
 
 .image-container.last-image:hover .info-box {
   opacity: 1;
@@ -197,31 +177,17 @@
   font-size: 12px;
   line-height: 108%;
   font-family: 'Fira Code';
-
-
 }
-
-
 
 .last-image .skill-font-styling {
   color: #ffffff;
   transition: color 0.3s ease-in-out;
   font-family: 'Fira Code';
-
-
 }
-
 
 .last-image:hover .skill-font-styling {
   color: #3DCFB6;
 }
-
-
-
-
-
-
-
 
 .skills-main-text {
   font-family: 'Karla';
@@ -230,8 +196,6 @@
 .special-interest-styling {
   font-family: 'Fira Code';
 }
-
-
 
 .talk-button {
   background-color: transparent;
@@ -278,11 +242,9 @@
 }
 
 @media (max-width: 1400px) {
-
   .skills-section {
     flex-direction: column;
     padding: 0px;
-
   }
 
   .right-side {
@@ -312,10 +274,6 @@
     width: 50%;
   }
 
-  //   .skills-section {
-  //   padding-left: 0px;
-  // }
-
   .right-side {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -327,10 +285,6 @@
     width: 40px;
     height: 40px;
   }
-
-  // .skills-section {
-  //   padding-left: 16px;
-  // }
 
   .right-side {
     padding-top: 96px;
@@ -353,18 +307,12 @@
     padding: 16px;
   }
 
-  // .skills-section {
-  //   padding-left: 16px;
-  // }
-
   .skills-section {
     gap: 20px;
-    // padding-left: 0;
   }
 }
 
 @media (max-width: 670px) {
-
   .skills-card {
     width: 450px;
   }
