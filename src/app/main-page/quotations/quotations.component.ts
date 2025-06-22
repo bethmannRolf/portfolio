@@ -49,7 +49,7 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
     this.slideRefs.changes.subscribe(() => {
       this.deferTransformUpdate();
     });
-    this.deferTransformUpdate(); // falls initial vorhanden
+    this.deferTransformUpdate(); 
   }
 
   ngOnDestroy(): void {
@@ -72,7 +72,7 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
   private deferTransformUpdate(): void {
     setTimeout(() => {
       this.updateTransform();
-      this.cdr.detectChanges(); // wichtig, um Fehler zu vermeiden
+      this.cdr.detectChanges(); 
     });
   }
 
@@ -87,11 +87,9 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
     const total = slideWidth + gap;
     const centerOffset = (window.innerWidth / 2) - (slideWidth / 2);
     const translateX = -(this.currentIndex * total) + centerOffset;
-
     this.slideTransform = `translateX(${translateX}px)`;
   }
 
-  // Bei Resize transform neu setzen
   onResize = () => {
     this.deferTransformUpdate();
   };

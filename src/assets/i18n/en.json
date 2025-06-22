@@ -8,7 +8,7 @@
     "DEVELOPER": "Frontend Developer",
     "CONTACT": "Contact me",
     "CHECK_WORK": "Check my work",
-      "BASED_IN": "Based in Blankenburg",
+    "BASED_IN": "Based in Blankenburg",
     "AVAILABLE": "Available for remote work",
     "OPEN_TO": "About me"
   },
@@ -48,36 +48,36 @@
       }
     }
   },
- "QUOTATIONS": {
+  "QUOTATIONS": {
     "HEADING": "What my colleagues say about me",
     "SINGLE_CARD": {
       "QUO_1": {
-        "TEXT": "First Quotation",
+        "TEXT": "'Rolf approaches projects holistically – his foresight has often saved us from unnecessary extra work.'",
         "NAME": "Erika Musterfrau",
         "POSITION": "Hoi Hoi"
       },
       "QUO_2": {
-        "TEXT": "Second quotation ...",
+        "TEXT": "'Whenever something gets stuck, Rolf jumps in – analytical, focused, and with solutions no one else had thought of.'",
         "NAME": "Lisa",
         "POSITION": "Test en"
       },
       "QUO_3": {
-        "TEXT": "Third quotation....",
+        "TEXT": "'Rolf inspires the whole team – his dedication lifts us all and clearly raises the bar.'",
         "NAME": "Fritz....",
         "POSITION": "empty"
       },
       "QUO_4": {
-        "TEXT": "",
+        "TEXT": "Whether it’s new tools or complex frameworks, Rolf learns incredibly fast and implements everything with precision.'",
         "NAME": "",
         "POSITION": ""
       },
       "QUO_5": {
-        "TEXT": "",
+        "TEXT": "With his broad general knowledge, Rolf often brings in perspectives that elegantly connect technical and content-related questions.'",
         "NAME": "",
         "POSITION": ""
       },
       "QUO_6": {
-        "TEXT": "",
+        "TEXT": "Rolf is our all-rounder – he can dive into any task and consistently delivers at a high level.'",
         "NAME": "",
         "POSITION": ""
       }

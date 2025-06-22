@@ -52,32 +52,32 @@
     "HEADING": "Was sagen meine Kollegen über mich",
     "SINGLE_CARD": {
       "QUO_1": {
-        "TEXT": "Erstes Zitat...",
+        "TEXT": "„Rolf denkt Projekte von Anfang bis Ende durch – seine Weitsicht hat uns schon oft vor unnötigem Mehraufwand bewahrt.“",
         "NAME": "Max Mustermann",
         "POSITION": "Entwickler"
       },
       "QUO_2": {
-        "TEXT": "Zweites Zitat...",
+        "TEXT": "„Wenn es irgendwo klemmt, ist Rolf sofort zur Stelle – analytisch stark und mit Lösungen, auf die niemand sonst gekommen wäre.“",
         "NAME": "Paul",
         "POSITION": "Test de"
       },
       "QUO_3": {
-        "TEXT": "Drittes Zitat...",
+        "TEXT": "„Rolf motiviert das ganze Team – durch sein Engagement zieht er uns alle mit und hebt das Niveau spürbar.“",
         "NAME": "Lumpi........",
         "POSITION": "vakant"
       },
       "QUO_4": {
-        "TEXT": "",
+        "TEXT": "„Egal ob neue Tools oder komplexe Frameworks: Rolf lernt schnell und setzt alles zielsicher und präzise um.“",
         "NAME": "",
         "POSITION": ""
       },
       "QUO_5": {
-        "TEXT": "",
+        "TEXT": "„Mit seiner breiten Allgemeinbildung bringt Rolf oft Perspektiven ein, die technische und inhaltliche Fragen elegant miteinander verbinden.“",
         "NAME": "",
         "POSITION": ""
       },
       "QUO_6": {
-        "TEXT": "",
+        "TEXT": "„Rolf ist unser Allrounder – er kann sich in jede Aufgabe reindenken und liefert konstant auf hohem Niveau.“",
         "NAME": "",
         "POSITION": ""
       }
