@@ -161,6 +161,9 @@
     padding: 0 54px;
     box-sizing: border-box;
   }
+  .projects-preview {
+    margin-left: 200px;
+  }
 }
 
 @media (max-width: 560px) {
