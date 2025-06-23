@@ -111,3 +111,10 @@ a:hover::before {
     height: 31.5px;
   }
 }
+
+@media (max-width: 400px) {
+  .whole-footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

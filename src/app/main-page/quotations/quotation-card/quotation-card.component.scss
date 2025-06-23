@@ -56,15 +56,21 @@
 }
 
 
-@media (max-width:800px) {
+@media (max-width:500px) {
 
-// .quotation-card-div {
+    .quotation-text{
+ font-size: 14px;
+    }
 
-//     gap: 42px;
-//     padding-top: 24px;
-//     padding-bottom: 24px;
-//     padding-left: 20px;
-//     padding-right: 20px;
-// }
+    .quoting-person-name{
+ font-size: 14px;
+    }
+    .hyphen{
+ font-size: 14px;
+    }
+    .quoting-person-position{
+ font-size: 14px;
+    }
+
 
 }
