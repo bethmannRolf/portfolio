@@ -1,3 +1,9 @@
+
+
+<div *ngIf="successMessageVisible" class="success-message">
+  Nachricht erfolgreich gesendet!
+</div>
+
 <form class="contact-form-container" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
   <div class="name-input-section">
     <label for="name"><span class="question-name-input question">{{'CONTACT.CONTACT_FORM.QUESTIONS.NAME'|

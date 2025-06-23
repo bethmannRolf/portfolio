@@ -27,7 +27,7 @@ export class ProjectsComponent {
 
   onHover(imageSrc: string, index: number): void {
     this.hoveredImage = imageSrc;
-    this.previewTopPosition = index * 100;
+    this.previewTopPosition = index * 70;
   }
 
   selectedProject: ProjectData | null = null;
@@ -49,6 +49,7 @@ export class ProjectsComponent {
   projectsData: ProjectData[] = [
     {
       projectTitle: 'El Polo Loco',
+      githubLink:'https://github.com/bethmannRolf/el_pollo_loco',
       projectNumber: 1,
       imageSource: 'assets/img/projects/epl_preview.png',
       usedTechnologies: ['JavaScript', 'HTML', 'CSS'],
@@ -70,6 +71,7 @@ export class ProjectsComponent {
     },
     {
       projectTitle: 'Join',
+      githubLink:'https://github.com/FlorianSchoenfelder/Join',
       projectNumber: 2,
       imageSource: 'assets/img/projects/join_preview.png',
       usedTechnologies: ['JavaScript', 'HTML', 'CSS'],
@@ -92,6 +94,7 @@ export class ProjectsComponent {
     },
     {
       projectTitle: 'Portfolio',
+      githubLink:'https://github.com/bethmannRolf/portfolio',
       projectNumber: 3,
       imageSource: 'assets/img/projects/portfolio_preview.png',
       usedTechnologies: ['Angular', 'Typescript', 'HTML', 'SCSS'],

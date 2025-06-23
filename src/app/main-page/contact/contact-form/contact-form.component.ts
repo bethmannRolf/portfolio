@@ -14,14 +14,11 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [ReactiveFormsModule, CommonModule, TranslateModule]
 })
+
 export class ContactFormComponent {
-
-  http = inject(HttpClient)
-
-
-
-
+  http = inject(HttpClient);
   contactForm: FormGroup;
+  successMessageVisible = false;
 
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
@@ -32,51 +29,19 @@ export class ContactFormComponent {
     });
   }
 
-
-
-
   onSubmit() {
     if (this.contactForm.valid) {
-      const formData = this.contactForm.value;
-
-      this.http.post('https://rolf-bethmann.de/sendMail.php', formData).subscribe({
-        next: (response) => {
-          console.log('E-Mail erfolgreich gesendet', response);
-          this.successMessage = 'Nachricht wurde erfolgreich gesendet!';
-          this.errorMessage = '';
-
-          // Optional: Benutzerfeedback anzeigen
-          alert('Nachricht wurde erfolgreich versendet!');
-          this.contactForm.reset(); // Formular zurücksetzen
-        },
-        error: (error) => {
-          this.errorMessage = 'Fehler beim Senden.';
-          this.successMessage = '';
-
-          console.error('Fehler beim Senden der Nachricht', error);
-          alert('Fehler beim Senden. Bitte später erneut versuchen.');
-        }
-      });
+      this.http.post('https://www.rolf-bethmann.de/sendMail.php', this.contactForm.value)
+        .subscribe({
+          next: () => {
+            this.successMessageVisible = true;
+            this.contactForm.reset();
+            setTimeout(() => this.successMessageVisible = false, 5000);
+          },
+          error: () => {
+            alert('Fehler beim Senden der Nachricht. Bitte erneut versuchen.');
+          }
+        });
     }
-
-
-
-
-
-
   }
-
-  successMessage = '';
-  errorMessage = '';
-
-
-
-
-
-  // onSubmit() {
-  //   if (this.contactForm.valid) {
-  //     console.log('Erfolg:', this.contactForm.value);
-  //      console.log('Erfolg Nr. 2', this.contactData)
-  //   }
-  // }
 }
