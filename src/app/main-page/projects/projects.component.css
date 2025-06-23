@@ -164,18 +164,21 @@
 }
 
 @media (max-width: 560px) {
-  .upper-large-heading {
-    font-size: 5px;
-  }
   .upper-small-heading {
     font-size: 20px;
   }
   .projects-section {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .upper-headings {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .upper-large-heading {
+    font-size: 50px !important;
   }
 }
