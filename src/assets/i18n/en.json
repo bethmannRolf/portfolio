@@ -53,32 +53,32 @@
     "SINGLE_CARD": {
       "QUO_1": {
         "TEXT": "'Rolf approaches projects holistically – his foresight has often saved us from unnecessary extra work.'",
-        "NAME": "Erika Musterfrau",
-        "POSITION": "Hoi Hoi"
+        "NAME": "Philipp S.",
+        "POSITION": "Developer"
       },
       "QUO_2": {
         "TEXT": "'Whenever something gets stuck, Rolf jumps in – analytical, focused, and with solutions no one else had thought of.'",
-        "NAME": "Lisa",
-        "POSITION": "Test en"
+        "NAME": "Tim G.",
+        "POSITION": "Teammember"
       },
       "QUO_3": {
         "TEXT": "'Rolf inspires the whole team – his dedication lifts us all and clearly raises the bar.'",
-        "NAME": "Fritz....",
-        "POSITION": "empty"
+        "NAME": "Florian L.",
+        "POSITION": "Teammember"
       },
       "QUO_4": {
         "TEXT": "Whether it’s new tools or complex frameworks, Rolf learns incredibly fast and implements everything with precision.'",
         "NAME": "",
-        "POSITION": ""
+        "POSITION": "Anton M."
       },
       "QUO_5": {
         "TEXT": "With his broad general knowledge, Rolf often brings in perspectives that elegantly connect technical and content-related questions.'",
-        "NAME": "",
+        "NAME": "Chris A.",
         "POSITION": ""
       },
       "QUO_6": {
         "TEXT": "Rolf is our all-rounder – he can dive into any task and consistently delivers at a high level.'",
-        "NAME": "",
+        "NAME": "Ferhat S.",
         "POSITION": ""
       }
     }

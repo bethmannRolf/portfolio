@@ -53,32 +53,32 @@
     "SINGLE_CARD": {
       "QUO_1": {
         "TEXT": "„Rolf denkt Projekte von Anfang bis Ende durch – seine Weitsicht hat uns schon oft vor unnötigem Mehraufwand bewahrt.“",
-        "NAME": "Max Mustermann",
+        "NAME": "Philipp S.",
         "POSITION": "Entwickler"
       },
       "QUO_2": {
         "TEXT": "„Wenn es irgendwo klemmt, ist Rolf sofort zur Stelle – analytisch stark und mit Lösungen, auf die niemand sonst gekommen wäre.“",
-        "NAME": "Paul",
-        "POSITION": "Test de"
+        "NAME": "Tim G.",
+        "POSITION": "Teamkollege"
       },
       "QUO_3": {
         "TEXT": "„Rolf motiviert das ganze Team – durch sein Engagement zieht er uns alle mit und hebt das Niveau spürbar.“",
-        "NAME": "Lumpi........",
-        "POSITION": "vakant"
+        "NAME": "Florian L.",
+        "POSITION": "Teamkollege"
       },
       "QUO_4": {
         "TEXT": "„Egal ob neue Tools oder komplexe Frameworks: Rolf lernt schnell und setzt alles zielsicher und präzise um.“",
-        "NAME": "",
+        "NAME": "Anton M.",
         "POSITION": ""
       },
       "QUO_5": {
         "TEXT": "„Mit seiner breiten Allgemeinbildung bringt Rolf oft Perspektiven ein, die technische und inhaltliche Fragen elegant miteinander verbinden.“",
-        "NAME": "",
+        "NAME": "Chris A.",
         "POSITION": ""
       },
       "QUO_6": {
         "TEXT": "„Rolf ist unser Allrounder – er kann sich in jede Aufgabe reindenken und liefert konstant auf hohem Niveau.“",
-        "NAME": "",
+        "NAME": "Ferhat S.",
         "POSITION": ""
       }
     }
