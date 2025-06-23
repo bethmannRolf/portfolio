@@ -302,6 +302,9 @@
 @media (max-width: 600px) {
   .project-overlay-container {
     padding-top: 16px;
+    padding-right: 8px;
+    width: 85%;
+    height: 85%;
   }
   .lower-right-card {
     padding-right: 0;
@@ -342,5 +345,14 @@
   }
   .what-about-question {
     font-size: 16px;
+  }
+  .tech-overlay-item {
+    gap: 8px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .used-technologies {
+    flex-wrap: wrap;
   }
 }

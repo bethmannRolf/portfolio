@@ -135,10 +135,12 @@
 
     &:hover {
         border: 1px solid #3DCFB6;
+
         .source-button-text {
             color: #3DCFB6;
             transition: color 0.3s ease-in-out;
         }
+
         img {
             transform: translate(5px, -5px);
             transition: transform 0.3s ease-in-out;
@@ -324,6 +326,9 @@
 
     .project-overlay-container {
         padding-top: 16px;
+        padding-right: 8px;
+        width: 85%;
+        height: 85%;
     }
 
     .lower-right-card {
@@ -373,7 +378,21 @@
         font-size: 30px;
     }
 
+
+      
+
     .what-about-question {
         font-size: 16px;
+    }
+    .tech-overlay-item{
+        gap: 8px !important;
+    }
+}
+
+
+@media (max-width:450px) {
+
+        .used-technologies{
+        flex-wrap: wrap;
     }
 }
