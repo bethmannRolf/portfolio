@@ -1,8 +1,6 @@
-
-
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateService } from '@ngx-translate/core';
+import { LanguagesService } from '../core/languages.service'; // Pfad anpassen
 
 @Component({
   selector: 'app-language-switcher',
@@ -12,26 +10,14 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./language-switcher.component.scss']
 })
 export class LanguageSwitcherComponent {
-  selectedLanguage: 'de' | 'en';
 
-  constructor(private translate: TranslateService) {
-    const savedLang = localStorage.getItem('language') as 'de' | 'en' | null;
-
-   // fall back solution german. Maybe later in english
-    const browserLang = this.translate.getBrowserLang();
-    const initialLang: 'de' | 'en' = (browserLang === 'en' || browserLang === 'de') ? browserLang : 'de';
-
-    this.selectedLanguage = savedLang || initialLang;
-
-    this.translate.setDefaultLang('de');
-    this.translate.use(this.selectedLanguage);
-    console.log('Die Sprache ist', this.selectedLanguage)
-  }
+  constructor(public languagesService: LanguagesService) {}
 
   setLanguage(lang: 'de' | 'en') {
-    this.selectedLanguage = lang;
-    localStorage.setItem('language', lang);
-    this.translate.use(lang);
-    console.log('Die Sprache setanguage ist', this.selectedLanguage)
+    this.languagesService.setLanguage(lang);
+  }
+
+  get selectedLanguage() {
+    return this.languagesService.getCurrentLanguage();
   }
 }

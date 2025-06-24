@@ -1,13 +1,22 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { LanguagesService } from '../core/languages.service';
 
 @Component({
   selector: 'app-imprint',
-  imports: [TranslateModule, CommonModule],
+  standalone: true,
+  imports: [CommonModule, TranslateModule], 
   templateUrl: './imprint.component.html',
-  styleUrl: './imprint.component.scss'
+  styleUrls: ['./imprint.component.scss']  
 })
 export class ImprintComponent {
 
+  constructor(
+    private translate: TranslateService,
+    private langService: LanguagesService
+  ) {
+    const savedLang = localStorage.getItem('language') || 'de'; 
+    this.translate.use(savedLang);
+  }
 }

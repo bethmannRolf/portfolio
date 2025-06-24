@@ -1,13 +1,23 @@
+
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { LanguagesService } from '../core/languages.service';
 
 @Component({
   selector: 'app-legal-notice',
-  imports: [TranslateModule, CommonModule],
+  standalone: true,
+  imports: [CommonModule, TranslateModule],
   templateUrl: './legal-notice.component.html',
-  styleUrl: './legal-notice.component.scss'
+  styleUrls: ['./legal-notice.component.scss']
 })
 export class LegalNoticeComponent {
 
+  constructor(
+    private translate: TranslateService,
+    private langService: LanguagesService
+  ) {
+    const savedLang = localStorage.getItem('lang') || 'de';
+    this.translate.use(savedLang);
+  }
 }
