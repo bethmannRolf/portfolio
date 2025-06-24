@@ -4,13 +4,14 @@ import { HeaderComponent } from './header/header.component';
 import { ScrollService } from '../../core/scroll.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageSwitcherComponent } from '../../language-switcher/language-switcher.component';
-import { MenuService } from '../../core/menu.service'; // Import des neuen Service
+import { MenuService } from '../../core/menu.service'; 
 import { Subscription } from 'rxjs';
+import { CookieBannerComponent } from '../../cookie-banner/cookie-banner.component';
 
 @Component({
   selector: 'app-atf',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, TranslateModule, LanguageSwitcherComponent],
+  imports: [CommonModule, HeaderComponent, TranslateModule, LanguageSwitcherComponent, CookieBannerComponent],
   templateUrl: './atf.component.html',
   styleUrl: './atf.component.scss',
 })

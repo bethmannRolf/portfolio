@@ -186,5 +186,13 @@
     "COPYRIGHT_NOT_THIRD": "Sofern Inhalte auf dieser Website nicht von mir erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitte ich um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Inhalte umgehend entfernen.",
     "CONTACT_INFO_HEADING": "Kontaktinformationen",
     "UPDATE": "Stand:"
+  },
+ 
+  "COOKIE": {
+    "MESSAGE": "Diese Website verwendet Cookies, um Ihr Erlebnis zu verbessern. Sie können zustimmen oder ablehnen.",
+    "ACCEPT": "Akzeptieren",
+    "REJECT": "Ablehnen"
   }
+
+
 }
