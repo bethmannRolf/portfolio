@@ -20,6 +20,15 @@ export class ProjectOverlayComponent {
     this.close.emit();
   }
 
+ngOnInit() {
+  document.documentElement.classList.add('no-scroll'); 
+}
+
+ngOnDestroy() {
+  document.documentElement.classList.remove('no-scroll');
+}
+
+
   onBackdropClick(event: MouseEvent): void {
     this.close.emit();
   }
