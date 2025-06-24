@@ -54,3 +54,17 @@ span {
   flex-direction: column;
   margin-bottom: 5px;
 }
+
+@media (max-width: 750px) {
+  .policy-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .policy-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
