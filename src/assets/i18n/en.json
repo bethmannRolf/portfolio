@@ -15,10 +15,10 @@
   "ABOUT_ME": {
     "WHO": "Who I Am",
     "ABOUT_ME": "About me",
-    "INTRO": "",
+    "INTRO": "Hey there, I am Rolf! I'm an aspiring frontend developer with a strong interest in modern web technologies. I love turning creative ideas into interactive, responsive user interfaces. My passion for coding comes from the joy of problem-solving and continuous learning. I'm inspired by great UI/UX design and real-world projects that challenge me to grow.",
     "LOCALISATION": "",
-    "EFFORT": "",
-    "DESCRIPTION": ""
+    "EFFORT": "I'm always open to new ideas and technologies. I enjoy stepping out of my comfort zone to explore new tools, frameworks, and best practices. Learning is a constant journey for me, and I love improving my skills one project at a time.",
+    "DESCRIPTION": "Solving problems is one of my favorite parts of coding. I use analytical thinking to understand the root of an issue, and creativity to find efficient solutions. I believe in persistence and learning from every challenge. I also value collaboration to gain new perspectives."
   },
   "SKILLS": {
     "TECHS": "Technologies",
@@ -68,8 +68,8 @@
       },
       "QUO_4": {
         "TEXT": "Whether it’s new tools or complex frameworks, Rolf learns incredibly fast and implements everything with precision.'",
-        "NAME": "",
-        "POSITION": "Anton M."
+        "NAME": "Anton M.",
+        "POSITION": ""
       },
       "QUO_5": {
         "TEXT": "With his broad general knowledge, Rolf often brings in perspectives that elegantly connect technical and content-related questions.'",

@@ -50,6 +50,7 @@ export class ProjectsComponent {
     {
       projectTitle: 'El Polo Loco',
       githubLink:'https://github.com/bethmannRolf/el_pollo_loco',
+      pageLink:'https://el-pollo-loco.rolf-bethmann.de/index.html',
       projectNumber: 1,
       imageSource: 'assets/img/projects/epl_preview.png',
       usedTechnologies: ['JavaScript', 'HTML', 'CSS'],
@@ -71,7 +72,8 @@ export class ProjectsComponent {
     },
     {
       projectTitle: 'Join',
-      githubLink:'https://github.com/FlorianSchoenfelder/Join',
+      githubLink:'https://github.com/bethmannRolf/join_firebase',
+      pageLink:'https://join.rolf-bethmann.de/assets/templates/index.html',
       projectNumber: 2,
       imageSource: 'assets/img/projects/join_preview.png',
       usedTechnologies: ['JavaScript', 'HTML', 'CSS'],
@@ -95,6 +97,7 @@ export class ProjectsComponent {
     {
       projectTitle: 'Portfolio',
       githubLink:'https://github.com/bethmannRolf/portfolio',
+      pageLink:'https://rolf-bethmann.de',
       projectNumber: 3,
       imageSource: 'assets/img/projects/portfolio_preview.png',
       usedTechnologies: ['Angular', 'Typescript', 'HTML', 'SCSS'],
