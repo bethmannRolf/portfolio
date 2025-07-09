@@ -12,7 +12,6 @@ export class MenuService {
   }
 
   closeMenu() {
- 
     this.menuOpenSubject.next(false);
   }
 }

@@ -20,5 +20,4 @@ getQuotations(): Observable<Quotation[]> {
     })
   );
 }
-
 }

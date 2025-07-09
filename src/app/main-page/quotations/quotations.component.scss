@@ -1,29 +1,27 @@
-*{
-        user-select: none;
+* {
+  user-select: none;
 }
-.quotations-section {
-    background-color: rgb(28, 28, 28);
-    color: white;
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    width: 100%;
 
+.quotations-section {
+  background-color: rgb(28, 28, 28);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
 }
 
 .what-colleagues-say {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: rgba(61, 207, 182, 1);
-     font-family: 'Fira Code';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(61, 207, 182, 1);
+  font-family: 'Fira Code';
 }
 
-
-  
 .slider-container {
   .slider-container {
     overflow: hidden;
@@ -32,20 +30,14 @@
     justify-content: center;
     position: relative;
   }
-  
 }
 
 .slides-wrapper {
   display: flex;
   transition: transform 0.5s ease;
-  gap: 80px; 
-  padding: 0 40px; 
+  gap: 80px;
+  padding: 0 40px;
 }
-
-
-
-
-
 
 .carousel-container {
   width: 100%;
@@ -66,97 +58,82 @@
   box-sizing: border-box;
 }
 
+.slide {
+  flex-shrink: 0;
+  width: 632px;
+  height: 274px;
+  opacity: 0.5;
+  transform: scale(0.95);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border: 1px solid rgba(61, 207, 182, 1);
+  background-color: rgba(61, 207, 182, 0.3);
+  border-radius: 32px;
 
-  .slide {
-    flex-shrink: 0;
-    width: 632px;
-    height: 274px;
-  
-    opacity: 0.5;
-    transform: scale(0.95);
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  
-    border: 1px solid rgba(61, 207, 182, 1);
-    background-color: rgba(61, 207, 182, 0.3);
-    border-radius: 32px;
-
-
-
-    &.active {
-      opacity: 1;
-      transform: scale(1.1);
-    }
+  &.active {
+    opacity: 1;
+    transform: scale(1.1);
   }
-  
-
-  .carousel-slide {
-    position: relative;
-  }
-  
-  .quote-sign-in-card {
-    position: absolute;
-    top: -10px;
-    left: -20px;
-    width: 40px;
-    height: auto;
-   
-    z-index:10;
-  }
-  
-
-  .carousel-container {
-    width: 100%;
-    overflow: visible;  
-    position: relative;
-  }
-  
-  .slider-container {
-    overflow: visible; 
-  }
-  
-.carousel-slide, .slide {
-  flex: 0 0 auto;
-  width: 90vw; // oder max-width: 632px;
-  max-width: 632px;
-  
-  // height: auto;
 }
 
+.carousel-slide {
+  position: relative;
+}
+
+.quote-sign-in-card {
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  width: 40px;
+  height: auto;
+  z-index: 10;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: visible;
+  position: relative;
+}
+
+.slider-container {
+  overflow: visible;
+}
+
+.carousel-slide,
+.slide {
+  flex: 0 0 auto;
+  width: 90vw;
+  max-width: 632px;
+}
 
 .carousel-track {
   transition: transform 0.5s ease-in-out;
 }
 
-
- .carousel-slide,
+.carousel-slide,
 .slide {
   flex: 0 0 auto;
   width: 90vw;
   max-width: 632px;
-  height: 274px; // ← DAS ist wichtig
+  height: 274px;
   box-sizing: border-box;
-  display: flex; // ← damit Kindkomponenten nicht größer „drücken“
+  display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
 }
 
-
-
 @media (max-width:800px) {
 
-.carousel-slide,
-.slide {
- 
-  width: 75vw;         
+  .carousel-slide,
+  .slide {
+    width: 75vw;
+  }
 
-}
-.what-colleagues-say{
-  font-size: 24px;
-  white-space: normal;
-  padding-left: 16px;
-  padding-right: 16px;
-  text-align: center;
-}
-
+  .what-colleagues-say {
+    font-size: 24px;
+    white-space: normal;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+  }
 }

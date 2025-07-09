@@ -27,7 +27,6 @@ export class CookieBannerComponent {
   acceptCookies() {
     this.cookieService.setConsent('accepted');
     this.consentGiven = true;
-    // hier kannst du ggf. Analytics oder andere Tools initialisieren
   }
 
   rejectCookies() {

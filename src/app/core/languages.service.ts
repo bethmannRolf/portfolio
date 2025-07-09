@@ -1,12 +1,3 @@
-// import { Injectable } from '@angular/core';
-
-// @Injectable({
-//   providedIn: 'root'
-// })
-// export class LanguagesService {
-
-//   constructor() { }
-// }
 import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -21,9 +12,7 @@ export class LanguagesService {
     const savedLang = localStorage.getItem(this.storageKey) as 'de' | 'en' | null;
     const browserLang = this.translate.getBrowserLang();
     const initialLang: 'de' | 'en' = (browserLang === 'de' || browserLang === 'en') ? browserLang : 'de';
-
     this.selectedLanguage = savedLang || initialLang;
-
     this.translate.setDefaultLang('de');
     this.translate.use(this.selectedLanguage);
   }

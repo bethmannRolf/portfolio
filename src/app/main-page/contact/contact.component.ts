@@ -11,5 +11,4 @@ import { TranslateModule } from '@ngx-translate/core';
     styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-
 }

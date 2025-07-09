@@ -35,7 +35,7 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
     private quotationService: QuotationService,
     private translate: TranslateService,
     private cdr: ChangeDetectorRef
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.loadQuotations();
@@ -49,7 +49,7 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
     this.slideRefs.changes.subscribe(() => {
       this.deferTransformUpdate();
     });
-    this.deferTransformUpdate(); 
+    this.deferTransformUpdate();
   }
 
   ngOnDestroy(): void {
@@ -72,7 +72,7 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
   private deferTransformUpdate(): void {
     setTimeout(() => {
       this.updateTransform();
-      this.cdr.detectChanges(); 
+      this.cdr.detectChanges();
     });
   }
 

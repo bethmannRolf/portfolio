@@ -45,7 +45,6 @@
         font-family: 'Fira Code';
         word-break: break-word;
         overflow-wrap: break-word;
-
       }
     }
 
@@ -171,14 +170,13 @@
     padding: 0 54px;
     box-sizing: border-box;
   }
-.projects-preview{
-  margin-left: 200px;
+
+  .projects-preview {
+    margin-left: 200px;
+  }
 }
 
-  }
-
 @media (max-width:560px) {
-
 
   .upper-small-heading {
     font-size: 20px;
@@ -198,13 +196,6 @@
 @media (max-width:400px) {
 
   .upper-large-heading {
-
     font-size: 50px !important
   }
-
-
-
 }
-
-
-

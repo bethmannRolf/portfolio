@@ -95,7 +95,8 @@
   overflow: visible;
 }
 
-.carousel-slide, .slide {
+.carousel-slide,
+.slide {
   flex: 0 0 auto;
   width: 90vw;
   max-width: 632px;

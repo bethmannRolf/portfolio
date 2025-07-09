@@ -1,7 +1,7 @@
-
-*{
-        user-select: none;
+* {
+    user-select: none;
 }
+
 .quotation-card-div {
     display: flex;
     flex-direction: column;
@@ -58,19 +58,19 @@
 
 @media (max-width:500px) {
 
-    .quotation-text{
- font-size: 14px;
+    .quotation-text {
+        font-size: 14px;
     }
 
-    .quoting-person-name{
- font-size: 14px;
-    }
-    .hyphen{
- font-size: 14px;
-    }
-    .quoting-person-position{
- font-size: 14px;
+    .quoting-person-name {
+        font-size: 14px;
     }
 
+    .hyphen {
+        font-size: 14px;
+    }
 
+    .quoting-person-position {
+        font-size: 14px;
+    }
 }

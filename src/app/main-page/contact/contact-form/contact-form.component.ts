@@ -1,8 +1,5 @@
-
-
-
 import { CommonModule } from '@angular/common';
-import { HttpClient } from '@angular/common/http'; //added
+import { HttpClient } from '@angular/common/http'; 
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';

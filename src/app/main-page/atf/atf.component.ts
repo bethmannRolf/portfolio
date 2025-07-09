@@ -28,12 +28,8 @@ export class AtfComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.menuSub = this.menuService.menuOpen$.subscribe((open) => {
       this.menuOpen = open;
-      console.log('menuOpen$ Wert:', open);
     });
   }
-
-
-  
 
   scrollToSection(sectionId: string) {
     this.scrollService.scrollTo(sectionId);

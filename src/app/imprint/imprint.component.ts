@@ -6,9 +6,9 @@ import { LanguagesService } from '../core/languages.service';
 @Component({
   selector: 'app-imprint',
   standalone: true,
-  imports: [CommonModule, TranslateModule], 
+  imports: [CommonModule, TranslateModule],
   templateUrl: './imprint.component.html',
-  styleUrls: ['./imprint.component.scss']  
+  styleUrls: ['./imprint.component.scss']
 })
 export class ImprintComponent {
 
@@ -16,7 +16,7 @@ export class ImprintComponent {
     private translate: TranslateService,
     private langService: LanguagesService
   ) {
-    const savedLang = localStorage.getItem('language') || 'de'; 
+    const savedLang = localStorage.getItem('language') || 'de';
     this.translate.use(savedLang);
   }
 }

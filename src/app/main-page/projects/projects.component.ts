@@ -13,7 +13,6 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class ProjectsComponent {
 
-
 @Input() project!: ProjectData;
 @Input() close!: () => void;
 

@@ -12,4 +12,3 @@ export class QuotationCardComponent {
   @Input() name: string = '';
   @Input() position: string = '';
 }
-

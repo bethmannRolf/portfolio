@@ -20,4 +20,3 @@ export class PrivacyPolicyComponent {
     this.translate.use(savedLang);
   }
 }
-

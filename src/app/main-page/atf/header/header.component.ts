@@ -15,17 +15,16 @@ import { MenuService } from '../../../core/menu.service'; // <--- Hinzugefügt
 export class HeaderComponent {
   constructor(
     private scrollService: ScrollService,
-    private menuService: MenuService 
-  ) {}
+    private menuService: MenuService
+  ) { }
 
   scrollToSection(sectionId: string) {
     this.scrollService.scrollTo(sectionId);
 
   }
 
-toggleMenu(event: Event) {
-  event.stopPropagation(); 
-  this.menuService.toggleMenu(); 
-}
-
+  toggleMenu(event: Event) {
+    event.stopPropagation();
+    this.menuService.toggleMenu();
+  }
 }
