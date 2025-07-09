@@ -17,13 +17,8 @@ export class ProjectsComponent {
 @Input() project!: ProjectData;
 @Input() close!: () => void;
 
-
-
-
   hoveredImage: string = '';
   previewTopPosition: number = 0;
-
-
 
   onHover(imageSrc: string, index: number): void {
     this.hoveredImage = imageSrc;
@@ -40,12 +35,10 @@ export class ProjectsComponent {
     this.selectedProject = newProject;
   }
 
-  
   closeOverlay() {
     this.selectedProject = null;
   }
   
-
   projectsData: ProjectData[] = [
     {
       projectTitle: 'El Polo Loco',
@@ -122,6 +115,4 @@ export class ProjectsComponent {
       additionalInformation: 'Overview about my skills...'
     }
   ];
-  
- 
 }
