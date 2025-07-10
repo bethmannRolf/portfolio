@@ -84,6 +84,7 @@
     }
   },
   "CONTACT": {
+    "SUCCESS_MESSAGE": "Nachricht erfolgreich gesendet!",
     "CONTACT_ME": "Kontakt",
     "HEADING": "Lass Sie uns zusammen arbeiten.",
     "SUBHEADING": "Gibt es ein Problem zu lösen?",
@@ -187,12 +188,9 @@
     "CONTACT_INFO_HEADING": "Kontaktinformationen",
     "UPDATE": "Stand:"
   },
- 
   "COOKIE": {
     "MESSAGE": "Diese Website verwendet Cookies, um Ihr Erlebnis zu verbessern. Sie können zustimmen oder ablehnen.",
     "ACCEPT": "Akzeptieren",
     "REJECT": "Ablehnen"
   }
-
-
 }

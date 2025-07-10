@@ -1,7 +1,7 @@
 
 
 <div *ngIf="successMessageVisible" class="success-message">
-  Nachricht erfolgreich gesendet!
+  {{'CONTACT.SUCCESS_MESSAGE'| translate}}
 </div>
 
 <form class="contact-form-container" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
