@@ -111,7 +111,7 @@ export class ProjectsComponent {
           techName: 'CSS'
         }
       ],
-      additionalInformation: 'Overview about my skills...'
+      additionalInformation: 'PROJECTS.SINGLE_PROJECT.PORTFOLIO.ABOUT_CONTENT'
     }
   ];
 }

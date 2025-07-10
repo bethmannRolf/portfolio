@@ -44,7 +44,7 @@
         "ABOUT_CONTENT": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu. "
       },
       "PORTFOLIO": {
-        "ABOUT_CONTENT": "Beispiele meienr Arbeit..."
+        "ABOUT_CONTENT": "Dieses Portfolio wurde mit Angular und TypeScript umgesetzt und enthält ausgewählte Beispiele meiner Arbeit als angehender Frontend-Entwickler. Es dient nicht nur zur Präsentation, sondern spiegelt auch meine Fähigkeiten in modernen Webtechnologien wider."
       }
     }
   },

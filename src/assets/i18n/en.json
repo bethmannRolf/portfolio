@@ -44,7 +44,7 @@
         "ABOUT_CONTENT": "Task manager inspired by the Kanban System, Create and organize tasks using drag and drop functions, assign users and categories."
       },
       "PORTFOLIO": {
-        "ABOUT_CONTENT": "Collection of my work..."
+        "ABOUT_CONTENT": "This portfolio was built with Angular and TypeScript and showcases selected examples of my work as an aspiring frontend developer. It not only serves as a presentation but also reflects my skills in modern web technologies."
       }
     }
   },
