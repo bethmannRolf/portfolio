@@ -1,4 +1,3 @@
-// src/app/shared/components/cookie-banner.component.ts
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CookieConsentService } from '../core/cookie-consent.service';
