@@ -16,8 +16,8 @@ export class ProjectsComponent {
 @Input() project!: ProjectData;
 @Input() close!: () => void;
 
-  hoveredImage: string = '';
-  previewTopPosition: number = 0;
+  hoveredImage = '';
+  previewTopPosition = 0;
 
   onHover(imageSrc: string, index: number): void {
     this.hoveredImage = imageSrc;

@@ -8,7 +8,7 @@ import { TranslateModule } from '@ngx-translate/core';
     styleUrl: './quotation-card.component.scss'
 })
 export class QuotationCardComponent {
-  @Input() text: string = '';
-  @Input() name: string = '';
-  @Input() position: string = '';
+  @Input() text = '';
+  @Input() name = '';
+  @Input() position = '';
 }

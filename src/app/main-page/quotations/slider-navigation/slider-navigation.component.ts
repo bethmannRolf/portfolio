@@ -9,7 +9,7 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class SliderNavigationComponent {
   @Input() slides: any[] = [];
-  @Input() currentIndex: number = 0;
+  @Input() currentIndex = 0;
 
   @Output() indexChanged = new EventEmitter<number>();
 

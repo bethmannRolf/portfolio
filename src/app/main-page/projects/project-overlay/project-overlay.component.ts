@@ -1,5 +1,5 @@
 
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectData } from '../../../../app/models/project-data.model';
 import { TranslateModule } from '@ngx-translate/core';
@@ -10,7 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './project-overlay.component.html',
   styleUrl: './project-overlay.component.scss'
 })
-export class ProjectOverlayComponent {
+export class ProjectOverlayComponent implements OnInit, OnDestroy {
   @Input() project!: ProjectData;
   @Input() allProjects: ProjectData[] = [];
   @Output() changeProject = new EventEmitter<ProjectData>();
