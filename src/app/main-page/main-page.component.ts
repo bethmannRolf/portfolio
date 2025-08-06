@@ -9,9 +9,22 @@ import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-main-page',
-  imports: [AtfComponent, AboutMeComponent, SkillsComponent, ProjectsComponent, ContactComponent, QuotationsComponent, TranslateModule],
+  imports: [
+    AtfComponent,
+    AboutMeComponent,
+    SkillsComponent,
+    ProjectsComponent,
+    ContactComponent,
+    QuotationsComponent,
+    TranslateModule
+  ],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss'
 })
+/**
+ * The main page component of the application.
+ * Acts as a container for all major sections of the website,
+ * such as ATF, About Me, Skills, Projects, Contact, and Quotations.
+ */
 export class MainPageComponent {
 }

@@ -9,14 +9,29 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
+/**
+ * Component to display skills and technologies as icons with titles.
+ * Provides scrolling functionality to specific page sections via ScrollService.
+ */
 export class SkillsComponent {
 
+  /**
+   * Creates an instance of SkillsComponent.
+   * @param scrollService Service to handle scrolling to page sections.
+   */
   constructor(private scrollService: ScrollService) { }
 
+  /**
+   * Scrolls smoothly to the given section ID.
+   * @param sectionId The ID of the section to scroll to.
+   */
   scrollToSection(sectionId: string) {
     this.scrollService.scrollTo(sectionId);
   }
 
+  /**
+   * List of technology images and their titles displayed in the skills section.
+   */
   images = [
     { src: '../../assets/img/technologies/html.svg', title: 'HTML' },
     { src: '../../assets/img/technologies/css.svg', title: 'CSS' },
@@ -31,6 +46,9 @@ export class SkillsComponent {
     { src: '../../assets/img/technologies/growth_mindset.svg', title: 'Growth Mindset' }
   ];
 
+  /**
+   * Additional technology images related to growth mindset.
+   */
   imagesGrowth = [
     { src: '../../assets/img/technologies/react.svg', title: 'React' },
     { src: '../../assets/img/technologies/vue.svg', title: 'Vue' },

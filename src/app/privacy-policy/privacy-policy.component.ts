@@ -10,8 +10,19 @@ import { LanguagesService } from '../core/languages.service';
   templateUrl: './privacy-policy.component.html',
   styleUrls: ['./privacy-policy.component.scss']
 })
+/**
+ * Component for displaying the privacy policy.
+ * Sets the translation language based on saved language preference.
+ */
 export class PrivacyPolicyComponent {
 
+  /**
+   * Constructs the PrivacyPolicyComponent.
+   * Loads the saved language from localStorage or defaults to German.
+   *
+   * @param translate - Translation service for internationalization
+   * @param langService - Custom language service (currently unused)
+   */
   constructor(
     private translate: TranslateService,
     private langService: LanguagesService

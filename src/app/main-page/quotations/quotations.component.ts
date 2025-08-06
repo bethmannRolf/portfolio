@@ -23,20 +23,39 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   templateUrl: './quotations.component.html',
   styleUrls: ['./quotations.component.scss'],
 })
+/**
+ * Component to display a carousel slider of quotations.
+ * Supports language change and window resize events.
+ */
 export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
+  /** Current active slide index */
   currentIndex = 0;
+
+  /** Array of quotations to display */
   slides: Quotation[] = [];
+
+  /** CSS transform string applied to the slide container */
   slideTransform = '';
 
+  /** Reference to the slide container element */
   @ViewChild('carouselSlide', { static: false }) slideRef!: ElementRef;
+
+  /** References to all slide elements */
   @ViewChildren('carouselSlide') slideRefs!: QueryList<ElementRef>;
 
+  /**
+   * Constructor for QuotationsComponent
+   * @param quotationService Service to fetch quotations
+   * @param translate Service to handle translation and language change
+   * @param cdr ChangeDetectorRef to manually trigger change detection
+   */
   constructor(
     private quotationService: QuotationService,
     private translate: TranslateService,
     private cdr: ChangeDetectorRef
   ) { }
 
+  /** Initialize component: load quotations and subscribe to language changes and resize events */
   ngOnInit(): void {
     this.loadQuotations();
     this.translate.onLangChange.subscribe(() => {
@@ -45,6 +64,7 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
     window.addEventListener('resize', this.onResize);
   }
 
+  /** After view initialization: listen to changes in slide elements and update transform accordingly */
   ngAfterViewInit(): void {
     this.slideRefs.changes.subscribe(() => {
       this.deferTransformUpdate();
@@ -52,10 +72,14 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
     this.deferTransformUpdate();
   }
 
+  /** Cleanup on destroy: remove window resize listener */
   ngOnDestroy(): void {
     window.removeEventListener('resize', this.onResize);
   }
 
+  /**
+   * Load quotations from the service and update the slides
+   */
   loadQuotations(): void {
     this.quotationService.getQuotations().subscribe((data) => {
       this.slides = data;
@@ -63,12 +87,20 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
     });
   }
 
+  /**
+   * Update the current slide index and apply transform to show the correct slide.
+   * @param index New slide index
+   */
   onSlideChanged(index: number): void {
     const slidesLength = this.slides.length;
     this.currentIndex = (index + slidesLength) % slidesLength;
     this.deferTransformUpdate();
   }
 
+  /**
+   * Defers the transform update using setTimeout to allow DOM updates to complete.
+   * Also triggers Angular change detection manually.
+   */
   private deferTransformUpdate(): void {
     setTimeout(() => {
       this.updateTransform();
@@ -76,6 +108,9 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
     });
   }
 
+  /**
+   * Calculates and sets the CSS transform string to center the current slide.
+   */
   private updateTransform(): void {
     if (!this.slideRef?.nativeElement) {
       this.slideTransform = '';
@@ -90,6 +125,7 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
     this.slideTransform = `translateX(${translateX}px)`;
   }
 
+  /** Handler for window resize events, triggers transform update */
   onResize = () => {
     this.deferTransformUpdate();
   };

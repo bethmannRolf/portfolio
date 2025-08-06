@@ -7,5 +7,9 @@ import { TranslateModule } from '@ngx-translate/core';
     templateUrl: './footer.component.html',
     styleUrl: './footer.component.scss'
 })
+/**
+ * FooterComponent displays the website footer.
+ * Includes translated text using ngx-translate.
+ */
 export class FooterComponent {
 }
