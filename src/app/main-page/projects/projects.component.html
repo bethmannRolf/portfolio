@@ -10,9 +10,9 @@
       </span>
     </div>
     <div class="single-project-area">
-      <!-- <div class="half-border"></div> -->
+      <div class="half-border"></div>
       <div class="test-wrapper">
-        <!-- <div class="responsive-line "></div> -->
+        <div class="responsive-line"></div>
         <div class="project-hover-wrapper" *ngFor="let project of projectsData; let i = index"
           (mouseenter)="onHover(project.imageSource, i)" (mouseleave)="hoveredImage = ''"
           (click)="openOverlay(project)">

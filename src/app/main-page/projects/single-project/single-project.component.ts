@@ -14,6 +14,10 @@ import { TranslateModule } from '@ngx-translate/core';
  * Displays summary information and emits an event when clicked to show full details in an overlay.
  */
 export class SingleProjectComponent {
+
+
+
+  
   /**
    * The project data to be displayed.
    * @type {ProjectData}

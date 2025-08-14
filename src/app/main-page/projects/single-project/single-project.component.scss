@@ -2,6 +2,11 @@
     user-select: none;
 }
 
+
+
+
+
+
 .project-card {
     display: flex;
     justify-content: space-between;
@@ -11,7 +16,6 @@
     padding-left: 32px;
     width: 100%;
     max-width: 880px;
-    
     border-bottom: 1px solid #3DCFB6;
     transition: ease-in 150ms;
 
@@ -26,8 +30,6 @@
         }
     }
 }
-
-
 
 .left-projectline-side {
     display: flex;
@@ -83,6 +85,12 @@
         font-family: 'Karla';
     }
 }
+
+
+
+
+
+
 
 @media (max-width: 1100px) {
 
