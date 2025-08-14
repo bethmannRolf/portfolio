@@ -2,6 +2,10 @@
     user-select: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 .landingpage-below-header {
     height: 90vh;
 }
@@ -48,6 +52,10 @@
     min-width: 200%;
     animation: marquee-animation 15s linear infinite;
     font-family: 'Karla';
+}
+
+button{
+    cursor:pointer;
 }
 
 @keyframes marquee-animation {
