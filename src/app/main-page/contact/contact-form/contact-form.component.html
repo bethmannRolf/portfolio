@@ -26,8 +26,11 @@
   <div class="message-area-section">
     <label for="message"><span class="question-message-input question">{{'CONTACT.CONTACT_FORM.QUESTIONS.CONTENT'|
         translate}}</span></label>
-    <textarea placeholder="{{'CONTACT.CONTACT_FORM.PLACEHOLDER.CONTENT'| translate}}" id="message"
+    <textarea minlength="10"  maxlength="200" placeholder="{{'CONTACT.CONTACT_FORM.PLACEHOLDER.CONTENT'| translate}}" id="message"
       formControlName="message" required></textarea>
+      <div class="char-count">
+  {{ remainingChars }} {{'CONTACT.CONTACT_FORM.REMAINING_CHARS'| translate}}
+</div>
     <div *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid" class="error-message">
       {{'CONTACT.CONTACT_FORM.WARNINGS.CONTENT'| translate}}
     </div>

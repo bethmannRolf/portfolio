@@ -240,6 +240,8 @@ input {
 textarea {
   background-color: transparent;
   border: none;
+  max-height: 300px;
+  min-height: 80px;
 }
 
 textarea::placeholder {
@@ -330,6 +332,25 @@ textarea.ng-invalid,
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+input:-webkit-autofill:hover,
+textarea:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px #1c1c1c inset;
+  -webkit-text-fill-color: white;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-moz-placeholder-shown,
+textarea:-moz-placeholder-shown {
+  background-color: #1c1c1c;
+  color: white;
 }
 
 @media (max-width: 1550px) {

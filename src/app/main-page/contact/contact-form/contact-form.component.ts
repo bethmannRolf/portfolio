@@ -42,26 +42,29 @@ export function emailWithTLDValidator(): ValidatorFn {
   imports: [ReactiveFormsModule, CommonModule, TranslateModule]
 })
 export class ContactFormComponent {
-  
-  /** HTTP client used to send form data to the server */
   http = inject(HttpClient);
-
-  /** Reactive form group for the contact form */
   contactForm: FormGroup;
-
-  /** Controls the visibility of the success message after form submission */
   successMessageVisible = false;
+
+
+  maxMessageLength = 200;
+  remainingChars = this.maxMessageLength;
 
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email, emailWithTLDValidator()]],
-      message: ['', Validators.required],
+      message: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(this.maxMessageLength)]],
       acceptTerms: [false, Validators.requiredTrue]
+    });
+
+
+    this.contactForm.get('message')?.valueChanges.subscribe(value => {
+      const length = value ? value.length : 0;
+      this.remainingChars = this.maxMessageLength - length;
     });
   }
 
-  /** Handles form submission */
   onSubmit() {
     if (this.contactForm.valid) {
       this.http.post('https://www.rolf-bethmann.de/sendMail.php', this.contactForm.value)
@@ -69,6 +72,7 @@ export class ContactFormComponent {
           next: () => {
             this.successMessageVisible = true;
             this.contactForm.reset();
+            this.remainingChars = this.maxMessageLength; 
             setTimeout(() => this.successMessageVisible = false, 5000);
           },
           error: () => {
