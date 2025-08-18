@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
     selector: 'app-footer',
-    imports: [TranslateModule],
+    imports: [TranslateModule, RouterModule],
     templateUrl: './footer.component.html',
     styleUrl: './footer.component.scss'
 })

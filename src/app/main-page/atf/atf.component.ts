@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, HostListener, ViewChild, OnInit, OnDestroy } from '@angular/core';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from '../../shared/header/header.component';
 import { ScrollService } from '../../core/scroll.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageSwitcherComponent } from '../../language-switcher/language-switcher.component';

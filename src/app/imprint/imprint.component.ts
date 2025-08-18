@@ -27,6 +27,7 @@ export class ImprintComponent {
     private translate: TranslateService,
     private langService: LanguagesService
   ) {
+     console.log('ImprintComponent geladen');
     const savedLang = localStorage.getItem('language') || 'de';
     this.translate.use(savedLang);
   }

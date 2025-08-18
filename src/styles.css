@@ -271,3 +271,15 @@ html {
     scrollbar-color: #1c1c1c transparent;
   }
 }
+
+body.imprint-page {
+  background-color: #1c1c1c;
+}
+
+body.privacy-page {
+  background-color: #1c1c1c;
+}
+
+body.legal-page {
+  background-color: #1c1c1c;
+}
