@@ -4,6 +4,7 @@ import { LanguageSwitcherComponent } from '../../language-switcher/language-swit
 import { ScrollService } from "../../core/scroll.service";
 import { TranslateModule } from '@ngx-translate/core';
 import { MenuService } from '../../core/menu.service';
+import { Router } from '@angular/router';
 
 /**
  * A standalone header component that includes navigation controls
@@ -14,28 +15,33 @@ import { MenuService } from '../../core/menu.service';
   standalone: true,
   imports: [CommonModule, LanguageSwitcherComponent, TranslateModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
 
-  /**
-   * Creates an instance of HeaderComponent.
-   *
-   * @param scrollService Service used to scroll to specific page sections.
-   * @param menuService Service used to toggle the responsive navigation menu.
-   */
   constructor(
     private scrollService: ScrollService,
-    private menuService: MenuService
+    private menuService: MenuService,
+    private router: Router
   ) { }
 
   /**
    * Scrolls smoothly to the section with the given ID.
+   * If not on the main page, navigates there first.
    *
    * @param sectionId The ID of the section to scroll to.
    */
   scrollToSection(sectionId: string): void {
-    this.scrollService.scrollTo(sectionId);
+    if (this.router.url === '/') {
+      this.scrollService.scrollTo(sectionId);
+    } else {
+      this.router.navigate(['/']).then(() => {
+        // Kurzes Delay, damit DOM gerendert ist
+        setTimeout(() => {
+          this.scrollService.scrollTo(sectionId);
+        }, 50);
+      });
+    }
   }
 
   /**

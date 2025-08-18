@@ -29,15 +29,15 @@ export class AppComponent {
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe((event: NavigationEnd) => {
-        // Header nur anzeigen, wenn die Route nicht die MainPage ist
+       
         this.showHeader = event.urlAfterRedirects !== '/';
 
-        // Body-Klassen für spezielle Routen setzen
+      
         const body = document.body;
-        // Vorherige Klassen entfernen
+       
         body.classList.remove('imprint-page', 'privacy-page', 'legal-page');
 
-        // Neue Klasse je nach Route hinzufügen
+     
         switch (event.urlAfterRedirects) {
           case '/imprint':
             body.classList.add('imprint-page');
