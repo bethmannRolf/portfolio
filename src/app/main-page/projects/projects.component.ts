@@ -123,21 +123,21 @@ export class ProjectsComponent {
       ],
       additionalInformation: 'PROJECTS.SINGLE_PROJECT.JOIN.ABOUT_CONTENT'
     },
-    {
-      projectTitle: 'Portfolio',
-      githubLink: 'https://github.com/bethmannRolf/portfolio',
-      pageLink: 'https://rolf-bethmann.de',
+        {
+      projectTitle: 'Pokedex',
+      githubLink: 'https://github.com/bethmannRolf/pokedex',
+      pageLink: 'https://pokedex.rolf-bethmann.de/index.html',
       projectNumber: 3,
-      imageSource: 'assets/img/projects/portfolio_preview.png',
-      usedTechnologies: ['Angular', 'Typescript', 'HTML', 'SCSS'],
+      imageSource: 'assets/img/projects/pokedex_preview.png',
+      usedTechnologies: ['JavaScript', 'REST-API', 'HTML', 'CSS'],
       usedTechOverlay: [
         {
-          imgSource: '../../assets/img/projects/angular_green.svg',
-          techName: 'Angular'
+          imgSource: '../../assets/img/projects/js_green.svg',
+          techName: 'JavaScript'
         },
         {
-          imgSource: '../../assets/img/projects/ts_green.svg',
-          techName: 'TypeScript'
+          imgSource: '../../assets/img/projects/rest-api_green.svg',
+          techName: 'REST-API'
         },
         {
           imgSource: '../../assets/img/projects/html_green.svg',
@@ -148,7 +148,8 @@ export class ProjectsComponent {
           techName: 'CSS'
         }
       ],
-      additionalInformation: 'PROJECTS.SINGLE_PROJECT.PORTFOLIO.ABOUT_CONTENT'
-    }
+      additionalInformation: 'PROJECTS.SINGLE_PROJECT.POKEDEX.ABOUT_CONTENT'
+    },
+
   ];
 }
