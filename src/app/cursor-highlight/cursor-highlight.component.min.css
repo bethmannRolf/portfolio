@@ -1,1 +1,1 @@
-#cursor-highlight{position:absolute;border-radius:50%;background:radial-gradient(circle, rgba(61,207,182,0.3) 5%, rgba(255,255,255,0) 60%);pointer-events:none;width:250px;height:250px;transform:translate(-50%, -50%);transition:all 0.01s ease-out;z-index:9999}
+#cursor-highlight{position:fixed;border-radius:50%;background:radial-gradient(circle, rgba(61,207,182,0.3) 5%, rgba(255,255,255,0) 60%);pointer-events:none;width:250px;height:250px;margin-left:-125px;margin-top:-125px;z-index:9999}

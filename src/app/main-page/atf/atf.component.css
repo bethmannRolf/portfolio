@@ -338,9 +338,14 @@ svg:hover path {
 
 .responsive-header-link-span {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 100%;
   letter-spacing: -3%;
+  font-family: 'Fira Code';
+}
+
+.no-division {
+  white-space: nowrap;
 }
 
 @media (max-width: 1600px) {
