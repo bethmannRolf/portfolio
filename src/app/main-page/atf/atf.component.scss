@@ -63,7 +63,6 @@ button{
     0% {
         transform: translateX(0);
     }
-
     100% {
         transform: translateX(-50%);
     }
@@ -133,7 +132,6 @@ button{
     from {
         left: 100%;
     }
-
     to {
         left: -100%;
     }
@@ -347,11 +345,6 @@ svg:hover path {
     line-height: 100%;
     letter-spacing: -3%;
 }
-
-
-
-
-
 
 @media (max-width: 1600px) {
     .mail-resp {
