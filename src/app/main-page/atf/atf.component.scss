@@ -21,6 +21,7 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    position:relative;
 }
 
 .marquee {
@@ -346,6 +347,11 @@ svg:hover path {
     line-height: 100%;
     letter-spacing: -3%;
 }
+
+
+
+
+
 
 @media (max-width: 1600px) {
     .mail-resp {

@@ -21,6 +21,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  position: relative;
 }
 
 .marquee {
@@ -52,6 +53,10 @@ a {
   min-width: 200%;
   animation: marquee-animation 15s linear infinite;
   font-family: 'Karla';
+}
+
+button {
+  cursor: pointer;
 }
 
 @keyframes marquee-animation {
