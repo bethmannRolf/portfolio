@@ -3,7 +3,6 @@ import { Component, ElementRef, HostListener, ViewChild, OnInit, OnDestroy } fro
 import { HeaderComponent } from '../../shared/header/header.component';
 import { ScrollService } from '../../core/scroll.service';
 import { TranslateModule } from '@ngx-translate/core';
-import { LanguageSwitcherComponent } from '../../language-switcher/language-switcher.component';
 import { MenuService } from '../../core/menu.service'; 
 import { Subscription } from 'rxjs';
 import { CookieBannerComponent } from '../../cookie-banner/cookie-banner.component';
@@ -20,8 +19,9 @@ import { CookieBannerComponent } from '../../cookie-banner/cookie-banner.compone
     CommonModule,
     HeaderComponent,
     TranslateModule,
-    LanguageSwitcherComponent,
+   
     CookieBannerComponent
+
   ],
   templateUrl: './atf.component.html',
   styleUrl: './atf.component.scss',

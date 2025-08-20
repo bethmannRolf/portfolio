@@ -61,3 +61,15 @@
         </svg>
     </div>
 </div>
+  <div #menuRef class="responsive-header-menu" [class.active]="menuOpen">
+    <a (click)="scrollToSection('about-me-section-path')">
+      <span class="responsive-header-link-span no-division">{{ 'HEADER.ABOUT' | translate }}</span>
+    </a>
+    <a (click)="scrollToSection('skills-section-path')">
+      <span class="responsive-header-link-span">{{ 'HEADER.SKILLS' | translate }}</span>
+    </a>
+    <a (click)="scrollToSection('projects-section-path')">
+      <span class="responsive-header-link-span">{{ 'HEADER.PROJECTS' | translate }}</span>
+    </a>
+    <app-language-switcher></app-language-switcher>
+  </div>
