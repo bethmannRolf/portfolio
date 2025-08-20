@@ -366,3 +366,11 @@
     justify-items: center;
   }
 }
+
+@media (max-width: 360px) {
+  .right-side {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+}
