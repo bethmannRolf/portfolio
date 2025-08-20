@@ -353,6 +353,42 @@ textarea:-moz-placeholder-shown {
   color: white;
 }
 
+#name-input-position {
+  position: relative;
+}
+
+#email-input-position {
+  position: relative;
+}
+
+#message-input-position {
+  position: relative;
+}
+
+#pp-input-position {
+  position: relative;
+}
+
+#name-error-message {
+  position: absolute;
+  top: 8px;
+}
+
+#email-error-message {
+  position: absolute;
+  top: 8px;
+}
+
+#message-error-message {
+  position: absolute;
+  top: 8px;
+}
+
+#pp-error-message {
+  position: absolute;
+  top: 150px;
+}
+
 @media (max-width: 1550px) {
   .contact-form-container {
     padding-left: 50px;
