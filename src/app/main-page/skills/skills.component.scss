@@ -89,7 +89,7 @@
   padding-top: 190px;
   flex-wrap: wrap;
   justify-content: flex-start;
-   font-family: 'Fira Code';
+  font-family: 'Fira Code';
 }
 
 .image-container {
@@ -188,7 +188,7 @@
 
 .last-image:hover .skill-font-styling {
   color: #3DCFB6;
- 
+
 }
 
 .skills-main-text {
@@ -351,6 +351,10 @@
 }
 
 @media (max-width: 390px) {
+
+  .skills-frame-heading {
+    font-size: 48px;
+  }
 
   .skills-card {
     width: 250px;
