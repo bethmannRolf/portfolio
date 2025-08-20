@@ -62,13 +62,13 @@
         <a href="https://www.linkedin.com/in/rolf-bethmann-4a0257371/" target="_blank" rel="noopener noreferrer">
             <span>LinkedIn</span></a>
         <a href="#contact-section-path"> <span>Email</span></a>
-        <a routerLink="/legal-notice">
+        <a routerLink="/legal-notice" (click)="scrollToTop()">
             <span>{{ 'SHARED.FOOTER.LN' | translate }}</span>
         </a>
-        <a routerLink="/privacy-policy">
+        <a routerLink="/privacy-policy" (click)="scrollToTop()">
             <span>{{ 'SHARED.FOOTER.PP' | translate }}</span>
         </a>
-        <a routerLink="/imprint">
+        <a routerLink="/imprint" (click)="scrollToTop()">
             <span>{{ 'SHARED.FOOTER.IMPRINT' | translate }}</span>
         </a>
     </div>

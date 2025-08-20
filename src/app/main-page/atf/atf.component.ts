@@ -19,9 +19,7 @@ import { CookieBannerComponent } from '../../cookie-banner/cookie-banner.compone
     CommonModule,
     HeaderComponent,
     TranslateModule,
-   
     CookieBannerComponent
-
   ],
   templateUrl: './atf.component.html',
   styleUrl: './atf.component.scss',
