@@ -6,6 +6,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { MenuService } from '../../core/menu.service'; 
 import { Subscription } from 'rxjs';
 import { CookieBannerComponent } from '../../cookie-banner/cookie-banner.component';
+import { BandComponent } from '../../band/band.component';
 
 /**
  * A standalone component that represents the "above the fold" section of the page.
@@ -19,7 +20,8 @@ import { CookieBannerComponent } from '../../cookie-banner/cookie-banner.compone
     CommonModule,
     HeaderComponent,
     TranslateModule,
-    CookieBannerComponent
+    CookieBannerComponent,
+    BandComponent
   ],
   templateUrl: './atf.component.html',
   styleUrl: './atf.component.scss',
@@ -91,4 +93,5 @@ export class AtfComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.menuSub.unsubscribe();
   }
+  
 }

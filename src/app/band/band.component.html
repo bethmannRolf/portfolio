@@ -1,0 +1,12 @@
+<div class="marquee"
+     (mouseenter)="pauseMarquee()"
+     (mouseleave)="resumeMarquee()">
+  <div class="marquee-content" #bandRef>
+    <span>{{'ATF.AVAILABLE'| translate}}</span>
+    <span class="dot">•</span>
+    <span>{{'ATF.DEVELOPER'| translate}}</span>
+    <span class="dot">•</span>
+    <span>{{'ATF.BASED_IN'| translate}}</span>
+    <span class="dot">•</span>
+  </div>
+</div>
