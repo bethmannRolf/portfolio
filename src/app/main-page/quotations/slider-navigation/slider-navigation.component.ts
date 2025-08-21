@@ -28,7 +28,7 @@ export class SliderNavigationComponent {
 
   /** Navigate to the next slide */
   nextSlide() {
-    this.indexChanged.emit(1); // Signal: gehe 1 nach rechts
+    this.indexChanged.emit(1); 
   }
 
   /** Navigate to the previous slide */
@@ -41,6 +41,6 @@ export class SliderNavigationComponent {
    * @param index The index of the slide to go to.
    */
   goToSlide(index: number) {
-    this.indexChanged.emit(index); // Absolute Navigation
+    this.indexChanged.emit(index); 
   }
 }
