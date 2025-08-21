@@ -1,16 +1,35 @@
 <div class="quotations-section">
-  <span class="what-colleagues-say">{{'QUOTATIONS.HEADING'| translate}}</span>
-  <div class="carousel-container">
+  <span class="what-colleagues-say">{{ 'QUOTATIONS.HEADING' | translate }}</span>
+
+
+  <div class="carousel-container" #carouselContainer>
     <div class="carousel-track" [ngStyle]="{ transform: slideTransform }">
-      <div *ngFor="let slide of slides; let i = index" class="carousel-slide slide" [class.active]="i === currentIndex"
-        #carouselSlide>
-        <img *ngIf="i === currentIndex" class="quote-sign-in-card" src="../../assets/img/quotations/quotes.png"
-          alt="Quotes Icon" />
-        <app-quotation-card [text]="slide.text" [name]="slide.name" [position]="slide.position">
+      <div
+        *ngFor="let slide of slides; let i = index"
+        class="carousel-slide slide"
+        [class.active]="i === currentIndex"
+        #carouselSlide
+      >
+        <img
+          *ngIf="i === currentIndex"
+          class="quote-sign-in-card"
+          src="../../assets/img/quotations/quotes.png"
+          alt="Quotes Icon"
+        />
+        <app-quotation-card
+          [text]="slide.text"
+          [name]="slide.name"
+          [position]="slide.position"
+        >
         </app-quotation-card>
       </div>
     </div>
   </div>
-  <app-slider-navigation [slides]="slides" [currentIndex]="currentIndex" (indexChanged)="onSlideChanged($event)">
+
+  <app-slider-navigation
+    [slides]="slides"
+    [currentIndex]="currentIndex"
+    (indexChanged)="onSlideChanged($event)"
+  >
   </app-slider-navigation>
 </div>

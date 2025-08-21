@@ -19,7 +19,12 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-quotations',
   standalone: true,
-  imports: [CommonModule, QuotationCardComponent, SliderNavigationComponent, TranslateModule],
+  imports: [
+    CommonModule,
+    QuotationCardComponent,
+    SliderNavigationComponent,
+    TranslateModule
+  ],
   templateUrl: './quotations.component.html',
   styleUrls: ['./quotations.component.scss'],
 })
@@ -43,17 +48,14 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
   /** References to all slide elements */
   @ViewChildren('carouselSlide') slideRefs!: QueryList<ElementRef>;
 
-  /**
-   * Constructor for QuotationsComponent
-   * @param quotationService Service to fetch quotations
-   * @param translate Service to handle translation and language change
-   * @param cdr ChangeDetectorRef to manually trigger change detection
-   */
+  /** Reference to the carousel container */
+  @ViewChild('carouselContainer', { static: false }) containerRef!: ElementRef;
+
   constructor(
     private quotationService: QuotationService,
     private translate: TranslateService,
     private cdr: ChangeDetectorRef
-  ) { }
+  ) {}
 
   /** Initialize component: load quotations and subscribe to language changes and resize events */
   ngOnInit(): void {
@@ -110,9 +112,10 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
 
   /**
    * Calculates and sets the CSS transform string to center the current slide.
+   * Uses the container width instead of the viewport width to handle zoom/scale correctly.
    */
   private updateTransform(): void {
-    if (!this.slideRef?.nativeElement) {
+    if (!this.slideRef?.nativeElement || !this.containerRef?.nativeElement) {
       this.slideTransform = '';
       return;
     }
@@ -120,7 +123,11 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
     const slideWidth = this.slideRef.nativeElement.offsetWidth;
     const gap = 80;
     const total = slideWidth + gap;
-    const centerOffset = (window.innerWidth / 2) - (slideWidth / 2);
+
+    // Container statt Viewport verwenden
+    const containerWidth = this.containerRef.nativeElement.offsetWidth;
+    const centerOffset = (containerWidth / 2) - (slideWidth / 2);
+
     const translateX = -(this.currentIndex * total) + centerOffset;
     this.slideTransform = `translateX(${translateX}px)`;
   }
