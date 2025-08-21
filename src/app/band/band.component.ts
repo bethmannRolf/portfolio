@@ -6,14 +6,13 @@ import {
   AfterViewInit,
   OnDestroy,
   HostListener,
-  
 } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-band',
   standalone: true,
-  imports: [CommonModule, TranslateModule], 
+  imports: [CommonModule, TranslateModule],
   templateUrl: './band.component.html',
   styleUrls: ['./band.component.scss'],
 })
@@ -30,14 +29,14 @@ export class BandComponent implements AfterViewInit, OnDestroy {
 
   ngAfterViewInit(): void {
   
-    requestAnimationFrame(() => {
-      setTimeout(() => this.buildOrRebuild(), 0);
-    });
+    const build = () => setTimeout(() => this.buildOrRebuild(), 0);
+
+    try { (document as any).fonts?.ready.then(build).catch(() => build()); } catch { build(); }
+    build();
   }
 
   @HostListener('window:resize')
   onResize(): void {
- 
     this.buildOrRebuild();
   }
 
@@ -47,55 +46,63 @@ export class BandComponent implements AfterViewInit, OnDestroy {
 
   private buildOrRebuild(): void {
     const bandEl = this.bandRef.nativeElement;
-    const wrapperEl = bandEl.parentElement as HTMLElement | null; // .marquee
+    const wrapperEl = bandEl.parentElement as HTMLElement | null;
     if (!wrapperEl) return;
-
 
     if (!this.originalHTML) {
       this.originalHTML = bandEl.innerHTML.trim();
     }
 
-    
+  
     this.cleanupStyle();
     bandEl.style.animation = '';
     bandEl.innerHTML = this.originalHTML;
 
-  
-    const minWidth = wrapperEl.offsetWidth * 2;
-    while (bandEl.scrollWidth < minWidth) {
-      bandEl.innerHTML += this.originalHTML;
-     
-      if (bandEl.innerHTML.length > 500000) break;
-    }
-
-    
-    const halfWidth = bandEl.scrollWidth / 2;
+ 
+    let w1 = bandEl.scrollWidth;
 
    
-    if (halfWidth <= 0) {
+    if (w1 <= 0) {
       setTimeout(() => this.buildOrRebuild(), 50);
       return;
     }
 
- 
-    const durationSec = halfWidth / this.speedPxPerSec;
-
-
-    this.keyframesName = `bandScroll_${Date.now()}`;
+  
+    bandEl.innerHTML = this.originalHTML + this.originalHTML;
+    let w2 = bandEl.scrollWidth;
 
   
+    const period = w2 - w1;
+    if (period <= 0) {
+
+      setTimeout(() => this.buildOrRebuild(), 50);
+      return;
+    }
+
+   
+ 
+    const neededMin = wrapperEl.offsetWidth + period;
+    while (bandEl.scrollWidth < neededMin) {
+      bandEl.innerHTML += this.originalHTML;
+      if (bandEl.innerHTML.length > 500_000) break; 
+    }
+
+   
+    const durationSec = period / this.speedPxPerSec;
+
+   
+    this.keyframesName = `bandScroll_${Date.now()}`;
     this.styleEl = document.createElement('style');
     this.styleEl.textContent = `
       @keyframes ${this.keyframesName} {
-        from { transform: translateX(0); }
-        to   { transform: translateX(-${halfWidth}px); }
+        from { transform: translate3d(0, 0, 0); }
+        to   { transform: translate3d(-${period}px, 0, 0); }
       }
     `;
     document.head.appendChild(this.styleEl);
 
-    
+  
     bandEl.style.animation = `${this.keyframesName} ${durationSec}s linear infinite`;
-
     this.built = true;
   }
 
@@ -106,18 +113,15 @@ export class BandComponent implements AfterViewInit, OnDestroy {
     this.styleEl = null;
   }
 
-pauseMarquee(): void {
-  if (this.built) {
-    this.bandRef.nativeElement.style.animationPlayState = 'paused';
+  pauseMarquee(): void {
+    if (this.built) {
+      this.bandRef.nativeElement.style.animationPlayState = 'paused';
+    }
   }
-}
 
-resumeMarquee(): void {
-  if (this.built) {
-    this.bandRef.nativeElement.style.animationPlayState = 'running';
+  resumeMarquee(): void {
+    if (this.built) {
+      this.bandRef.nativeElement.style.animationPlayState = 'running';
+    }
   }
-}
-
-
-
 }
