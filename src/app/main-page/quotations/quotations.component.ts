@@ -28,27 +28,26 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   templateUrl: './quotations.component.html',
   styleUrls: ['./quotations.component.scss'],
 })
-/**
- * Component to display a carousel slider of quotations.
- * Supports language change and window resize events.
- */
 export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
-  /** Current active slide index */
-  currentIndex = 0;
-
-  /** Array of quotations to display */
+  /** Original slides */
   slides: Quotation[] = [];
 
-  /** CSS transform string applied to the slide container */
+  /** Slides inkl. vorderem/hinterem Klon */
+  displaySlides: Quotation[] = [];
+
+  /** Aktueller Index innerhalb der displaySlides */
+  currentIndex = 1;
+
+  /** Reeller Index innerhalb der Original-Slides */
+  get realIndex(): number {
+    return (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+  }
+
   slideTransform = '';
-
-  /** Reference to the slide container element */
+  slideTransition = 'transform 0.5s ease';
+  
   @ViewChild('carouselSlide', { static: false }) slideRef!: ElementRef;
-
-  /** References to all slide elements */
   @ViewChildren('carouselSlide') slideRefs!: QueryList<ElementRef>;
-
-  /** Reference to the carousel container */
   @ViewChild('carouselContainer', { static: false }) containerRef!: ElementRef;
 
   constructor(
@@ -57,7 +56,6 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
     private cdr: ChangeDetectorRef
   ) {}
 
-  /** Initialize component: load quotations and subscribe to language changes and resize events */
   ngOnInit(): void {
     this.loadQuotations();
     this.translate.onLangChange.subscribe(() => {
@@ -66,7 +64,6 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
     window.addEventListener('resize', this.onResize);
   }
 
-  /** After view initialization: listen to changes in slide elements and update transform accordingly */
   ngAfterViewInit(): void {
     this.slideRefs.changes.subscribe(() => {
       this.deferTransformUpdate();
@@ -74,35 +71,52 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
     this.deferTransformUpdate();
   }
 
-  /** Cleanup on destroy: remove window resize listener */
   ngOnDestroy(): void {
     window.removeEventListener('resize', this.onResize);
   }
 
-  /**
-   * Load quotations from the service and update the slides
-   */
   loadQuotations(): void {
     this.quotationService.getQuotations().subscribe((data) => {
       this.slides = data;
+
+      // Klonen: [letzte] + slides + [erste]
+      if (this.slides.length > 0) {
+        this.displaySlides = [
+          this.slides[this.slides.length - 1],
+          ...this.slides,
+          this.slides[0],
+        ];
+        this.currentIndex = 1; // Start auf dem ersten echten Slide
+      }
+
       this.deferTransformUpdate();
     });
   }
 
-  /**
-   * Update the current slide index and apply transform to show the correct slide.
-   * @param index New slide index
-   */
-  onSlideChanged(index: number): void {
-    const slidesLength = this.slides.length;
-    this.currentIndex = (index + slidesLength) % slidesLength;
+  onSlideChanged(direction: number): void {
+    this.currentIndex += direction;
     this.deferTransformUpdate();
+
+    // Am Ende oder Anfang angekommen? -> nach kurzer Zeit Transition ausschalten und springen
+    setTimeout(() => {
+      if (this.currentIndex === this.displaySlides.length - 1) {
+        // Am Ende -> zurück auf 1
+        this.slideTransition = 'none';
+        this.currentIndex = 1;
+        this.updateTransform();
+        this.cdr.detectChanges();
+        setTimeout(() => (this.slideTransition = 'transform 0.5s ease'));
+      } else if (this.currentIndex === 0) {
+        // Am Anfang -> nach hinten
+        this.slideTransition = 'none';
+        this.currentIndex = this.displaySlides.length - 2;
+        this.updateTransform();
+        this.cdr.detectChanges();
+        setTimeout(() => (this.slideTransition = 'transform 0.5s ease'));
+      }
+    }, 500);
   }
 
-  /**
-   * Defers the transform update using setTimeout to allow DOM updates to complete.
-   * Also triggers Angular change detection manually.
-   */
   private deferTransformUpdate(): void {
     setTimeout(() => {
       this.updateTransform();
@@ -110,10 +124,6 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
     });
   }
 
-  /**
-   * Calculates and sets the CSS transform string to center the current slide.
-   * Uses the container width instead of the viewport width to handle zoom/scale correctly.
-   */
   private updateTransform(): void {
     if (!this.slideRef?.nativeElement || !this.containerRef?.nativeElement) {
       this.slideTransform = '';
@@ -124,7 +134,6 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
     const gap = 80;
     const total = slideWidth + gap;
 
-    // Container statt Viewport verwenden
     const containerWidth = this.containerRef.nativeElement.offsetWidth;
     const centerOffset = (containerWidth / 2) - (slideWidth / 2);
 
@@ -132,7 +141,6 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
     this.slideTransform = `translateX(${translateX}px)`;
   }
 
-  /** Handler for window resize events, triggers transform update */
   onResize = () => {
     this.deferTransformUpdate();
   };

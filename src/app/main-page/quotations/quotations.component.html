@@ -1,11 +1,10 @@
 <div class="quotations-section">
   <span class="what-colleagues-say">{{ 'QUOTATIONS.HEADING' | translate }}</span>
 
-
   <div class="carousel-container" #carouselContainer>
-    <div class="carousel-track" [ngStyle]="{ transform: slideTransform }">
+    <div class="carousel-track" [ngStyle]="{ transform: slideTransform, transition: slideTransition }">
       <div
-        *ngFor="let slide of slides; let i = index"
+        *ngFor="let slide of displaySlides; let i = index"
         class="carousel-slide slide"
         [class.active]="i === currentIndex"
         #carouselSlide
@@ -28,7 +27,7 @@
 
   <app-slider-navigation
     [slides]="slides"
-    [currentIndex]="currentIndex"
+    [currentIndex]="realIndex"
     (indexChanged)="onSlideChanged($event)"
   >
   </app-slider-navigation>
