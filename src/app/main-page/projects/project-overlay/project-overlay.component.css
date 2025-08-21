@@ -295,11 +295,17 @@
 
 @media (max-width: 650px) {
   .what-about-text {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 600px) {
+  .project-number {
+    font-size: 48px;
+  }
+  .project-name {
+    font-size: 36px;
+  }
   .project-overlay-container {
     padding-top: 16px;
     padding-right: 8px;
@@ -322,6 +328,9 @@
 }
 
 @media (max-width: 500px) {
+  .upper-left-texts {
+    gap: 20px;
+  }
   .lower-card {
     display: flex;
     flex-direction: column;

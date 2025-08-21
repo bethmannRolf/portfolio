@@ -324,6 +324,15 @@
 
 @media (max-width:600px) {
 
+
+    .project-number {
+        font-size: 48px;
+    }
+
+    .project-name {
+        font-size: 36px;
+    }
+
     .project-overlay-container {
         padding-top: 16px;
         padding-right: 8px;
@@ -351,6 +360,11 @@
 
 
 @media (max-width:500px) {
+
+    .upper-left-texts {
+        gap: 20px;
+    }
+
 
     .lower-card {
         display: flex;
@@ -381,14 +395,15 @@
     .what-about-question {
         font-size: 16px;
     }
-    .tech-overlay-item{
+
+    .tech-overlay-item {
         gap: 8px !important;
     }
 }
 
 @media (max-width:450px) {
 
-        .used-technologies{
+    .used-technologies {
         flex-wrap: wrap;
     }
 }
