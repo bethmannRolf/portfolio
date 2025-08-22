@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   user-select: none;
 }
@@ -16,6 +15,7 @@ a {
 }
 
 .atf-wrapper {
+  position: relative;
   background-image: url(../../../assets/img/backgrounds/landingpage_bg.svg);
   background-size: cover;
   background-position: center;
@@ -24,15 +24,30 @@ a {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  /* Content horizontal in der Mitte */
   align-items: center;
-  /* Content vertikal in der Mitte */
+  z-index: 0;
+}
+
+.atf-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
+app-header {
+  position: relative;
+  z-index: 2;
 }
 
 .landingpage {
   width: 100%;
   max-width: 1920px;
-  /* Begrenzung für große Screens */
   height: 100vh;
   position: relative;
   color: white;
