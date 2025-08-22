@@ -2,16 +2,28 @@
   user-select: none;
 }
 
-.quotations-section {
-  background-color: rgb(28, 28, 28);
-  color: white;
+.quotations-wrapper {
+  width: 100%;
+  background-color: rgb(28, 28, 28); 
+  display: flex;
+  justify-content: center;
+  overflow: hidden; 
+}
 
+.quotations-section {
+  max-width: 1920px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  width: 100%;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  color: white;
+  overflow-x: hidden;
 }
+
+
 
 .what-colleagues-say {
   font-weight: 700;

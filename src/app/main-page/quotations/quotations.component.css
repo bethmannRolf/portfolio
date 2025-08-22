@@ -2,14 +2,25 @@
   user-select: none;
 }
 
-.quotations-section {
+.quotations-wrapper {
+  width: 100%;
   background-color: #1c1c1c;
-  color: white;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.quotations-section {
+  max-width: 1920px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  width: 100%;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  color: white;
+  overflow-x: hidden;
 }
 
 .what-colleagues-say {
