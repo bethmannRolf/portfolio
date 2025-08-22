@@ -1,11 +1,22 @@
-.contact-section {
+.contact-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   background-color: #1c1c1c;
+  /* volle Breite */
   color: white;
+}
+
+.contact-section {
   display: flex;
   justify-content: space-between;
   padding: 96px;
+  width: 100%;
+  max-width: 1920px;
+  /* wie bei ATF & Footer */
 }
 
+/* restliche Styles bleiben wie gehabt */
 .left-contact-side {
   max-width: 616px;
   display: flex;

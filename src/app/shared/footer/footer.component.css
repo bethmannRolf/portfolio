@@ -1,16 +1,21 @@
 @charset "UTF-8";
+.footer-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #1c1c1c;
+}
+
 .whole-footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   color: #FFFFFF;
-  padding-bottom: 100px;
-  padding-top: 100px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 100px;
   user-select: none;
-  background-color: #1c1c1c;
+  max-width: 1920px;
+  width: 100%;
 }
 
 .footer-left {
