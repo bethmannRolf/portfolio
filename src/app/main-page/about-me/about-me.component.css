@@ -2,13 +2,20 @@
   user-select: none;
 }
 
-.about-me-section {
+.about-me-wrapper {
+  width: 100%;
   background-color: #1c1c1c;
   color: white;
+}
+
+.about-me-section {
+  max-width: 1920px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
   padding-top: 100px;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .about-me-right {
