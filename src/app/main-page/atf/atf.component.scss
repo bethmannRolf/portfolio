@@ -2,7 +2,7 @@
     user-select: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -14,10 +14,8 @@ a{
     color: white
 }
 
-
-
 .atf-wrapper {
-    position: relative; 
+    position: relative;
     background-image: url(../../../assets/img/backgrounds/landingpage_bg.svg);
     background-size: cover;
     background-position: center;
@@ -36,35 +34,29 @@ a{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;            
-    height: 100px;          
-    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0));
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
     pointer-events: none;
-    z-index: 1;             
+    z-index: 1;
 }
 
 app-header {
     position: relative;
-    z-index: 2; 
+    z-index: 2;
 }
 
 .landingpage {
     width: 100%;
-    max-width: 1920px;  
+    max-width: 1920px;
     height: 100vh;
     position: relative;
     color: white;
 }
 
-
-
-
-
-button{
-    cursor:pointer;
+button {
+    cursor: pointer;
 }
-
-
 
 .marquee:hover .marquee-content {
     animation-play-state: paused;
@@ -130,6 +122,7 @@ button{
     from {
         left: 100%;
     }
+
     to {
         left: -100%;
     }
@@ -302,10 +295,6 @@ svg:hover path {
     right: 50px;
     gap: 24px;
 }
-
-
-
-
 
 @media (max-width: 1600px) {
     .mail-resp {

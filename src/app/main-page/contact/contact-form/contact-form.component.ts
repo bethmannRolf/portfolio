@@ -1,9 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { HttpClient } from '@angular/common/http'; 
+import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule, AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
-
 
 const validTLDs = [
   'com', 'de', 'org', 'net', 'info', 'eu', 'io', 'dev',
@@ -11,8 +10,6 @@ const validTLDs = [
   'ca', 'au', 'cz', 'pl', 'se', 'no', 'dk', 'fi', 'jp', 'cn',
   'biz', 'tv', 'me', 'pro', 'name', 'app', 'shop', 'online', 'site', 'club'
 ];
-
-
 
 export function emailWithTLDValidator(): ValidatorFn {
   return (control: AbstractControl): ValidationErrors | null => {
@@ -58,7 +55,6 @@ export class ContactFormComponent {
       acceptTerms: [false, Validators.requiredTrue]
     });
 
-
     this.contactForm.get('message')?.valueChanges.subscribe(value => {
       const length = value ? value.length : 0;
       this.remainingChars = this.maxMessageLength - length;
@@ -72,7 +68,7 @@ export class ContactFormComponent {
           next: () => {
             this.successMessageVisible = true;
             this.contactForm.reset();
-            this.remainingChars = this.maxMessageLength; 
+            this.remainingChars = this.maxMessageLength;
             setTimeout(() => this.successMessageVisible = false, 5000);
           },
           error: () => {

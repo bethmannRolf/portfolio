@@ -1,8 +1,4 @@
-
-
-
 import { Component, OnInit, HostListener } from '@angular/core';
-
 @Component({
   selector: 'app-cursor-highlight',
   templateUrl: './cursor-highlight.component.html',
@@ -23,7 +19,7 @@ export class CursorHighlightComponent implements OnInit {
 
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(event: MouseEvent): void {
-   
+
     this.targetX = event.clientX;
     this.targetY = event.clientY;
   }
@@ -35,7 +31,6 @@ export class CursorHighlightComponent implements OnInit {
       this.cursorHighlight.style.left = `${this.currentX}px`;
       this.cursorHighlight.style.top = `${this.currentY}px`;
     }
-
     requestAnimationFrame(() => this.animate());
   }
 }

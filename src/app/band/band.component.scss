@@ -25,9 +25,8 @@
   display: flex;
   white-space: nowrap;
   will-change: transform;
-  gap: 8rem; 
+  gap: 8rem;
 }
-
 
 .marquee:hover .marquee-content {
   animation-play-state: paused;
@@ -40,32 +39,26 @@
 
 @media (max-width: 960px) {
 
-    .marquee {
-        font-size: 28px;
-    }
+  .marquee {
+    font-size: 28px;
+  }
 
+  .marquee-content {
 
-.marquee-content {
-
-  gap: 4rem; 
-}
-
-
-
+    gap: 4rem;
+  }
 }
 
 @media (max-width: 550px) {
 
-    .marquee {
-        font-size: 16px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
+  .marquee {
+    font-size: 16px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 
+  .marquee-content {
 
-    
-.marquee-content {
-
-  gap: 1rem; 
-}
+    gap: 1rem;
+  }
 }

@@ -273,21 +273,23 @@ html {
 }
 
 .imprint-page {
-   background-color: rgb(28, 28, 28);
+  background-color: rgb(28, 28, 28);
 }
 
 .privacy-page {
-   background-color: rgb(28, 28, 28);
+  background-color: rgb(28, 28, 28);
 }
 
 .legal-page {
-   background-color: rgb(28, 28, 28);
+  background-color: rgb(28, 28, 28);
 }
+
 .header-wrapper {
   max-width: 1920px;
-  margin: 0 auto;  
+  margin: 0 auto;
   box-sizing: border-box;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -296,11 +298,13 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
-
-html, body {
+html,
+body {
   overflow-x: hidden;
 }

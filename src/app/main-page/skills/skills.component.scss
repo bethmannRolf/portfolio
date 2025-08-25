@@ -2,21 +2,20 @@
   user-select: none;
 }
 
-
 .skills-wrapper {
   width: 100%;
   background-color: rgb(28, 28, 28);
   background-image: url(../../../assets/img/backgrounds/skills_background.svg);
-  background-size: cover; 
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 96px 0; 
+  padding: 96px 0;
 }
 
 .skills-section {
   max-width: 1920px;
-  margin: 0 auto; /* zentrieren */
-  padding: 0 20px; 
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   color: white;
@@ -196,7 +195,6 @@
 
 .last-image:hover .skill-font-styling {
   color: #3DCFB6;
-
 }
 
 .skills-main-text {

@@ -2,7 +2,6 @@
   <button (click)="previousSlide()" class="nav-button">
     <span>&larr;</span>
   </button>
-
   <div class="dots">
     <span 
       *ngFor="let slide of slides; let i = index"
@@ -10,7 +9,6 @@
       [class.active]="i === currentIndex"
     ></span>
   </div>
-
   <button (click)="nextSlide()" class="nav-button">
     <span>&rarr;</span>
   </button>

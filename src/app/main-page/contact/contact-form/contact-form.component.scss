@@ -241,7 +241,7 @@ textarea {
     background-color: transparent;
     border: none;
     max-height: 300px;
-   
+
     min-height: 80px;
 }
 
@@ -344,65 +344,55 @@ input:-webkit-autofill:focus,
 textarea:-webkit-autofill:focus,
 input:-webkit-autofill:active,
 textarea:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0px 1000px rgb(28, 28, 28) inset; 
-  -webkit-text-fill-color: white;
-  transition: background-color 5000s ease-in-out 0s;
+    -webkit-box-shadow: 0 0 0px 1000px rgb(28, 28, 28) inset;
+    -webkit-text-fill-color: white;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 
 input:-moz-placeholder-shown,
 textarea:-moz-placeholder-shown {
-  background-color: rgb(28, 28, 28);
-  color: white;
+    background-color: rgb(28, 28, 28);
+    color: white;
 }
 
-
-
-
-#name-input-position{
+#name-input-position {
     position: relative;
 }
 
-#email-input-position{
- position: relative;
+#email-input-position {
+    position: relative;
 }
 
-#message-input-position{
-  position: relative;
+#message-input-position {
+    position: relative;
 }
 
-#pp-input-position{
-      position: relative;
+#pp-input-position {
+    position: relative;
 }
 
-#name-error-message{
+#name-error-message {
     position: absolute;
- top: 8px;
+    top: 8px;
 }
 
 
-#email-error-message{
+#email-error-message {
     position: absolute;
-   top: 8px;
+    top: 8px;
 
 }
 
-#message-error-message{
+#message-error-message {
     position: absolute;
-      top: 8px;
+    top: 8px;
 }
 
-
-
-
-
-#pp-error-message{
+#pp-error-message {
     position: absolute;
- top: 150px;
+    top: 150px;
 }
-
-
-
 
 @media (max-width: 1550px) {
     .contact-form-container {

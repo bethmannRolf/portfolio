@@ -24,11 +24,10 @@ export class BandComponent implements AfterViewInit, OnDestroy {
   private originalHTML = '';
   private built = false;
 
-
   private readonly speedPxPerSec = 120;
 
   ngAfterViewInit(): void {
-  
+
     const build = () => setTimeout(() => this.buildOrRebuild(), 0);
 
     try { (document as any).fonts?.ready.then(build).catch(() => build()); } catch { build(); }
@@ -53,25 +52,23 @@ export class BandComponent implements AfterViewInit, OnDestroy {
       this.originalHTML = bandEl.innerHTML.trim();
     }
 
-  
     this.cleanupStyle();
     bandEl.style.animation = '';
     bandEl.innerHTML = this.originalHTML;
 
- 
+
     let w1 = bandEl.scrollWidth;
 
-   
+
     if (w1 <= 0) {
       setTimeout(() => this.buildOrRebuild(), 50);
       return;
     }
 
-  
     bandEl.innerHTML = this.originalHTML + this.originalHTML;
     let w2 = bandEl.scrollWidth;
 
-  
+
     const period = w2 - w1;
     if (period <= 0) {
 
@@ -79,18 +76,14 @@ export class BandComponent implements AfterViewInit, OnDestroy {
       return;
     }
 
-   
- 
     const neededMin = wrapperEl.offsetWidth + period;
     while (bandEl.scrollWidth < neededMin) {
       bandEl.innerHTML += this.originalHTML;
-      if (bandEl.innerHTML.length > 500_000) break; 
+      if (bandEl.innerHTML.length > 500_000) break;
     }
 
-   
     const durationSec = period / this.speedPxPerSec;
 
-   
     this.keyframesName = `bandScroll_${Date.now()}`;
     this.styleEl = document.createElement('style');
     this.styleEl.textContent = `
@@ -101,7 +94,6 @@ export class BandComponent implements AfterViewInit, OnDestroy {
     `;
     document.head.appendChild(this.styleEl);
 
-  
     bandEl.style.animation = `${this.keyframesName} ${durationSec}s linear infinite`;
     this.built = true;
   }

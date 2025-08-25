@@ -93,5 +93,4 @@ export class AtfComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.menuSub.unsubscribe();
   }
-  
 }

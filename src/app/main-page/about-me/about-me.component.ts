@@ -14,5 +14,5 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './about-me.component.scss'
 })
 export class AboutMeComponent {
-  // Currently no logic is implemented in this component.
+
 }

@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-
 @Component({
   selector: 'app-slider-navigation',
   standalone: true,
@@ -28,7 +27,7 @@ export class SliderNavigationComponent {
 
   /** Navigate to the next slide */
   nextSlide() {
-    this.indexChanged.emit(1); 
+    this.indexChanged.emit(1);
   }
 
   /** Navigate to the previous slide */
@@ -41,6 +40,6 @@ export class SliderNavigationComponent {
    * @param index The index of the slide to go to.
    */
   goToSlide(index: number) {
-    this.indexChanged.emit(index); 
+    this.indexChanged.emit(index);
   }
 }

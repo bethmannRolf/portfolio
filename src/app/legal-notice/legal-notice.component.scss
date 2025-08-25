@@ -1,87 +1,84 @@
 * {
-    background-color: rgb(28, 28, 28);
-    font-family: 'Karla';
-    user-select: none;
+  background-color: rgb(28, 28, 28);
+  font-family: 'Karla';
+  user-select: none;
 }
 
 h1 {
-    text-align: center;
-    font-weight: 400;
-    margin-bottom: 50px;
-    color: whitesmoke;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 50px;
+  color: whitesmoke;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h2 {
-    margin-top: 50px;
-    text-align: center;
-    font-weight: 400;
-    margin-bottom: 80px;
-    color: whitesmoke;
-    color: #3DCFB6;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 80px;
+  color: whitesmoke;
+  color: #3DCFB6;
 }
 
 h2:hover {
-    scale: 1.2;
+  scale: 1.2;
 }
 
 h3 {
-    text-decoration: underline;
-    font-weight: 400;
-    margin-bottom: 5px;
-    color: whitesmoke;
+  text-decoration: underline;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: whitesmoke;
 }
 
 p {
-    margin-bottom: 5px;
-    color: whitesmoke;
+  margin-bottom: 5px;
+  color: whitesmoke;
 }
 
 span {
-    margin-bottom: 5px;
-    color: whitesmoke;
+  margin-bottom: 5px;
+  color: whitesmoke;
 }
 
 .legal-notice-wrapper {
   width: 100%;
-  background-color: rgb(28, 28, 28); 
+  background-color: rgb(28, 28, 28);
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .legal-notice-container {
-  max-width: 1920px;      
-  width: 100%;           
+  max-width: 1920px;
+  width: 100%;
   padding: 100px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
-
 .contact-data-div {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 750px) {
   .legal-notice-container {
     padding-left: 40px;
-    padding-right:40px;
+    padding-right: 40px;
   }
 }
 
 @media (max-width: 500px) {
   .legal-notice-container {
     padding-left: 16px;
-    padding-right:16px;
+    padding-right: 16px;
   }
 
-h1 {
-font-size: 30px;
-}
-
-
+  h1 {
+    font-size: 30px;
+  }
 }

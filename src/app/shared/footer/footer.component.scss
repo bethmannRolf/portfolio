@@ -1,21 +1,21 @@
 .footer-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center; 
-    background-color: rgb(28, 28, 28); 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(28, 28, 28);
 }
 
 .whole-footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    color: #FFFFFF;
-    padding: 100px;
-    user-select: none;
-    max-width: 1920px;
-    width: 100%;
-    box-sizing: border-box; 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: #FFFFFF;
+  padding: 100px;
+  user-select: none;
+  max-width: 1920px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-left {
@@ -129,8 +129,8 @@ a:hover::before {
 
 @media (max-width: 400px) {
 
-.whole-footer{
-  padding-left:16px;
-  padding-right: 16px;
-}
+  .whole-footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }

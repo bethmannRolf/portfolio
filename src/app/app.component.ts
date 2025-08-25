@@ -29,15 +29,12 @@ export class AppComponent {
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe((event: NavigationEnd) => {
-       
-        this.showHeader = event.urlAfterRedirects !== '/';
 
-      
+        this.showHeader = event.urlAfterRedirects !== '/';
         const body = document.body;
-       
+
         body.classList.remove('imprint-page', 'privacy-page', 'legal-page');
 
-     
         switch (event.urlAfterRedirects) {
           case '/imprint':
             body.classList.add('imprint-page');

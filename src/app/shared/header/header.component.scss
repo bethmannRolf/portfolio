@@ -15,7 +15,7 @@
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 50px;
-z-index: 2;
+  z-index: 2;
 }
 
 .header-link-span {
@@ -57,50 +57,49 @@ a:active {
 }
 
 .responsive-header-menu {
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    width: 238px;
-    height: 254px;
-    background: linear-gradient(to top right, rgba(28, 28, 28, 1), rgba(8, 70, 59, 1));
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 40px 77px;
-    gap: 24px;
-    border-radius: 30px;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
-    z-index: 9999999999;
-    opacity: 0;
-    pointer-events: none;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  width: 238px;
+  height: 254px;
+  background: linear-gradient(to top right, rgba(28, 28, 28, 1), rgba(8, 70, 59, 1));
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 77px;
+  gap: 24px;
+  border-radius: 30px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 9999999999;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .responsive-header-menu.active {
-    transform: translateX(-50%);
-    opacity: 1;
-    pointer-events: auto;
+  transform: translateX(-50%);
+  opacity: 1;
+  pointer-events: auto;
 }
 
 #responsive-header-menu span {
-    color: white;
-    font-size: 16px;
-   
+  color: white;
+  font-size: 16px;
 }
 
 .responsive-header-link-span {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: -3%;
-       font-family: 'Fira Code';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -3%;
+  font-family: 'Fira Code';
 }
 
-.no-division{
-    white-space: nowrap;
+.no-division {
+  white-space: nowrap;
 }
 
 @media (max-width: 1000px) {

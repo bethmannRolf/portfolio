@@ -45,7 +45,7 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
 
   slideTransform = '';
   slideTransition = 'transform 0.5s ease';
-  
+
   @ViewChild('carouselSlide', { static: false }) slideRef!: ElementRef;
   @ViewChildren('carouselSlide') slideRefs!: QueryList<ElementRef>;
   @ViewChild('carouselContainer', { static: false }) containerRef!: ElementRef;
@@ -54,7 +54,7 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
     private quotationService: QuotationService,
     private translate: TranslateService,
     private cdr: ChangeDetectorRef
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.loadQuotations();
@@ -79,14 +79,14 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
     this.quotationService.getQuotations().subscribe((data) => {
       this.slides = data;
 
-      // Klonen: [letzte] + slides + [erste]
+     
       if (this.slides.length > 0) {
         this.displaySlides = [
           this.slides[this.slides.length - 1],
           ...this.slides,
           this.slides[0],
         ];
-        this.currentIndex = 1; // Start auf dem ersten echten Slide
+        this.currentIndex = 1;
       }
 
       this.deferTransformUpdate();
@@ -96,18 +96,14 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
   onSlideChanged(direction: number): void {
     this.currentIndex += direction;
     this.deferTransformUpdate();
-
-    // Am Ende oder Anfang angekommen? -> nach kurzer Zeit Transition ausschalten und springen
     setTimeout(() => {
       if (this.currentIndex === this.displaySlides.length - 1) {
-        // Am Ende -> zurück auf 1
         this.slideTransition = 'none';
         this.currentIndex = 1;
         this.updateTransform();
         this.cdr.detectChanges();
         setTimeout(() => (this.slideTransition = 'transform 0.5s ease'));
       } else if (this.currentIndex === 0) {
-        // Am Anfang -> nach hinten
         this.slideTransition = 'none';
         this.currentIndex = this.displaySlides.length - 2;
         this.updateTransform();
@@ -129,14 +125,12 @@ export class QuotationsComponent implements OnInit, AfterViewInit, OnDestroy {
       this.slideTransform = '';
       return;
     }
-
+    
     const slideWidth = this.slideRef.nativeElement.offsetWidth;
     const gap = 80;
     const total = slideWidth + gap;
-
     const containerWidth = this.containerRef.nativeElement.offsetWidth;
     const centerOffset = (containerWidth / 2) - (slideWidth / 2);
-
     const translateX = -(this.currentIndex * total) + centerOffset;
     this.slideTransform = `translateX(${translateX}px)`;
   }

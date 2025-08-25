@@ -37,7 +37,6 @@ export class CookieBannerComponent {
     this.consentGiven = !!this.cookieService.getConsent();
   }
 
-  
   /**
    * Handles the user's acceptance of cookies.
    * Sets the consent state to 'accepted' and hides the banner.

@@ -1,41 +1,38 @@
-
-
 <div *ngIf="successMessageVisible" class="success-message">
   {{'CONTACT.SUCCESS_MESSAGE'| translate}}
 </div>
-
 <form class="contact-form-container" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
   <div class="name-input-section" id="name-input-position">
     <label for="name"><span class="question-name-input question">{{'CONTACT.CONTACT_FORM.QUESTIONS.NAME'|
         translate}}</span></label>
-    <input placeholder="{{'CONTACT.CONTACT_FORM.PLACEHOLDER.NAME'| translate}}"  autocomplete="name"  id="name" formControlName="name"
-      required />
-
-          <div id="name-error-message" *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid" class="error-message">
+    <input placeholder="{{'CONTACT.CONTACT_FORM.PLACEHOLDER.NAME'| translate}}" autocomplete="name" id="name"
+      formControlName="name" required />
+    <div id="name-error-message" *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid"
+      class="error-message">
       {{'CONTACT.CONTACT_FORM.WARNINGS.NAME'| translate}}
     </div>
   </div>
   <div class="email-input-section" id="email-input-position">
     <label for="email"><span class="question-mail-input question">{{'CONTACT.CONTACT_FORM.QUESTIONS.MAIL'|
         translate}}</span></label>
-    <input autocomplete="email"  placeholder="{{'CONTACT.CONTACT_FORM.PLACEHOLDER.MAIL'| translate}}" id="email" formControlName="email"
-      required type="email" />
+    <input autocomplete="email" placeholder="{{'CONTACT.CONTACT_FORM.PLACEHOLDER.MAIL'| translate}}" id="email"
+      formControlName="email" required type="email" />
 
-    <div id="email-error-message" *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid" class="error-message">
+    <div id="email-error-message" *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid"
+      class="error-message">
       {{'CONTACT.CONTACT_FORM.WARNINGS.MAIL'| translate}}
     </div>
-
   </div>
   <div class="message-area-section" id="message-input-position">
     <label for="message"><span class="question-message-input question">{{'CONTACT.CONTACT_FORM.QUESTIONS.CONTENT'|
         translate}}</span></label>
-    <textarea minlength="10"  maxlength="200" placeholder="{{'CONTACT.CONTACT_FORM.PLACEHOLDER.CONTENT'| translate}}" id="message"
-      formControlName="message" required></textarea>
-      <div class="char-count">
-  {{ remainingChars }} {{'CONTACT.CONTACT_FORM.REMAINING_CHARS'| translate}}
-</div>
-
-        <div id="message-error-message" *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid" class="error-message">
+    <textarea minlength="10" maxlength="200" placeholder="{{'CONTACT.CONTACT_FORM.PLACEHOLDER.CONTENT'| translate}}"
+      id="message" formControlName="message" required></textarea>
+    <div class="char-count">
+      {{ remainingChars }} {{'CONTACT.CONTACT_FORM.REMAINING_CHARS'| translate}}
+    </div>
+    <div id="message-error-message" *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid"
+      class="error-message">
       {{'CONTACT.CONTACT_FORM.WARNINGS.CONTENT'| translate}}
     </div>
   </div>
@@ -49,7 +46,8 @@
           translate}}</a>
         <span class="privacy-confirmation-text"> {{'CONTACT.CONTACT_FORM.AGREE_DATA'| translate}}</span>
       </label>
-      <div id="pp-error-message" *ngIf="contactForm.get('acceptTerms')?.touched && contactForm.get('acceptTerms')?.invalid"
+      <div id="pp-error-message"
+        *ngIf="contactForm.get('acceptTerms')?.touched && contactForm.get('acceptTerms')?.invalid"
         class="error-message">
         {{'CONTACT.CONTACT_FORM.WARNINGS.PP'| translate}}
       </div>
@@ -59,13 +57,4 @@
       <span class="submit-span">{{'CONTACT.CONTACT_FORM.SUBMIT_BTN'| translate}}</span>
     </button>
   </div>
-
-
-
-
-
-
-
-
-    
 </form>

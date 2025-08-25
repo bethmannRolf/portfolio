@@ -16,11 +16,11 @@ export class FooterComponent {
   constructor(
     private scrollService: ScrollService,
     private router: Router
-  ) {}
+  ) { }
 
-scrollToTop(): void {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
   /**
    * Scrolls to a section on the homepage.
