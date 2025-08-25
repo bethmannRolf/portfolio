@@ -365,3 +365,30 @@
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 380px) {
+  .upper-left-side {
+    gap: 20px;
+  }
+  .upper-right-card {
+    gap: 0px;
+  }
+  .upper-card {
+    padding: 10px;
+    padding-left: 0;
+  }
+  .project-overlay-container {
+    padding: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .upper-left-texts {
+    gap: 10px;
+  }
+  .project-number {
+    font-size: 24px;
+  }
+  .project-name {
+    font-size: 22px;
+  }
+}

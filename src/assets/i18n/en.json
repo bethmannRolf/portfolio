@@ -47,7 +47,7 @@
         "ABOUT_CONTENT": "This portfolio was built with Angular and TypeScript and showcases selected examples of my work as an aspiring frontend developer. It not only serves as a presentation but also reflects my skills in modern web technologies."
       },
       "POKEDEX": {
-        "ABOUT_CONTENT": "This project is built with JavaScript and utilizes an API to fetch data dynamically. It presents the retrieved information in a clear and organized way, allowing users to easily browse, search, and sort the content according to their needs."
+        "ABOUT_CONTENT": "This project is built with JavaScript and utilizes an API to fetch data dynamically. "
       }
     }
   },

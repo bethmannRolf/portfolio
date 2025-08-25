@@ -47,7 +47,7 @@
         "ABOUT_CONTENT": "Dieses Portfolio wurde mit Angular und TypeScript umgesetzt und enthält ausgewählte Beispiele meiner Arbeit als angehender Frontend-Entwickler. Es dient nicht nur zur Präsentation, sondern spiegelt auch meine Fähigkeiten in modernen Webtechnologien wider."
       },
       "POKEDEX": {
-        "ABOUT_CONTENT": "Dieses Projekt wurde mit JavaScript entwickelt und nutzt eine API, um Daten dynamisch abzurufen. Die erhaltenen Informationen werden übersichtlich dargestellt, sodass Benutzer sie leicht durchsuchen, suchen und nach ihren Bedürfnissen sortieren können."
+        "ABOUT_CONTENT": "Dieses Projekt wurde mit JavaScript entwickelt und nutzt eine API, um Daten dynamisch abzurufen. "
       }
     }
   },

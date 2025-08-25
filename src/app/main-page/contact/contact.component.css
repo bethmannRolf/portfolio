@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   background-color: #1c1c1c;
-  /* volle Breite */
   color: white;
 }
 
@@ -13,10 +12,8 @@
   padding: 96px;
   width: 100%;
   max-width: 1920px;
-  /* wie bei ATF & Footer */
 }
 
-/* restliche Styles bleiben wie gehabt */
 .left-contact-side {
   max-width: 616px;
   display: flex;
@@ -112,7 +109,7 @@ div::placeholder {
     font-size: 20px;
   }
   .work-together-heading {
-    font-size: 50px;
+    font-size: 48px;
   }
   .contact-me-span {
     font-size: 20px;
