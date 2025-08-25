@@ -283,4 +283,8 @@ html {
 .legal-page {
    background-color: rgb(28, 28, 28);
 }
-
+.header-wrapper {
+  max-width: 1920px;
+  margin: 0 auto;  
+  box-sizing: border-box;
+}

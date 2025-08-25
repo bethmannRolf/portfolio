@@ -283,3 +283,9 @@ html {
 .legal-page {
   background-color: #1c1c1c;
 }
+
+.header-wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}

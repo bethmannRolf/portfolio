@@ -16,6 +16,7 @@
   user-select: none;
   max-width: 1920px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-left {
