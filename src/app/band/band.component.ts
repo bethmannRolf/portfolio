@@ -7,7 +7,7 @@ import {
   OnDestroy,
   HostListener,
 } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-band',
@@ -26,12 +26,17 @@ export class BandComponent implements AfterViewInit, OnDestroy {
 
   private readonly speedPxPerSec = 120;
 
+  constructor(private translate: TranslateService) {}
+
   ngAfterViewInit(): void {
-
-    const build = () => setTimeout(() => this.buildOrRebuild(), 0);
-
-    try { (document as any).fonts?.ready.then(build).catch(() => build()); } catch { build(); }
-    build();
+    this.translate.stream('ANY_KEY').subscribe(() => {
+      const build = () => setTimeout(() => this.buildOrRebuild(), 0);
+      try {
+        (document as any).fonts?.ready.then(build).catch(() => build());
+      } catch {
+        build();
+      }
+    });
   }
 
   @HostListener('window:resize')
@@ -48,18 +53,20 @@ export class BandComponent implements AfterViewInit, OnDestroy {
     const wrapperEl = bandEl.parentElement as HTMLElement | null;
     if (!wrapperEl) return;
 
-    if (!this.originalHTML) {
+    if (!this.originalHTML && bandEl.innerHTML.trim().length > 0) {
       this.originalHTML = bandEl.innerHTML.trim();
+    }
+
+    if (!this.originalHTML) {
+      setTimeout(() => this.buildOrRebuild(), 100);
+      return;
     }
 
     this.cleanupStyle();
     bandEl.style.animation = '';
     bandEl.innerHTML = this.originalHTML;
 
-
     let w1 = bandEl.scrollWidth;
-
-
     if (w1 <= 0) {
       setTimeout(() => this.buildOrRebuild(), 50);
       return;
@@ -68,10 +75,8 @@ export class BandComponent implements AfterViewInit, OnDestroy {
     bandEl.innerHTML = this.originalHTML + this.originalHTML;
     let w2 = bandEl.scrollWidth;
 
-
     const period = w2 - w1;
     if (period <= 0) {
-
       setTimeout(() => this.buildOrRebuild(), 50);
       return;
     }
