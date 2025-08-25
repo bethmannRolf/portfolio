@@ -45,8 +45,18 @@ span {
   color: whitesmoke;
 }
 
+.legal-notice-wrapper {
+  width: 100%;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+}
+
 .legal-notice-container {
+  max-width: 1920px;
+  width: 100%;
   padding: 100px;
+  box-sizing: border-box;
 }
 
 .contact-data-div {

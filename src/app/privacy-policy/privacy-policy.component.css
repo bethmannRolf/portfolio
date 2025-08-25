@@ -1,7 +1,20 @@
 * {
-  background-color: #1c1c1c;
   font-family: 'Karla';
   user-select: none;
+}
+
+.policy-wrapper {
+  width: 100%;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+}
+
+.policy-container {
+  max-width: 1920px;
+  padding: 100px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 h1 {
@@ -20,12 +33,12 @@ h2 {
   text-align: center;
   font-weight: 400;
   margin-bottom: 80px;
-  color: whitesmoke;
   color: #3DCFB6;
+  transition: transform 0.2s ease;
 }
 
 h2:hover {
-  scale: 1.2;
+  transform: scale(1.2);
 }
 
 h3 {
@@ -35,18 +48,9 @@ h3 {
   color: whitesmoke;
 }
 
-p {
+p, span {
   margin-bottom: 5px;
   color: whitesmoke;
-}
-
-span {
-  margin-bottom: 5px;
-  color: whitesmoke;
-}
-
-.policy-container {
-  padding: 100px;
 }
 
 .contact-data-div {
@@ -57,15 +61,13 @@ span {
 
 @media (max-width: 750px) {
   .policy-container {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 100px 40px;
   }
 }
 
 @media (max-width: 500px) {
   .policy-container {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 80px 16px;
   }
   h1 {
     font-size: 24px;

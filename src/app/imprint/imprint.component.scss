@@ -45,10 +45,19 @@ span {
     color: whitesmoke;
 }
 
+.imprint-wrapper {
+  width: 100%;
+  background-color: rgb(28, 28, 28);
+  display: flex;
+  justify-content: center; 
+}
+
 .imprint-container {
-    background-size: cover;
-    max-width: 1500px;
-    padding: 100px;
+  max-width: 1500px;        
+  width: 100%;              
+  padding: 100px;
+  box-sizing: border-box;  
+  background-size: cover;
 }
 
 .contact-data-div {
