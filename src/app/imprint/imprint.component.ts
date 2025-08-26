@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { LanguagesService } from '../core/languages.service';
 
+
 /**
  * A standalone component that displays the imprint ("Impressum") page.
  * Initializes the translation service with a saved language preference.

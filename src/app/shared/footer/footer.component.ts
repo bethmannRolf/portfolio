@@ -18,6 +18,9 @@ export class FooterComponent {
     private router: Router
   ) { }
 
+  /**
+   * Smooth scroll to top of the page
+   */
   scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
@@ -34,5 +37,16 @@ export class FooterComponent {
         setTimeout(() => this.scrollService.scrollTo(sectionId), 50);
       });
     }
+  }
+
+  /**
+   * Navigates to a different page and scrolls to top after navigation.
+   * Use this for links like legal notice, privacy, imprint.
+   */
+  navigateAndScroll(path: string): void {
+    this.router.navigate([path]).then(() => {
+     
+      setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 50);
+    });
   }
 }

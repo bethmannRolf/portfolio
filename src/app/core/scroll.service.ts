@@ -13,7 +13,7 @@ export class ScrollService {
    * @param offset Vertical offset in pixels (default: 5).
    * @param delay Delay in ms before scrolling (default: 50).
    */
-  scrollTo(id: string, offset: number = 5, delay: number = 100): void {
+  scrollTo(id: string, offset: number = 5, delay: number = 500): void {
     setTimeout(() => {
       const el = document.getElementById(id);
       if (el) {
