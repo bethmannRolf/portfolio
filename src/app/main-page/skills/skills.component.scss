@@ -362,8 +362,12 @@
     font-size: 48px;
   }
 
+  .left-side{
+    padding: 50px 0 0;
+  }
+
   .skills-card {
-    width: 250px;
+    width: 300px;
   }
 
   .right-side {
@@ -378,5 +382,9 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     justify-items: center;
+  }
+
+    .skills-card {
+    width: 250px;
   }
 }

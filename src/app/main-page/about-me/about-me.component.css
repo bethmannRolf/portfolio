@@ -130,7 +130,7 @@
 
 @media (max-width: 500px) {
   .about-me-card {
-    width: 300px;
+    width: 350px;
   }
   .profile-image-about-me {
     width: 300px;
@@ -143,10 +143,16 @@
     font-size: 48px;
   }
   .about-me-card {
-    width: 250px;
+    width: 300px;
   }
   .profile-image-about-me {
     width: 250px;
     height: auto;
+  }
+}
+
+@media (max-width: 350px) {
+  .about-me-card {
+    width: 250px;
   }
 }
