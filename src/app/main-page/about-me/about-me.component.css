@@ -93,6 +93,11 @@
   gap: 40px;
 }
 
+.lower-card-section img {
+  width: 32px;
+  height: 32px;
+}
+
 @media (max-width: 1400px) {
   .about-me-section {
     flex-direction: column;
