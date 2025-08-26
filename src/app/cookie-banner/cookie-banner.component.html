@@ -1,5 +1,7 @@
 <div *ngIf="!consentGiven" class="cookie-banner">
-  <p>{{ 'COOKIE.MESSAGE' | translate }}</p>
+  <div class="message-div">
+    <p class="cookie-message">{{ 'COOKIE.MESSAGE' | translate }}</p>
+  </div>
   <button (click)="acceptCookies()">{{ 'COOKIE.ACCEPT' | translate }}</button>
   <button (click)="rejectCookies()">{{ 'COOKIE.REJECT' | translate }}</button>
 </div>

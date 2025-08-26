@@ -3,23 +3,22 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: #f4f4f4;
-  color: #000;
+  background: #1c1c1c;
+  color: white;
   padding: 1rem;
   text-align: center;
   z-index: 1000;
   box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+  font-family: 'Karla';
 
   button {
+    border-radius: 8px;
     margin: 0 0.5rem;
     padding: 0.5rem 1rem;
     border: none;
-    background: #3f51b5;
+    background: #26534b;
     color: white;
     cursor: pointer;
-
-    &:hover {
-      background: #303f9f;
-    }
+    margin-top: 20px;
   }
 }
