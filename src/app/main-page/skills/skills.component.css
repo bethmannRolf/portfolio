@@ -366,6 +366,10 @@
 }
 
 @media (max-width: 390px) {
+  .skills-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   .skills-frame-heading {
     font-size: 48px;
   }
@@ -373,7 +377,7 @@
     padding: 50px 0 0;
   }
   .skills-card {
-    width: 300px;
+    width: 100%;
   }
   .right-side {
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
@@ -387,8 +391,5 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     justify-items: center;
-  }
-  .skills-card {
-    width: 250px;
   }
 }
