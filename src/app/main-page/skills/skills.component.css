@@ -9,7 +9,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 96px 0;
+  padding: 96px 100px;
   position: relative;
   z-index: 1;
 }
@@ -295,6 +295,13 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .skills-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 @media (max-width: 850px) {
   .image-container {
     width: 50%;
@@ -324,7 +331,7 @@
 
 @media (max-width: 730px) {
   .skills-card {
-    width: 568px;
+    max-width: 568px;
     padding: 16px;
   }
   .skills-section {
@@ -334,7 +341,7 @@
 
 @media (max-width: 670px) {
   .skills-card {
-    width: 450px;
+    width: 100%;
   }
   .right-side {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -345,7 +352,11 @@
 
 @media (max-width: 550px) {
   .skills-card {
-    width: 390px;
+    width: 100%;
+  }
+  .skills-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .right-side {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -356,7 +367,7 @@
 
 @media (max-width: 500px) {
   .skills-card {
-    width: 300px;
+    width: 100%px;
   }
   .right-side {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -366,10 +377,6 @@
 }
 
 @media (max-width: 500px) {
-  .skills-section {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
   .skills-frame-heading {
     font-size: 48px;
   }

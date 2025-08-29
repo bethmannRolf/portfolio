@@ -103,35 +103,45 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .about-me-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
+
+
 
 @media (max-width: 730px) {
   .about-me-card {
     width: 568px;
     padding: 16px;
   }
+
   .profile-image-about-me {
-    width: 568px;
+    width: 100%;
     height: auto;
   }
 }
 
 @media (max-width: 670px) {
   .about-me-card {
-    width: 450px;
+    width: 100%;
     height: auto;
   }
 }
 
 @media (max-width: 550px) {
   .about-me-card {
-    width: 390px;
+    width: 100%;
   }
+
   .profile-image-about-me {
-    width: 390px;
+    width: 100%;
     height: auto;
   }
-  .about-me-section {
+
+  .about-me-wrapper {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -141,6 +151,7 @@
   .about-me-card {
     width: 100%;
   }
+
   .profile-image-about-me {
     width: 100%;
     height: auto;
@@ -151,13 +162,16 @@
   .about-me-heading {
     font-size: 48px;
   }
+
   .about-me-card {
     width: 100%;
   }
+
   .profile-image-about-me {
     width: 100%;
     height: auto;
   }
+
   .about-me-right {
     width: 100%;
     padding-top: 120px;

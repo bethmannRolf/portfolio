@@ -101,7 +101,7 @@ div::placeholder {
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 550px) {
   .left-contact-side {
     gap: 20px;
   }
@@ -114,6 +114,15 @@ div::placeholder {
   .contact-me-span {
     font-size: 20px;
   }
+  .contact-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .contact-section {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 500px) {
@@ -121,9 +130,5 @@ div::placeholder {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
-  }
-  .contact-wrapper {
-    padding-left: 16px;
-    padding-right: 16px;
   }
 }

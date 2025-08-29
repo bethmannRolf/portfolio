@@ -9,7 +9,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 96px 0;
+  padding: 96px 100px;
   position: relative;
   z-index: 1;
 }
@@ -20,31 +20,27 @@
   position: absolute;
   left: 0;
   width: 100%;
-  height: 160px; 
+  height: 160px;
   z-index: 2;
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 .skills-wrapper::before {
   top: 0;
-  background: linear-gradient(
-    to bottom,
-    rgb(28, 28, 28) 0%,
-    rgba(28, 28, 28, 0.9) 30%,
-    rgba(28, 28, 28, 0.6) 60%,
-    rgba(28, 28, 28, 0) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgb(28, 28, 28) 0%,
+      rgba(28, 28, 28, 0.9) 30%,
+      rgba(28, 28, 28, 0.6) 60%,
+      rgba(28, 28, 28, 0) 100%);
 }
 
 .skills-wrapper::after {
   bottom: 0;
-  background: linear-gradient(
-    to top,
-    rgb(28, 28, 28) 0%,
-    rgba(28, 28, 28, 0.9) 30%,
-    rgba(28, 28, 28, 0.6) 60%,
-    rgba(28, 28, 28, 0) 100%
-  );
+  background: linear-gradient(to top,
+      rgb(28, 28, 28) 0%,
+      rgba(28, 28, 28, 0.9) 30%,
+      rgba(28, 28, 28, 0.6) 60%,
+      rgba(28, 28, 28, 0) 100%);
 }
 
 .skills-section {
@@ -313,6 +309,16 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .skills-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+
+
+
 @media (max-width: 850px) {
   .image-container {
     width: 50%;
@@ -347,7 +353,7 @@
 
 @media (max-width: 730px) {
   .skills-card {
-    width: 568px;
+    max-width: 568px;
     padding: 16px;
   }
 
@@ -358,8 +364,11 @@
 
 @media (max-width: 670px) {
   .skills-card {
-    width: 450px;
+    width: 100%;
+
   }
+
+
 
   .right-side {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -370,7 +379,14 @@
 
 @media (max-width: 550px) {
   .skills-card {
-    width: 390px;
+    width: 100%;
+
+
+  }
+
+  .skills-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .right-side {
@@ -382,8 +398,10 @@
 
 @media (max-width: 500px) {
   .skills-card {
-    width: 300px;
+    width: 100%px;
   }
+
+
 
   .right-side {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -395,17 +413,12 @@
 @media (max-width: 500px) {
 
 
-  .skills-section{
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  
 
   .skills-frame-heading {
     font-size: 48px;
   }
 
-  .left-side{
+  .left-side {
     padding: 50px 0 0;
   }
 

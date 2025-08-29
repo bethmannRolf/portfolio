@@ -105,6 +105,15 @@
         }
 }
 
+.about-me-wrapper{
+        padding-left: 50px;
+        padding-right: 50px;
+}
+
+
+
+
+
 @media (max-width: 730px) {
         .about-me-card {
                 width: 568px;
@@ -112,29 +121,33 @@
         }
 
         .profile-image-about-me {
-                width: 568px;
+                width: 100%;
                 height: auto;
         }
 }
 
 @media (max-width: 670px) {
+
+
+
+
         .about-me-card {
-                width: 450px;
+                width: 100%;
                 height: auto;
         }
 }
 
 @media (max-width: 550px) {
         .about-me-card {
-                width: 390px;
+                width: 100%;
         }
 
         .profile-image-about-me {
-                width: 390px;
+                width: 100%;
                 height: auto;
         }
 
-               .about-me-section{
+               .about-me-wrapper{
                 padding-left: 16px;
                 padding-right: 16px;
         }

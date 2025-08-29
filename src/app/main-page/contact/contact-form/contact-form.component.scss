@@ -401,7 +401,7 @@ textarea:-moz-placeholder-shown {
     }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 550px) {
 
     .checkbox-section input[type="checkbox"] {
         appearance: none;
@@ -422,9 +422,8 @@ textarea:-moz-placeholder-shown {
     }
 }
 
-@media (max-width: 500px) {
     .contact-form-container {
         padding-left: 0;
         padding-right: 0;
     }
-}
+
