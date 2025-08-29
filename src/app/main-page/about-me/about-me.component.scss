@@ -155,13 +155,23 @@
         }
 
         .about-me-card {
-                width: 300px;
+                width: 100%;
+        }
+
+        .about-me-section{
+                padding-left: 16px;
+                padding-right: 16px;
         }
 
         .profile-image-about-me {
-                width: 250px;
+                width: 100%;
                 height: auto;
         }
+        .about-me-right{
+                width: 100%;
+                padding-top: 120px;
+        }
+
 }
 
 @media (max-width: 350px) {
@@ -169,4 +179,5 @@
         .about-me-card {
                 width: 250px;
         }
+
 }
