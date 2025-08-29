@@ -140,10 +140,27 @@
   }
 
   .what-colleagues-say {
-    font-size: 24px;
+    font-size: 36px;
     white-space: normal;
     padding-left: 16px;
     padding-right: 16px;
     text-align: center;
   }
+}
+
+
+@media(max-width:390px){
+ 
+.quotations-section{
+  padding-left: 24px;
+   padding-right: 16px;
+}
+.what-colleagues-say{
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+
 }

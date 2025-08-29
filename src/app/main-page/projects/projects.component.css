@@ -203,12 +203,20 @@
 }
 
 @media (max-width: 400px) {
+  .projects-wrapper {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .content-area {
+    width: 100%;
+  }
   .upper-large-heading {
     font-size: 36px !important;
     word-break: keep-all !important;
     overflow-wrap: normal !important;
   }
   .projects-section {
-    padding-left: 0;
+    padding-left: 16;
   }
 }

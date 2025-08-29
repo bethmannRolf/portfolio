@@ -115,3 +115,15 @@ div::placeholder {
     font-size: 20px;
   }
 }
+
+@media (max-width: 390px) {
+  .contact-section {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .contact-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
