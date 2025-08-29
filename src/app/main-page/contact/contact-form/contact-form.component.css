@@ -412,7 +412,7 @@ textarea:-moz-placeholder-shown {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .contact-form-container {
     padding-left: 0;
     padding-right: 0;
